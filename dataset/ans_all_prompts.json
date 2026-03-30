@@ -1,0 +1,80 @@
+{
+    "General_Text": [
+        "Answer"
+    ],
+    "MOL_Solubility": [
+        "solubility_in_log_mol_per_L"
+    ],
+    "MOL_Freesolv": [
+        "free_energy"
+    ],
+    "PROT_Melt": [
+        "meltingPoint"
+    ],
+    "PROT_Energy": [
+        "ddg_value"
+    ],
+    "PROT_Fitness": [
+        "log_fitness_score"
+    ],
+    "PROT_Mutation": [
+        "DMS_score"
+    ],
+    "PROT_Conserve": [
+        "conservation_score"
+    ],
+    "PROT_Location": [
+        "localization_class"
+    ],
+    "MOL_Syn": [
+        "Answer"
+    ],
+    "MOL_Resyn": [
+        "Answer"
+    ],
+    "PROT_EC": [
+        "EC_LV1"
+    ],
+    "PROT_GO": [
+        "GO-MF"
+    ],
+    "PROT_SSC": [
+        "ss3_label"
+    ],
+    "PROT_Fold": [
+        "pdb_path"
+    ],
+    "PPI_Type": [
+        "mode"
+    ],
+    "PPI_Binary": [
+        "label"
+    ],
+    "DDI_Interact": [
+        "description"
+    ],
+    "PLI_BA": [
+        "BA"
+    ],
+    "CI_AbAg": [
+        "binding_score"
+    ],
+    "MOL_Excited": [
+        "E1-CC2"
+    ],
+    "MOL_Thermo": [
+        "cv"
+    ],
+    "MOL_BBBP": [
+        "two_class_label"
+    ],
+    "MOL_HIV": [
+        "two_class_active"
+    ],
+    "MOL_HLGap": [
+        "HUMO_LOGO"
+    ],
+    "MOL_TOX": [
+        "SR-ARE"
+    ]
+}

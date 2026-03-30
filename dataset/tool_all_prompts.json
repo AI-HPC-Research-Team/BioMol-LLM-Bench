@@ -1,0 +1,6 @@
+{
+	"MOL_Solubility":"ADMETAI_predict_solubility_lipophilicity_hydration/Solubility_AqSolDB",
+	"MOL_Freesolv": "ADMETAI_predict_solubility_lipophilicity_hydration/HydrationFreeEnergy_FreeSolv",
+	"MOL_BBBP": "ADMETAI_predict_BBB_penetrance/BBB_Martins",
+	"MOL_TOX": "ADMETAI_predict_stress_response/SR-ARE"
+}

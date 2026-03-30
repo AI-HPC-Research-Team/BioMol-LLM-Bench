@@ -1,0 +1,1624 @@
+{
+    "schema":{
+        "fields":[
+            {
+                "name":"index",
+                "type":"integer"
+            },
+            {
+                "name":"Source",
+                "type":"string"
+            },
+            {
+                "name":"Question",
+                "type":"string"
+            },
+            {
+                "name":"Production",
+                "type":"string"
+            },
+            {
+                "name":"Reaction type",
+                "type":"string"
+            },
+            {
+                "name":"Answer",
+                "type":"string"
+            },
+            {
+                "name":"Label",
+                "type":"string"
+            }
+        ],
+        "primaryKey":[
+            "index"
+        ],
+        "pandas_version":"1.4.0"
+    },
+    "data":[
+        {
+            "index":0,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"CC(C)(C)OC(=O)Nc1ccc(CCO)cc1",
+            "Reaction type":"protections",
+            "Answer":"CC(C)(C)OC(=O)OC(=O)OC(C)(C)C,Nc1ccc(CCO)cc1",
+            "Label":"E"
+        },
+        {
+            "index":1,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"COc1ncccc1-c1ccc(O)c(-c2nc3ccc(C(=O)N(C)C)cc3[nH]2)c1",
+            "Reaction type":"acylation and related processes",
+            "Answer":"CNC,COc1ncccc1-c1ccc(O)c(-c2nc3ccc(C(=O)O)cc3[nH]2)c1",
+            "Label":"B"
+        },
+        {
+            "index":2,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"Cc1c(F)ccc(Br)[n+]1[O-]",
+            "Reaction type":"oxidations",
+            "Answer":"Cc1nc(Br)ccc1F,O=S([O-])([O-])=S",
+            "Label":"F"
+        },
+        {
+            "index":3,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"Cc1ccc(-c2cc(Cl)ccc2OCc2cccc(F)c2F)n1-c1cc(C(=O)O)ccc1F",
+            "Reaction type":"heterocycle formation",
+            "Answer":"CC(=O)CCC(=O)c1cc(Cl)ccc1OCc1cccc(F)c1F,Nc1cc(C(=O)O)ccc1F",
+            "Label":"D"
+        },
+        {
+            "index":4,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"COc1cc(C#N)c(-c2cccc(-c3ccccc3)c2)nc1OC",
+            "Reaction type":" functional group interconversion",
+            "Answer":"COc1cc(Br)c(-c2cccc(-c3ccccc3)c2)nc1OC,[C-]#N",
+            "Label":"G"
+        },
+        {
+            "index":5,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"CC1(C)OC(=O)Nc2ccc(OCCCCS(=O)c3ccc(C4CCCCC4)cc3)cc21",
+            "Reaction type":"oxidations",
+            "Answer":"CC1(C)OC(=O)Nc2ccc(OCCCCSc3ccc(C4CCCCC4)cc3)cc21,OO",
+            "Label":"F"
+        },
+        {
+            "index":6,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"Nc1cccnc1C(=O)Nc1ccc(Cl)cc1",
+            "Reaction type":"acylation and related processes",
+            "Answer":"Nc1ccc(Cl)cc1,Nc1cccnc1C(=O)O",
+            "Label":"B"
+        },
+        {
+            "index":7,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"CCOC(=O)c1csc(CBr)n1",
+            "Reaction type":"functional group addition",
+            "Answer":"CCOC(=O)c1csc(C)n1,O=C1CCC(=O)N1Br",
+            "Label":"H"
+        },
+        {
+            "index":8,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"COc1cccc(C(=O)OCCCc2ccc(C3CCN(C(=O)OC(C)(C)C)CC3OCc3ccc4ccccc4c3)cc2)c1",
+            "Reaction type":"acylation and related processes",
+            "Answer":"CC(C)(C)OC(=O)N1CCC(c2ccc(CCCO)cc2)C(OCc2ccc3ccccc3c2)C1,COc1cccc(C(=O)Cl)c1",
+            "Label":"B"
+        },
+        {
+            "index":9,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"[O-][n+]1ccccc1C1=CC(CF)(CF)Oc2ccc(I)cc21",
+            "Reaction type":"oxidations",
+            "Answer":"FCC1(CF)C=C(c2ccccn2)c2cc(I)ccc2O1,O=C([O-])[O-]",
+            "Label":"F"
+        },
+        {
+            "index":10,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"CCOC(=O)c1csc(Cc2cc3cc(C(F)(F)F)ccc3n2S(=O)(=O)c2cccc(C(C)(C)C)c2)n1",
+            "Reaction type":"heterocycle formation",
+            "Answer":"CC(C)(C)c1cccc(S(=O)(=O)n2c(CC(N)=S)cc3cc(C(F)(F)F)ccc32)c1,CCOC(=O)C(=O)CBr",
+            "Label":"D"
+        },
+        {
+            "index":11,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"O=C(c1ccc(Cl)nc1)c1cccc(F)c1F",
+            "Reaction type":"C-C bond formation",
+            "Answer":"CON(C)C(=O)c1ccc(Cl)nc1,Fc1cccc(Br)c1F",
+            "Label":"C"
+        },
+        {
+            "index":12,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"CC(=O)Nc1cc(OC(F)(F)C(F)F)nn1-c1cc(S(=O)CC(F)(F)F)c(C)cc1F",
+            "Reaction type":"oxidations",
+            "Answer":"CC(=O)Nc1cc(OC(F)(F)C(F)F)nn1-c1cc(SCC(F)(F)F)c(C)cc1F,O=C(OO)c1cccc(Cl)c1",
+            "Label":"F"
+        },
+        {
+            "index":13,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"Cc1ccc(Nc2cncc(F)c2)c(C(=O)Nc2csc(C)n2)n1",
+            "Reaction type":"heteroatom alkylation and arylation",
+            "Answer":"Cc1ccc(N)c(C(=O)Nc2csc(C)n2)n1,Fc1cncc(Br)c1",
+            "Label":"A"
+        },
+        {
+            "index":14,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"Cc1ccc(-c2c(\/C=C\/c3ccccc3Br)c(C)nc(CC(C)C)c2CNC(=O)OC(C)(C)C)cc1",
+            "Reaction type":"C-C bond formation",
+            "Answer":"CCOP(=O)(Cc1ccccc1Br)OCC,Cc1ccc(-c2c(C=O)c(C)nc(CC(C)C)c2CNC(=O)OC(C)(C)C)cc1",
+            "Label":"C"
+        },
+        {
+            "index":15,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"Cc1ncc(-c2cccc(Nc3nccc4c(-c5ccsc5)cccc34)c2)n1C",
+            "Reaction type":"heteroatom alkylation and arylation",
+            "Answer":"Cc1ncc(-c2cccc(N)c2)n1C,Clc1nccc2c(-c3ccsc3)cccc12",
+            "Label":"A"
+        },
+        {
+            "index":16,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"CCOC(=O)c1cc(C#N)c(N2CC(C(=O)O)C2)nc1N(C)C",
+            "Reaction type":"heteroatom alkylation and arylation",
+            "Answer":"CCOC(=O)c1cc(C#N)c(Cl)nc1N(C)C,O=C(O)C1CNC1",
+            "Label":"A"
+        },
+        {
+            "index":17,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"CC(C)(C)OC(=O)N1CCN(c2cccnc2)CC1",
+            "Reaction type":"protections",
+            "Answer":"CC(C)(C)OC(=O)OC(=O)OC(C)(C)C,c1cncc(N2CCNCC2)c1",
+            "Label":"E"
+        },
+        {
+            "index":18,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"CCCCOc1ccc(C)[n+]([O-])c1",
+            "Reaction type":"oxidations",
+            "Answer":"CCCCOc1ccc(C)nc1,O=C(OO)c1cccc(Cl)c1",
+            "Label":"F"
+        },
+        {
+            "index":19,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"CCOC(=O)C1CN(C(=O)OC(C)(C)C)CCC1=O",
+            "Reaction type":"protections",
+            "Answer":"CC(C)(C)OC(=O)OC(=O)OC(C)(C)C,CCOC(=O)C1CNCCC1=O",
+            "Label":"E"
+        },
+        {
+            "index":20,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"[O-][n+]1cc(C(F)(F)F)ccc1Cl",
+            "Reaction type":"oxidations",
+            "Answer":"FC(F)(F)c1ccc(Cl)nc1,OO",
+            "Label":"F"
+        },
+        {
+            "index":21,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"Cc1ncc(I)n1C(=O)OC(C)(C)C",
+            "Reaction type":"protections",
+            "Answer":"CC(C)(C)OC(=O)OC(=O)OC(C)(C)C,Cc1ncc(I)[nH]1",
+            "Label":"E"
+        },
+        {
+            "index":22,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"CCOC(=O)C(Br)C(=O)Cc1ccc(Cl)cc1",
+            "Reaction type":"functional group addition",
+            "Answer":"CCOC(=O)CC(=O)Cc1ccc(Cl)cc1,O=C1CCC(=O)N1Br",
+            "Label":"H"
+        },
+        {
+            "index":23,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"COc1ccc(C(=O)NC2(C(=O)O)Cc3ccccc3C2)cc1OCCc1cccc(S(C)=O)c1",
+            "Reaction type":"oxidations",
+            "Answer":"COc1ccc(C(=O)NC2(C(=O)O)Cc3ccccc3C2)cc1OCCc1cccc(SC)c1,OO",
+            "Label":"F"
+        },
+        {
+            "index":24,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"Cc1c(-c2ccc(C(F)(F)F)cc2)nn(C)c1C(C)(C)O[SiH2]C(C)(C)C",
+            "Reaction type":"C-C bond formation",
+            "Answer":"CI,Cn1nc(-c2ccc(C(F)(F)F)cc2)c(Br)c1C(C)(C)O[SiH2]C(C)(C)C",
+            "Label":"C"
+        },
+        {
+            "index":25,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"O=C1c2ccccc2C(=O)N1CCCCCCCCOc1ccc2ccccc2c1",
+            "Reaction type":"heteroatom alkylation and arylation",
+            "Answer":"ClCCCCCCCCOc1ccc2ccccc2c1,O=C1NC(=O)c2ccccc21",
+            "Label":"A"
+        },
+        {
+            "index":26,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"O=C(CBr)c1ccc(-n2cncn2)nc1",
+            "Reaction type":"functional group addition",
+            "Answer":"CC(=O)c1ccc(-n2cncn2)nc1,O=C1CCC(=O)N1Br",
+            "Label":"H"
+        },
+        {
+            "index":27,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"CCOC(=O)COc1c(C(=O)O)sc(-c2cccc(N(C(=O)NC)C3CCCCC3)c2)c1Br",
+            "Reaction type":"acylation and related processes",
+            "Answer":"CCO,CNC(=O)N(c1cccc(-c2sc(C(=O)O)c(OCC(=O)O)c2Br)c1)C1CCCCC1",
+            "Label":"B"
+        },
+        {
+            "index":28,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"CC(C)(C)OC(=O)N(CCOc1cc(Cl)cc(C(=O)N(CCC#N)c2ccccc2F)c1)c1ccncc1",
+            "Reaction type":"acylation and related processes",
+            "Answer":"CC(C)(C)OC(=O)N(CCOc1cc(Cl)cc(C(=O)O)c1)c1ccncc1,N#CCCNc1ccccc1F",
+            "Label":"B"
+        },
+        {
+            "index":29,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"Cc1ccc2ncn(C)c2c1",
+            "Reaction type":"heterocycle formation",
+            "Answer":"CNc1cc(C)ccc1N,O=CO",
+            "Label":"D"
+        },
+        {
+            "index":30,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"COC(=O)c1ccc(OC(C)C)c(C#N)c1",
+            "Reaction type":" functional group interconversion",
+            "Answer":"COC(=O)c1ccc(OC(C)C)c(Br)c1,[C-]#N",
+            "Label":"G"
+        },
+        {
+            "index":31,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"O=C(NCc1ccc(F)cc1)c1ccc(S(=O)(=O)n2cc(-c3ccccc3Cl)c3ccccc32)cc1",
+            "Reaction type":"C-C bond formation",
+            "Answer":"O=C(NCc1ccc(F)cc1)c1ccc(S(=O)(=O)n2cc(I)c3ccccc32)cc1,OB(O)c1ccccc1Cl",
+            "Label":"C"
+        },
+        {
+            "index":32,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"O=C1CCCC1Oc1cc(N2C(=O)C3=C(CCCC3)C2=O)ccc1Cl",
+            "Reaction type":"heterocycle formation",
+            "Answer":"Nc1ccc(Cl)c(OC2CCCC2=O)c1,O=C1OC(=O)C2=C1CCCC2",
+            "Label":"D"
+        },
+        {
+            "index":33,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"C[C@H](NC(=O)OC(C)(C)C)C(=O)O",
+            "Reaction type":"protections",
+            "Answer":"CC(C)(C)OC(=O)OC(=O)OC(C)(C)C,C[C@H](N)C(=O)O",
+            "Label":"E"
+        },
+        {
+            "index":34,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"CS(=O)Cc1cccc2c(C(CCC#N)c3ccc(C(F)(F)F)cc3)c[nH]c12",
+            "Reaction type":"oxidations",
+            "Answer":"CSCc1cccc2c(C(CCC#N)c3ccc(C(F)(F)F)cc3)c[nH]c12,O=C(OO)c1cccc(Cl)c1",
+            "Label":"F"
+        },
+        {
+            "index":35,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"COC(=O)c1ccc(C2(NC(=O)c3cc(Cl)cnc3N3CC(Nc4cccc(C(F)(F)F)c4)C3)CC2)cc1",
+            "Reaction type":"acylation and related processes",
+            "Answer":"COC(=O)c1ccc(C2(N)CC2)cc1,O=C(O)c1cc(Cl)cnc1N1CC(Nc2cccc(C(F)(F)F)c2)C1",
+            "Label":"B"
+        },
+        {
+            "index":36,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"CC(C)(C)OC(=O)c1ccc(CBr)cc1",
+            "Reaction type":"functional group addition",
+            "Answer":"Cc1ccc(C(=O)OC(C)(C)C)cc1,O=C1CCC(=O)N1Br",
+            "Label":"H"
+        },
+        {
+            "index":37,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"CC(=O)c1ccc(N2CCN(C(=O)c3cc(C(N)=O)ccc3N3CCOCC3)CC2)c(F)c1",
+            "Reaction type":" functional group interconversion",
+            "Answer":"CC(=O)c1ccc(N2CCN(C(=O)c3cc(C(=O)O)ccc3N3CCOCC3)CC2)c(F)c1,N",
+            "Label":"G"
+        },
+        {
+            "index":38,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"O=c1cc(-c2nnn[nH]2)oc2c([N+](=O)[O-])cccc12",
+            "Reaction type":"heterocycle formation",
+            "Answer":"N#Cc1cc(=O)c2cccc([N+](=O)[O-])c2o1,[N-]=[N+]=[N-]",
+            "Label":"D"
+        },
+        {
+            "index":39,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"CCc1nc2c(C)cc(C)nc2n1-c1ccc(CCN=[N+]=[N-])cc1",
+            "Reaction type":" functional group interconversion",
+            "Answer":"CCc1nc2c(C)cc(C)nc2n1-c1ccc(CCCl)cc1,[N-]=[N+]=[N-]",
+            "Label":"G"
+        },
+        {
+            "index":40,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"CCOC(=O)c1c(OC)cc(-c2cnc(OC)c(OC)c2)nc1CBr",
+            "Reaction type":"functional group addition",
+            "Answer":"CCOC(=O)c1c(OC)cc(-c2cnc(OC)c(OC)c2)nc1C,O=C1CCC(=O)N1Br",
+            "Label":"H"
+        },
+        {
+            "index":41,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"COC(=O)c1cc(NC2CCN(C(=O)OC(C)(C)C)CC2)nc(Cl)n1",
+            "Reaction type":"heteroatom alkylation and arylation",
+            "Answer":"CC(C)(C)OC(=O)N1CCC(N)CC1,COC(=O)c1cc(Cl)nc(Cl)n1",
+            "Label":"A"
+        },
+        {
+            "index":42,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"COCCCCCN1CCC(=NO)CC1",
+            "Reaction type":" functional group interconversion",
+            "Answer":"COCCCCCN1CCC(=O)CC1,NO",
+            "Label":"G"
+        },
+        {
+            "index":43,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"O=[N+]([O-])c1ccccc1-c1cccc2ccsc12",
+            "Reaction type":"C-C bond formation",
+            "Answer":"Brc1cccc2ccsc12,O=[N+]([O-])c1ccccc1B(O)O",
+            "Label":"C"
+        },
+        {
+            "index":44,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"CC(C)(C)OC(=O)N1CCN(c2ccc(Br)cc2)CC1",
+            "Reaction type":"protections",
+            "Answer":"Brc1ccc(N2CCNCC2)cc1,CC(C)(C)OC(=O)OC(=O)OC(C)(C)C",
+            "Label":"E"
+        },
+        {
+            "index":45,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"CCC(O)c1cccc(O[Si](C)(C)C(C)(C)C)c1",
+            "Reaction type":"C-C bond formation",
+            "Answer":"CC(C)(C)[Si](C)(C)Oc1cccc(C=O)c1,CC[Mg+]",
+            "Label":"C"
+        },
+        {
+            "index":46,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"COC(=O)C(Br)c1ccc2oc(Br)cc2c1",
+            "Reaction type":"functional group addition",
+            "Answer":"COC(=O)Cc1ccc2oc(Br)cc2c1,O=C1CCC(=O)N1Br",
+            "Label":"H"
+        },
+        {
+            "index":47,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"Nc1nc(-c2cccc([N+](=O)[O-])c2)cs1",
+            "Reaction type":"heterocycle formation",
+            "Answer":"NC(N)=S,O=C(CBr)c1cccc([N+](=O)[O-])c1",
+            "Label":"D"
+        },
+        {
+            "index":48,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"Cc1ccn2ccnc(N3CC[C@H](NC(=O)c4ccn(-c5ccc(Cl)cc5)n4)C3)c12",
+            "Reaction type":"acylation and related processes",
+            "Answer":"Cc1ccn2ccnc(N3CC[C@H](N)C3)c12,O=C(O)c1ccn(-c2ccc(Cl)cc2)n1",
+            "Label":"B"
+        },
+        {
+            "index":49,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"CC(C)C(NC(=O)OC(C)(C)C)C(=O)OCCCc1cc(F)c2ncc(C(=O)NCc3ccc(Cl)cc3)c(O)c2c1",
+            "Reaction type":"acylation and related processes",
+            "Answer":"CC(C)[C@H](NC(=O)OC(C)(C)C)C(=O)O,O=C(NCc1ccc(Cl)cc1)c1cnc2c(F)cc(CCCO)cc2c1O",
+            "Label":"B"
+        },
+        {
+            "index":50,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"CNc1cc(-n2ncnc2N)ncn1",
+            "Reaction type":"heteroatom alkylation and arylation",
+            "Answer":"CN,Nc1ncnn1-c1cc(Cl)ncn1",
+            "Label":"A"
+        },
+        {
+            "index":51,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"COc1ccc2c(ccn2C(=O)OC(C)(C)C)c1",
+            "Reaction type":"protections",
+            "Answer":"CC(C)(C)OC(=O)OC(=O)OC(C)(C)C,COc1ccc2[nH]ccc2c1",
+            "Label":"E"
+        },
+        {
+            "index":52,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"O=C(Nc1ccc(OC(F)(F)Cl)cc1)c1cnc(N2C[C@@H](O)[C@H](O)C2)c(I)c1",
+            "Reaction type":"heteroatom alkylation and arylation",
+            "Answer":"O=C(Nc1ccc(OC(F)(F)Cl)cc1)c1cnc(Cl)c(I)c1,O[C@@H]1CNC[C@H]1O",
+            "Label":"A"
+        },
+        {
+            "index":53,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"CC(C)(C)OC(=O)N1CCC(=O)CC1",
+            "Reaction type":"protections",
+            "Answer":"CC(C)(C)OC(=O)OC(=O)OC(C)(C)C,O=C1CCNCC1",
+            "Label":"E"
+        },
+        {
+            "index":54,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"Cc1c(Cc2cccc(C(F)(F)F)c2)oc2c(-c3cccc(C(=O)NCCS(C)=O)c3)cccc12",
+            "Reaction type":"oxidations",
+            "Answer":"CSCCNC(=O)c1cccc(-c2cccc3c(C)c(Cc4cccc(C(F)(F)F)c4)oc23)c1,O=C([O-])O",
+            "Label":"F"
+        },
+        {
+            "index":55,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"COc1ccc(OC(F)(F)F)c(B2OC(C)(C)C(C)(C)O2)c1",
+            "Reaction type":" functional group interconversion",
+            "Answer":"CC1(C)OB(B2OC(C)(C)C(C)(C)O2)OC1(C)C,COc1ccc(OC(F)(F)F)c(Cl)c1",
+            "Label":"G"
+        },
+        {
+            "index":56,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"Cc1noc(NS(=O)(=O)c2ccsc2C2SCCCS2)c1Cl",
+            "Reaction type":"protections",
+            "Answer":"Cc1noc(NS(=O)(=O)c2ccsc2C=O)c1Cl,SCCCS",
+            "Label":"E"
+        },
+        {
+            "index":57,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"[O-][n+]1cccc2cc[nH]c21",
+            "Reaction type":"oxidations",
+            "Answer":"O=C(OO)c1cccc(Cl)c1,c1cnc2[nH]ccc2c1",
+            "Label":"F"
+        },
+        {
+            "index":58,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"Oc1cc(C(F)(F)F)c2ccccc2n1",
+            "Reaction type":"heterocycle formation",
+            "Answer":"CCOC(=O)CC(=O)C(F)(F)F,Nc1ccccc1",
+            "Label":"D"
+        },
+        {
+            "index":59,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"CCS(=O)(=O)c1ccc(Nc2cc(-c3cccc(-n4ncc5cc(C(C)(C)C)cc(F)c5c4=O)c3COC(C)=O)nn(C)c2=O)nc1",
+            "Reaction type":"C-C bond formation",
+            "Answer":"CC(=O)OCc1c(B2OC(C)(C)C(C)(C)O2)cccc1-n1ncc2cc(C(C)(C)C)cc(F)c2c1=O,CCS(=O)(=O)c1ccc(Nc2cc(Cl)nn(C)c2=O)nc1",
+            "Label":"C"
+        },
+        {
+            "index":60,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"CCCCOCCOc1ccc(-c2ccc3c(c2)C=C(C(=O)Nc2ccc(S(=O)Cc4cccnn4)cc2)CCN3CC(C)C)cc1",
+            "Reaction type":"oxidations",
+            "Answer":"CCCCOCCOc1ccc(-c2ccc3c(c2)C=C(C(=O)Nc2ccc(SCc4cccnn4)cc2)CCN3CC(C)C)cc1,O=S([O-])([O-])=S",
+            "Label":"F"
+        },
+        {
+            "index":61,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"COc1cc(Nc2nc(C)c(Cc3ccc(C)c(Cl)c3)s2)ccc1-n1cnc(C)c1",
+            "Reaction type":"heterocycle formation",
+            "Answer":"CC(=O)C(Cl)Cc1ccc(C)c(Cl)c1,COc1cc(NC(N)=S)ccc1-n1cnc(C)c1",
+            "Label":"D"
+        },
+        {
+            "index":62,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"C=C(C(=O)N(C)OC)C(F)(F)F",
+            "Reaction type":"acylation and related processes",
+            "Answer":"C=C(C(=O)O)C(F)(F)F,CNOC",
+            "Label":"B"
+        },
+        {
+            "index":63,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"CCCCN(CCCC)C(=O)c1nn(-c2ccc(OC)cc2C(=O)N2Cc3ccccc3C[C@H]2CO)c(C)c1Cl",
+            "Reaction type":"acylation and related processes",
+            "Answer":"CCCCN(CCCC)C(=O)c1nn(-c2ccc(OC)cc2C(=O)O)c(C)c1Cl,OC[C@@H]1Cc2ccccc2CN1",
+            "Label":"B"
+        },
+        {
+            "index":64,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"O=c1[nH]nc(CBr)cc1C(F)(F)F",
+            "Reaction type":"functional group addition",
+            "Answer":"Cc1cc(C(F)(F)F)c(=O)[nH]n1,O=C1CCC(=O)N1Br",
+            "Label":"H"
+        },
+        {
+            "index":65,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"COC(=O)C(C)(COS(C)(=O)=O)C(=O)c1ccc(Cl)cc1",
+            "Reaction type":"acylation and related processes",
+            "Answer":"COC(=O)C(C)(CO)C(=O)c1ccc(Cl)cc1,CS(=O)(=O)Cl",
+            "Label":"B"
+        },
+        {
+            "index":66,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"CCOC(=O)Cc1nc(NCC(F)(F)c2ccccc2)ccc1Cl",
+            "Reaction type":"heteroatom alkylation and arylation",
+            "Answer":"CCOC(=O)Cc1nc(Cl)ccc1Cl,NCC(F)(F)c1ccccc1",
+            "Label":"A"
+        },
+        {
+            "index":67,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"OCC1OC1Cc1ccccc1",
+            "Reaction type":"heterocycle formation",
+            "Answer":"O=C(OO)c1cccc(Cl)c1,OC\/C=C\/Cc1ccccc1",
+            "Label":"D"
+        },
+        {
+            "index":68,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"CC1(C)OB(c2ccc(CC(N)=O)nc2)OC1(C)C",
+            "Reaction type":" functional group interconversion",
+            "Answer":"CC1(C)OB(B2OC(C)(C)C(C)(C)O2)OC1(C)C,NC(=O)Cc1ccc(Br)cn1",
+            "Label":"G"
+        },
+        {
+            "index":69,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"CC(C)(C)OC(=O)n1nc(Br)c2cc(-c3ncccc3Cl)cc(Oc3ccc(S(C)(=O)=O)cc3)c21",
+            "Reaction type":"protections",
+            "Answer":"CC(C)(C)OC(=O)OC(=O)OC(C)(C)C,CS(=O)(=O)c1ccc(Oc2cc(-c3ncccc3Cl)cc3c(Br)n[nH]c23)cc1",
+            "Label":"E"
+        },
+        {
+            "index":70,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"[N-]=[N+]=NCCCC(=O)c1ccccc1",
+            "Reaction type":" functional group interconversion",
+            "Answer":"O=C(CCCCl)c1ccccc1,[N-]=[N+]=[N-]",
+            "Label":"G"
+        },
+        {
+            "index":71,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"COc1ccc(C(=O)CCl)c(NC(C)=O)c1",
+            "Reaction type":"acylation and related processes",
+            "Answer":"CC(=O)O,COc1ccc(C(=O)CCl)c(N)c1",
+            "Label":"B"
+        },
+        {
+            "index":72,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"CCOC(=O)\/C(=N\\OC1CCCCCCC1)c1csc(N)n1",
+            "Reaction type":"heterocycle formation",
+            "Answer":"CCOC(=O)\/C(=N\\OC1CCCCCCC1)C(=O)CBr,NC(N)=S",
+            "Label":"D"
+        },
+        {
+            "index":73,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"CCOC(=O)C(C)C(C)(C)C=CCBr",
+            "Reaction type":"functional group addition",
+            "Answer":"CC=CC(C)(C)C(C)C(=O)OCC,O=C1CCC(=O)N1Br",
+            "Label":"H"
+        },
+        {
+            "index":74,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"O=C(c1cccc(O)c1F)c1c[nH]c2ncc(-c3ccccc3)cc12",
+            "Reaction type":"C-C bond formation",
+            "Answer":"O=C(c1cccc(O)c1F)c1c[nH]c2ncc(Br)cc12,OB(O)c1ccccc1",
+            "Label":"C"
+        },
+        {
+            "index":75,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"CC(C)(C)OC(=O)N1CCC(CC(=O)O)CC1",
+            "Reaction type":"protections",
+            "Answer":"CC(C)(C)OC(=O)OC(=O)OC(C)(C)C,O=C(O)CC1CCNCC1",
+            "Label":"E"
+        },
+        {
+            "index":76,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"O=C1CCC(N2Cc3c(CNC(=O)c4ccccn4)cccc3C2=O)C(=O)N1",
+            "Reaction type":"acylation and related processes",
+            "Answer":"NCc1cccc2c1CN(C1CCC(=O)NC1=O)C2=O,O=C(Cl)c1ccccn1",
+            "Label":"B"
+        },
+        {
+            "index":77,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"COCCCc1ccc(Cl)c(CN(C(=O)CC#N)C2CC2)c1",
+            "Reaction type":"acylation and related processes",
+            "Answer":"COCCCc1ccc(Cl)c(CNC2CC2)c1,N#CCC(=O)O",
+            "Label":"B"
+        },
+        {
+            "index":78,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"Cc1ccc(C)n1Cc1ccc(-c2ccccc2-c2nnn[nH]2)cc1",
+            "Reaction type":"heterocycle formation",
+            "Answer":"CC(=O)CCC(C)=O,NCc1ccc(-c2ccccc2-c2nnn[nH]2)cc1",
+            "Label":"D"
+        },
+        {
+            "index":79,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"Clc1cccc(-n2nncc2Cc2ccccc2)c1Cl",
+            "Reaction type":"heterocycle formation",
+            "Answer":"C#CCc1ccccc1,[N-]=[N+]=Nc1cccc(Cl)c1Cl",
+            "Label":"D"
+        },
+        {
+            "index":80,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"N#CCc1c(-c2ccccc2)sc2ccc(Cl)cc12",
+            "Reaction type":" functional group interconversion",
+            "Answer":"Clc1ccc2sc(-c3ccccc3)c(CBr)c2c1,[C-]#N",
+            "Label":"G"
+        },
+        {
+            "index":81,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"ON=C1CCCc2cc3c(cc21)OCC3",
+            "Reaction type":" functional group interconversion",
+            "Answer":"NO,O=C1CCCc2cc3c(cc21)OCC3",
+            "Label":"G"
+        },
+        {
+            "index":82,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"CSc1sc(C(=N)NC(=O)OC(C)(C)C)cc1S(=O)(=O)c1cccc(-c2cccc(C(=O)OC(C)C)c2C)c1",
+            "Reaction type":"C-C bond formation",
+            "Answer":"CSc1sc(C(=N)NC(=O)OC(C)(C)C)cc1S(=O)(=O)c1cccc(Br)c1,Cc1c(B2OC(C)(C)C(C)(C)O2)cccc1C(=O)OC(C)C",
+            "Label":"C"
+        },
+        {
+            "index":83,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"COc1ccc(COc2cn(C)c3ccc(C(=O)NCCN4CCCC4)cc3c2=O)cc1",
+            "Reaction type":"acylation and related processes",
+            "Answer":"COc1ccc(COc2cn(C)c3ccc(C(=O)O)cc3c2=O)cc1,NCCN1CCCC1",
+            "Label":"B"
+        },
+        {
+            "index":84,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"CCOC(=O)c1ncc2cc(-c3cccc(C(F)(F)F)c3)sc2c1O",
+            "Reaction type":"C-C bond formation",
+            "Answer":"CCOC(=O)c1ncc2cc(Br)sc2c1O,OB(O)c1cccc(C(F)(F)F)c1",
+            "Label":"C"
+        },
+        {
+            "index":85,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"O=C(O)C(F)(F)F",
+            "Reaction type":"acylation and related processes",
+            "Answer":"Clc1cnc2nc1Nc1ccc(OCCC3CCNCC3)c(c1)CCc1cncc(c1)N2,O=C(Cl)c1cnccn1",
+            "Label":"B"
+        },
+        {
+            "index":86,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"O=C(c1cc(Cl)ncn1)N(Cc1ccccc1)CC(F)(F)F",
+            "Reaction type":"acylation and related processes",
+            "Answer":"FC(F)(F)CNCc1ccccc1,O=C(O)c1cc(Cl)ncn1",
+            "Label":"B"
+        },
+        {
+            "index":87,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"C[Si](C)(C)OC(=O)\/C=C\/CBr",
+            "Reaction type":"functional group addition",
+            "Answer":"C\/C=C\/C(=O)O[Si](C)(C)C,O=C1CCC(=O)N1Br",
+            "Label":"H"
+        },
+        {
+            "index":88,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"CCCNC(=O)CCn1ncc2c(-c3ccc(F)cc3)c(-c3ccncc3)c(-c3ccc(F)cc3)nc21",
+            "Reaction type":"acylation and related processes",
+            "Answer":"CCCN,O=C(O)CCn1ncc2c(-c3ccc(F)cc3)c(-c3ccncc3)c(-c3ccc(F)cc3)nc21",
+            "Label":"B"
+        },
+        {
+            "index":89,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"COc1c(NC(=O)c2ccc(C)c(-n3cc(-c4ccc(NC5CC5)nc4)nn3)c2)cc(C(C)(C)C)cc1NS(C)(=O)=O",
+            "Reaction type":"heterocycle formation",
+            "Answer":"C#Cc1ccc(NC2CC2)nc1,COc1c(NC(=O)c2ccc(C)c(N=[N+]=[N-])c2)cc(C(C)(C)C)cc1NS(C)(=O)=O",
+            "Label":"D"
+        },
+        {
+            "index":90,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"Cn1cc(C[C@@H](NC(=O)OC(C)(C)C)C(=O)O)c2ccccc21",
+            "Reaction type":"protections",
+            "Answer":"CC(C)(C)OC(=O)OC(=O)OC(C)(C)C,Cn1cc(C[C@@H](N)C(=O)O)c2ccccc21",
+            "Label":"E"
+        },
+        {
+            "index":91,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"NC(=O)C12C=CC(C1)C1C(=O)N(Cc3ccccc3)C(=O)C12",
+            "Reaction type":" functional group interconversion",
+            "Answer":"CCN(CC)CC,O=C1C2C3C=CC(C(=O)O)(C3)C2C(=O)N1Cc1ccccc1",
+            "Label":"G"
+        },
+        {
+            "index":92,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"CC(F)(F)C(F)(F)C(O)(CF)C(F)(F)F",
+            "Reaction type":"functional group addition",
+            "Answer":"CC(F)(F)C(F)(F)C(=CF)C(F)(F)F,O=S(=O)(O)O",
+            "Label":"H"
+        },
+        {
+            "index":93,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"Fc1cnc(Cl)nc1-c1ccc(Cl)cc1",
+            "Reaction type":"C-C bond formation",
+            "Answer":"Fc1cnc(Cl)nc1Cl,OB(O)c1ccc(Cl)cc1",
+            "Label":"C"
+        },
+        {
+            "index":94,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"CCOC(=O)Cc1cccc(CBr)c1",
+            "Reaction type":"functional group addition",
+            "Answer":"CCOC(=O)Cc1cccc(C)c1,O=C1CCC(=O)N1Br",
+            "Label":"H"
+        },
+        {
+            "index":95,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"Cc1cnc(C)c(NC2CCc3ccccc32)n1",
+            "Reaction type":"heteroatom alkylation and arylation",
+            "Answer":"Cc1cnc(C)c(Cl)n1,NC1CCc2ccccc21",
+            "Label":"A"
+        },
+        {
+            "index":96,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"Fc1cc(Oc2ccc(-c3c[nH]c(COc4ccccc4)n3)cc2)ccc1N=C=S",
+            "Reaction type":" functional group interconversion",
+            "Answer":"Nc1ccc(Oc2ccc(-c3c[nH]c(COc4ccccc4)n3)cc2)cc1F,S=C(Cl)Cl",
+            "Label":"G"
+        },
+        {
+            "index":97,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"CCOC(=O)CCCc1ccc(O)c(C#N)c1",
+            "Reaction type":" functional group interconversion",
+            "Answer":"CCOC(=O)CCCc1ccc(O)c(Br)c1,N#C[Cu]",
+            "Label":"G"
+        },
+        {
+            "index":98,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"CCN(CC)Cc1nn2c(C=O)c(-c3ccccc3)nc2s1",
+            "Reaction type":"C-C bond formation",
+            "Answer":"CCN(CC)Cc1nn2cc(-c3ccccc3)nc2s1,CN(C)C=O",
+            "Label":"C"
+        },
+        {
+            "index":99,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"O=S(=O)(c1cscc1Br)N1CCN(c2ccc(C(O)(C(F)(F)F)C(F)(F)F)cc2)CC1",
+            "Reaction type":"acylation and related processes",
+            "Answer":"O=S(=O)(Cl)c1cscc1Br,OC(c1ccc(N2CCNCC2)cc1)(C(F)(F)F)C(F)(F)F",
+            "Label":"B"
+        },
+        {
+            "index":100,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"CC(C)(C)OC(=O)NC1=N[C@@]2(c3ccccc3F)CO[C@@H](CO)C[C@H]2CS1",
+            "Reaction type":"protections",
+            "Answer":"CC(C)(C)OC(=O)OC(=O)OC(C)(C)C,NC1=N[C@@]2(c3ccccc3F)CO[C@@H](CO)C[C@H]2CS1",
+            "Label":"E"
+        },
+        {
+            "index":101,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"Fc1ccc(Br)cc1CBr",
+            "Reaction type":"functional group addition",
+            "Answer":"Cc1cc(Br)ccc1F,O=C1CCC(=O)N1Br",
+            "Label":"H"
+        },
+        {
+            "index":102,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"FC(F)(F)Oc1ccccc1CN1Cc2ncnc(Nc3cnc4ccccc4c3)c2C1",
+            "Reaction type":"heteroatom alkylation and arylation",
+            "Answer":"O=Cc1ccccc1OC(F)(F)F,c1ccc2ncc(Nc3ncnc4c3CNC4)cc2c1",
+            "Label":"A"
+        },
+        {
+            "index":103,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"C#CCN1C(=O)C(F)(F)Oc2cc(F)c(N3C(=O)C4=C(CCCC4)C3=O)cc21",
+            "Reaction type":"heterocycle formation",
+            "Answer":"C#CCN1C(=O)C(F)(F)Oc2cc(F)c(N)cc21,O=C1OC(=O)C2=C1CCCC2",
+            "Label":"D"
+        },
+        {
+            "index":104,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"O=C(O)c1ccc(F)cc1NC(=O)C(F)(F)F",
+            "Reaction type":"protections",
+            "Answer":"Nc1cc(F)ccc1C(=O)O,O=C(OC(=O)C(F)(F)F)C(F)(F)F",
+            "Label":"E"
+        },
+        {
+            "index":105,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"O=C(Nc1ccon1)c1ncccc1OC[C@H]1C[C@@H](OCOCc2ccccc2)CN1C(=O)[C@H]1CC[C@H](C(F)(F)F)CC1",
+            "Reaction type":"acylation and related processes",
+            "Answer":"Nc1ccon1,O=C(O)c1ncccc1OC[C@H]1C[C@@H](OCOCc2ccccc2)CN1C(=O)[C@H]1CC[C@H](C(F)(F)F)CC1",
+            "Label":"B"
+        },
+        {
+            "index":106,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"CC(N)c1cc2cccnc2n1-c1cccc(F)c1",
+            "Reaction type":"heteroatom alkylation and arylation",
+            "Answer":"CC(=O)c1cc2cccnc2n1-c1cccc(F)c1,[BH3-]C#N",
+            "Label":"A"
+        },
+        {
+            "index":107,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"C[C@H]1CN(S(=O)(=O)c2cccs2)CCN1c1ccc(C(O)(CO)C(F)(F)F)cc1",
+            "Reaction type":"heteroatom alkylation and arylation",
+            "Answer":"C[C@H]1CN(S(=O)(=O)c2cccs2)CCN1,OCC(O)(c1ccc(Br)cc1)C(F)(F)F",
+            "Label":"A"
+        },
+        {
+            "index":108,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"COc1cc(S(C)=O)c(C)cc1O",
+            "Reaction type":"oxidations",
+            "Answer":"COc1cc(SC)c(C)cc1O,OO",
+            "Label":"F"
+        },
+        {
+            "index":109,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"Fc1ccc(C#Cc2cncc(Br)c2)cc1",
+            "Reaction type":"C-C bond formation",
+            "Answer":"C#Cc1cncc(Br)c1,Fc1ccc(I)cc1",
+            "Label":"C"
+        },
+        {
+            "index":110,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"CCOC(=O)c1cnn2c(Nc3cc(C)ccc3C)c(C(=O)N3CCC(c4ccc(F)c(F)c4)CC3)cnc12",
+            "Reaction type":"acylation and related processes",
+            "Answer":"CCOC(=O)c1cnn2c(Nc3cc(C)ccc3C)c(C(=O)O)cnc12,Fc1ccc(C2CCNCC2)cc1F",
+            "Label":"B"
+        },
+        {
+            "index":111,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"Cc1nsc(C#N)c1CBr",
+            "Reaction type":" functional group interconversion",
+            "Answer":"BrC(Br)(Br)Br,Cc1nsc(C#N)c1CO",
+            "Label":"G"
+        },
+        {
+            "index":112,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"COCCn1ccc2cc(Cl)cc(C)c21",
+            "Reaction type":"heteroatom alkylation and arylation",
+            "Answer":"COCCBr,Cc1cc(Cl)cc2cc[nH]c12",
+            "Label":"A"
+        },
+        {
+            "index":113,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"O=C(OCc1ccccc1)N1CCCC2OC2C1",
+            "Reaction type":"heterocycle formation",
+            "Answer":"O=C(OCc1ccccc1)N1CC=CCCC1,O=C([O-])O",
+            "Label":"D"
+        },
+        {
+            "index":114,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"CCCCCCCCCCC#Cc1cc(C)c(N(C)S(=O)(=O)c2ccc(OC)cc2)c(C(=O)OC)c1",
+            "Reaction type":"C-C bond formation",
+            "Answer":"C#CCCCCCCCCCC,COC(=O)c1cc(Br)cc(C)c1N(C)S(=O)(=O)c1ccc(OC)cc1",
+            "Label":"C"
+        },
+        {
+            "index":115,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"CCOC(=O)C(Oc1ccc(CBr)cc1)c1ccccc1",
+            "Reaction type":" functional group interconversion",
+            "Answer":"BrC(Br)(Br)Br,CCOC(=O)C(Oc1ccc(CO)cc1)c1ccccc1",
+            "Label":"G"
+        },
+        {
+            "index":116,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"CC(C)(C)OC(=O)NC[C@H]1CC[C@H](CNC(=O)c2cc(-c3cccc(CNS(C)(=O)=O)c3)nc3ccccc23)CC1",
+            "Reaction type":"acylation and related processes",
+            "Answer":"CC(C)(C)OC(=O)NC[C@H]1CC[C@H](CNC(=O)c2cc(-c3cccc(CN)c3)nc3ccccc23)CC1,CS(=O)(=O)Cl",
+            "Label":"B"
+        },
+        {
+            "index":117,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"COc1cc([N+](=O)[O-])ccc1C1OCCO1",
+            "Reaction type":"protections",
+            "Answer":"COc1cc([N+](=O)[O-])ccc1C=O,Cc1ccc(S(=O)(=O)O)cc1",
+            "Label":"E"
+        },
+        {
+            "index":118,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"CCc1c[nH]c2ncc3cnn(C)c3c12",
+            "Reaction type":"heterocycle formation",
+            "Answer":"CCc1c[nH]c2ncc(C=O)c(Cl)c12,CNN",
+            "Label":"D"
+        },
+        {
+            "index":119,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"CC1(C)Oc2c([N+](=O)[O-])ccc(Cl)c2C1Br",
+            "Reaction type":"functional group addition",
+            "Answer":"CC1(C)Cc2c(Cl)ccc([N+](=O)[O-])c2O1,O=C1CCC(=O)N1Br",
+            "Label":"H"
+        },
+        {
+            "index":120,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"CCOC(=O)N1CCC(NC(=O)OC(C)(C)C)c2ccccc21",
+            "Reaction type":"acylation and related processes",
+            "Answer":"CC(C)(C)OC(=O)NC1CCNc2ccccc21,CCOC(=O)Cl",
+            "Label":"B"
+        },
+        {
+            "index":121,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"ON=C1CCc2ccccc21",
+            "Reaction type":" functional group interconversion",
+            "Answer":"NO,O=C1CCc2ccccc21",
+            "Label":"G"
+        },
+        {
+            "index":122,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"O=C(Nc1cnccc1O)c1ccc([N+](=O)[O-])s1",
+            "Reaction type":"acylation and related processes",
+            "Answer":"Nc1cnccc1O,O=C(O)c1ccc([N+](=O)[O-])s1",
+            "Label":"B"
+        },
+        {
+            "index":123,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"CCC(=O)N(Cc1cccc(-c2ccncc2)c1)c1cccc(C#N)c1",
+            "Reaction type":"C-C bond formation",
+            "Answer":"CCC(=O)N(Cc1cccc(I)c1)c1cccc(C#N)c1,OB(O)c1ccncc1",
+            "Label":"C"
+        },
+        {
+            "index":124,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"CCOC(=O)COc1c(OC2CCCCO2)cccc1[N+](=O)[O-]",
+            "Reaction type":"heteroatom alkylation and arylation",
+            "Answer":"CCOC(=O)CBr,O=[N+]([O-])c1cccc(OC2CCCCO2)c1O",
+            "Label":"A"
+        },
+        {
+            "index":125,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"COCOc1ccc(Br)nc1",
+            "Reaction type":"protections",
+            "Answer":"COCCl,Oc1ccc(Br)nc1",
+            "Label":"E"
+        },
+        {
+            "index":126,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"N#Cc1ccccc1Oc1cccc([C@H]2COC(=O)N2c2ccc(Cl)cc2)c1",
+            "Reaction type":"heteroatom alkylation and arylation",
+            "Answer":"N#Cc1ccccc1F,O=C1OC[C@H](c2cccc(O)c2)N1c1ccc(Cl)cc1",
+            "Label":"A"
+        },
+        {
+            "index":127,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"CC(C)(O)c1ccc(CBr)c(C(F)(F)F)c1",
+            "Reaction type":"functional group addition",
+            "Answer":"Cc1ccc(C(C)(C)O)cc1C(F)(F)F,O=C1CCC(=O)N1Br",
+            "Label":"H"
+        },
+        {
+            "index":128,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"[N-]=[N+]=NCc1ccc2nc(Cl)nc(N3CCOCC3)c2n1",
+            "Reaction type":" functional group interconversion",
+            "Answer":"Clc1nc(N2CCOCC2)c2nc(CBr)ccc2n1,[N-]=[N+]=[N-]",
+            "Label":"G"
+        },
+        {
+            "index":129,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"CC(C)OC(=O)N[C@H](C(=O)NC(C)c1cc2cc(F)ccc2o1)C(C)C",
+            "Reaction type":"acylation and related processes",
+            "Answer":"CC(C)OC(=O)N[C@H](C(=O)O)C(C)C,CC(N)c1cc2cc(F)ccc2o1",
+            "Label":"B"
+        },
+        {
+            "index":130,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"CCOC(=O)c1sc(N2CCOCC2)nc1CBr",
+            "Reaction type":"functional group addition",
+            "Answer":"CCOC(=O)c1sc(N2CCOCC2)nc1C,O=C1CCC(=O)N1Br",
+            "Label":"H"
+        },
+        {
+            "index":131,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"C[C@@H]1CN(C)CCN1c1nc(Cl)nc(N(C(=O)OC(C)(C)C)N(C(=O)OC(C)(C)C)C(=O)OC(C)(C)C)c1F",
+            "Reaction type":"heteroatom alkylation and arylation",
+            "Answer":"CC(C)(C)OC(=O)N(C(=O)OC(C)(C)C)N(C(=O)OC(C)(C)C)c1nc(Cl)nc(Cl)c1F,C[C@@H]1CN(C)CCN1",
+            "Label":"A"
+        },
+        {
+            "index":132,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"COC(=O)[C@@H]1C[C@]2(CN1C(=O)OC(C)(C)C)C(=O)Nc1ccccc12",
+            "Reaction type":"protections",
+            "Answer":"CC(C)(C)OC(=O)OC(=O)OC(C)(C)C,COC(=O)[C@@H]1CC2(CN1)C(=O)Nc1ccccc12",
+            "Label":"E"
+        },
+        {
+            "index":133,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"CC(C)(C)OC(=O)NCCOc1ccc(-c2cc(C(F)(F)F)nn2-c2ccc3c(c2)OCO3)cc1",
+            "Reaction type":"heterocycle formation",
+            "Answer":"CC(C)(C)OC(=O)NCCOc1ccc(C(=O)CC(=O)C(F)(F)F)cc1,NNc1ccc2c(c1)OCO2",
+            "Label":"D"
+        },
+        {
+            "index":134,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"Cc1nn(CC(C)CO)c(-c2ccc(F)cc2)c1Br",
+            "Reaction type":"functional group addition",
+            "Answer":"C=C(C)Cn1nc(C)c(Br)c1-c1ccc(F)cc1,OO",
+            "Label":"H"
+        },
+        {
+            "index":135,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"N#Cc1ccc(Oc2ccc3c(c2)CCNC3=O)nc1",
+            "Reaction type":"heteroatom alkylation and arylation",
+            "Answer":"N#Cc1ccc(Cl)nc1,O=C1NCCc2cc(O)ccc21",
+            "Label":"A"
+        },
+        {
+            "index":136,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"Cn1cc(CCO)c2c3c(c(-c4ccccc4Cl)cc21)C(=O)NC3=O",
+            "Reaction type":"functional group addition",
+            "Answer":"C=Cc1cn(C)c2cc(-c3ccccc3Cl)c3c(c12)C(=O)NC3=O,OO",
+            "Label":"H"
+        },
+        {
+            "index":137,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"O=S(=O)(C1CC1)N1CCC(c2n[nH]c3cnc4[nH]ccc4c23)CC1",
+            "Reaction type":"acylation and related processes",
+            "Answer":"O=S(=O)(Cl)C1CC1,c1cc2c(ncc3[nH]nc(C4CCNCC4)c32)[nH]1",
+            "Label":"B"
+        },
+        {
+            "index":138,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"CC(C)(C#N)c1ccc(CBr)cc1",
+            "Reaction type":"functional group addition",
+            "Answer":"Cc1ccc(C(C)(C)C#N)cc1,O=C1CCC(=O)N1Br",
+            "Label":"H"
+        },
+        {
+            "index":139,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"O=Cc1ccc(-c2nnn[nH]2)cc1",
+            "Reaction type":"heterocycle formation",
+            "Answer":"N#Cc1ccc(C=O)cc1,[N-]=[N+]=[N-]",
+            "Label":"D"
+        },
+        {
+            "index":140,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"C[C@H](CO)NC(=O)OC(C)(C)C",
+            "Reaction type":"protections",
+            "Answer":"CC(C)(C)OC(=O)OC(=O)OC(C)(C)C,C[C@@H](N)CO",
+            "Label":"E"
+        },
+        {
+            "index":141,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"N#Cc1ncccc1CBr",
+            "Reaction type":"functional group addition",
+            "Answer":"Cc1cccnc1C#N,O=C1CCC(=O)N1Br",
+            "Label":"H"
+        },
+        {
+            "index":142,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"Oc1cc(C2=C(CCCCCCBr)c3cc(F)c(O)cc3CCC2)ccc1F",
+            "Reaction type":" functional group interconversion",
+            "Answer":"BrC(Br)(Br)Br,OCCCCCCC1=C(c2ccc(F)c(O)c2)CCCc2cc(O)c(F)cc21",
+            "Label":"G"
+        },
+        {
+            "index":143,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"CC(C)(C)OC(=O)Cn1nc(I)c2nc(Cl)ccc21",
+            "Reaction type":"heteroatom alkylation and arylation",
+            "Answer":"CC(C)(C)OC(=O)CBr,Clc1ccc2[nH]nc(I)c2n1",
+            "Label":"A"
+        },
+        {
+            "index":144,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"COC(=O)CCCCCCCCN(C)CCc1ccccc1",
+            "Reaction type":"heteroatom alkylation and arylation",
+            "Answer":"CNCCc1ccccc1,COC(=O)CCCCCCCC=O",
+            "Label":"A"
+        },
+        {
+            "index":145,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"CN(CC(=O)N1CCN(C(=O)c2ccccc2C(F)(F)F)CC1)C(=O)c1ccc(-c2ccccc2)cc1",
+            "Reaction type":"acylation and related processes",
+            "Answer":"CN(CC(=O)O)C(=O)c1ccc(-c2ccccc2)cc1,O=C(c1ccccc1C(F)(F)F)N1CCNCC1",
+            "Label":"B"
+        },
+        {
+            "index":146,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"[O-][n+]1ccc2c(Br)cccc2c1",
+            "Reaction type":"oxidations",
+            "Answer":"Brc1cccc2cnccc12,O=C(OO)c1cccc(Cl)c1",
+            "Label":"F"
+        },
+        {
+            "index":147,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"COCC(COC)OC(=O)OC(C)n1c(S(=O)Cc2nccc(OCC(F)(F)F)c2C)nc2ccccc21",
+            "Reaction type":"oxidations",
+            "Answer":"COCC(COC)OC(=O)OC(C)n1c(SCc2nccc(OCC(F)(F)F)c2C)nc2ccccc21,O=C(OO)c1cccc(Cl)c1",
+            "Label":"F"
+        },
+        {
+            "index":148,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"COC(=O)\/C=C\/c1ccc(C=O)s1",
+            "Reaction type":"C-C bond formation",
+            "Answer":"COC(=O)C=P(c1ccccc1)(c1ccccc1)c1ccccc1,O=Cc1ccc(C=O)s1",
+            "Label":"C"
+        },
+        {
+            "index":149,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"ON=C(c1ccccn1)c1ccccn1",
+            "Reaction type":" functional group interconversion",
+            "Answer":"NO,O=C(c1ccccn1)c1ccccn1",
+            "Label":"G"
+        },
+        {
+            "index":150,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"O=[N+]([O-])c1cccc2nc(CBr)ccc12",
+            "Reaction type":"functional group addition",
+            "Answer":"Cc1ccc2c([N+](=O)[O-])cccc2n1,O=C1CCC(=O)N1Br",
+            "Label":"H"
+        },
+        {
+            "index":151,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"COCCCCC(O)(c1ccccc1Oc1cccc(F)c1)[C@@H]1CCCN(C(=O)OC(C)(C)C)C1",
+            "Reaction type":"C-C bond formation",
+            "Answer":"CC(C)(C)OC(=O)N1CCC[C@@H](C(=O)c2ccccc2Oc2cccc(F)c2)C1,COCCCC[Mg+]",
+            "Label":"C"
+        },
+        {
+            "index":152,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"CC(C)(C)OC(=O)NC1=N[C@](C)(c2cccc(-c3cncnc3)c2)C[C@@H](CO)S1",
+            "Reaction type":"C-C bond formation",
+            "Answer":"CC(C)(C)OC(=O)NC1=N[C@](C)(c2cccc(Br)c2)C[C@@H](CO)S1,OB(O)c1cncnc1",
+            "Label":"C"
+        },
+        {
+            "index":153,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"Cc1cc(C(=O)N[C@@H](CCS(C)=O)c2nc3cc(Cl)ccc3[nH]2)ccc1C(=O)N1CCCC1",
+            "Reaction type":"oxidations",
+            "Answer":"CSCC[C@H](NC(=O)c1ccc(C(=O)N2CCCC2)c(C)c1)c1nc2cc(Cl)ccc2[nH]1,O=C(OO)c1cccc(Cl)c1",
+            "Label":"F"
+        },
+        {
+            "index":154,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"C=CCOC(CCCC)n1cncn1",
+            "Reaction type":"heteroatom alkylation and arylation",
+            "Answer":"C=CCOC(Cl)CCCC,c1nc[nH]n1",
+            "Label":"A"
+        },
+        {
+            "index":155,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"COC(=O)[C@H]1CC[C@H](N(Cc2ccc(OC)cc2)C(=O)OCc2ccccc2)[C@@H]1c1ccc(F)cc1",
+            "Reaction type":"acylation and related processes",
+            "Answer":"COC(=O)[C@H]1CC[C@H](NCc2ccc(OC)cc2)[C@@H]1c1ccc(F)cc1,O=C(Cl)OCc1ccccc1",
+            "Label":"B"
+        },
+        {
+            "index":156,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"CCOC(=O)c1cc(C#N)cs1",
+            "Reaction type":" functional group interconversion",
+            "Answer":"CCOC(=O)c1cc(Br)cs1,N#C[Cu]",
+            "Label":"G"
+        },
+        {
+            "index":157,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"Cn1nnn(-c2cccc([N+](=O)[O-])c2CBr)c1=O",
+            "Reaction type":"functional group addition",
+            "Answer":"Cc1c(-n2nnn(C)c2=O)cccc1[N+](=O)[O-],O=C1CCC(=O)N1Br",
+            "Label":"H"
+        },
+        {
+            "index":158,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"COc1cc(OC)c2c(=O)[nH]c(-c3ccccc3C)nc2c1",
+            "Reaction type":"heterocycle formation",
+            "Answer":"COc1cc(N)c(C(N)=O)c(OC)c1,Cc1ccccc1C=O",
+            "Label":"D"
+        },
+        {
+            "index":159,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"[O-][n+]1cc(OCC(F)(F)F)cc2c1CCCC2",
+            "Reaction type":"oxidations",
+            "Answer":"FC(F)(F)COc1cnc2c(c1)CCCC2,O=C([O-])O",
+            "Label":"F"
+        },
+        {
+            "index":160,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"COC(=O)c1ccc2ccccc2c1-c1ccccc1",
+            "Reaction type":"C-C bond formation",
+            "Answer":"COC(=O)c1ccc2ccccc2c1Br,OB(O)c1ccccc1",
+            "Label":"C"
+        },
+        {
+            "index":161,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"CCN(Cc1ccc(CN2CCN(c3ncccc3C(=O)OC(C)C)CC2)cn1)Cc1c(F)cccc1Cl",
+            "Reaction type":"heteroatom alkylation and arylation",
+            "Answer":"CC(C)OC(=O)c1cccnc1N1CCNCC1,CCN(Cc1ccc(C=O)cn1)Cc1c(F)cccc1Cl",
+            "Label":"A"
+        },
+        {
+            "index":162,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"COc1cc(C(F)(F)F)ccc1-c1ncnc2cc(S(=O)(=O)Nc3nccs3)ccc12",
+            "Reaction type":"acylation and related processes",
+            "Answer":"COc1cc(C(F)(F)F)ccc1-c1ncnc2cc(S(=O)(=O)Cl)ccc12,Nc1nccs1",
+            "Label":"B"
+        },
+        {
+            "index":163,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"C=C(C)C[C@H](NC(=O)OC(C)(C)C)C(=O)O",
+            "Reaction type":"protections",
+            "Answer":"C=C(C)C[C@H](N)C(=O)O,CC(C)(C)OC(=O)OC(=O)OC(C)(C)C",
+            "Label":"E"
+        },
+        {
+            "index":164,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"CC(C)(C)OC(=O)Nc1nc2c(-c3cccc([N+](=O)[O-])c3)cc(C#N)cc2s1",
+            "Reaction type":"protections",
+            "Answer":"CC(C)(C)OC(=O)OC(=O)OC(C)(C)C,N#Cc1cc(-c2cccc([N+](=O)[O-])c2)c2nc(N)sc2c1",
+            "Label":"E"
+        },
+        {
+            "index":165,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"BrCc1ccc2noc(-c3ccccc3)c2c1",
+            "Reaction type":"functional group addition",
+            "Answer":"Cc1ccc2noc(-c3ccccc3)c2c1,O=C1CCC(=O)N1Br",
+            "Label":"H"
+        },
+        {
+            "index":166,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"CCCc1nc2c(C)cc(-c3nc4ccccc4[nH]3)cc2n1Cc1ccc(-c2ccccc2-c2nnn[nH]2)cc1",
+            "Reaction type":"heterocycle formation",
+            "Answer":"CCCc1nc2c(C)cc(-c3nc4ccccc4[nH]3)cc2n1Cc1ccc(-c2ccccc2C#N)cc1,[N-]=[N+]=[N-]",
+            "Label":"D"
+        },
+        {
+            "index":167,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"[N-]=[N+]=NC[C@H]1O[C@@H](n2ccc(=O)[nH]c2=O)[C@H](OCc2ccccc2)[C@@H]1O",
+            "Reaction type":" functional group interconversion",
+            "Answer":"O=c1ccn([C@@H]2O[C@H](CBr)[C@@H](O)[C@H]2OCc2ccccc2)c(=O)[nH]1,[N-]=[N+]=[N-]",
+            "Label":"G"
+        },
+        {
+            "index":168,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"CCC(C)Cc1nc(SC)nc(OC)c1-c1c(F)cc(F)cc1F",
+            "Reaction type":"heteroatom alkylation and arylation",
+            "Answer":"CCC(C)Cc1nc(SC)nc(Cl)c1-c1c(F)cc(F)cc1F,C[O-]",
+            "Label":"A"
+        },
+        {
+            "index":169,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"Cc1cccc(CC2CO2)c1C",
+            "Reaction type":"heterocycle formation",
+            "Answer":"C=CCc1cccc(C)c1C,OO",
+            "Label":"D"
+        },
+        {
+            "index":170,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"C[C@H](NC(=O)C(F)(F)F)[C@@H](COc1ccc(F)cc1F)Oc1ccc2c(cnn2-c2ccc(F)cc2)c1",
+            "Reaction type":"protections",
+            "Answer":"C[C@H](N)[C@@H](COc1ccc(F)cc1F)Oc1ccc2c(cnn2-c2ccc(F)cc2)c1,O=C(OC(=O)C(F)(F)F)C(F)(F)F",
+            "Label":"E"
+        },
+        {
+            "index":171,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"CCCC(=NOCC=CCl)[C@H]1C(=O)C[C@H](CC(C)S(=O)CC)CC1=O",
+            "Reaction type":"oxidations",
+            "Answer":"CCCC(=NOCC=CCl)[C@H]1C(=O)C[C@H](CC(C)SCC)CC1=O,OO",
+            "Label":"F"
+        },
+        {
+            "index":172,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"CC(C)(C)OC(=O)n1nc(I)c2c([N+](=O)[O-])cccc21",
+            "Reaction type":"protections",
+            "Answer":"CC(C)(C)OC(=O)OC(=O)OC(C)(C)C,O=[N+]([O-])c1cccc2[nH]nc(I)c12",
+            "Label":"E"
+        },
+        {
+            "index":173,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"CC(C)(C)OC(=O)NCCN1Cc2cc(B3OC(C)(C)C(C)(C)O3)ccc2C1=O",
+            "Reaction type":" functional group interconversion",
+            "Answer":"CC(C)(C)OC(=O)NCCN1Cc2cc(Br)ccc2C1=O,CC1(C)OB(B2OC(C)(C)C(C)(C)O2)OC1(C)C",
+            "Label":"G"
+        },
+        {
+            "index":174,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"O=C(NCc1cccc(F)c1)C1(O)CCCN(CC2CCCCC2)C1=O",
+            "Reaction type":"acylation and related processes",
+            "Answer":"NCc1cccc(F)c1,O=C(O)C1(O)CCCN(CC2CCCCC2)C1=O",
+            "Label":"B"
+        },
+        {
+            "index":175,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"COc1ccc2oc(=O)cc(NC3CCN(Cc4cccc(OC(F)(F)F)c4)CC3)c2c1",
+            "Reaction type":"heteroatom alkylation and arylation",
+            "Answer":"COc1ccc2oc(=O)cc(NC3CCNCC3)c2c1,O=Cc1cccc(OC(F)(F)F)c1",
+            "Label":"A"
+        }
+    ]
+}

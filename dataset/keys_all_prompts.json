@@ -1,0 +1,88 @@
+{
+    "General_Text": [
+        "Question",
+        "Options"
+    ],
+    "MOL_Solubility": [
+        "smiles"
+    ],
+    "MOL_Freesolv": [
+        "smiles"
+    ],
+    "PROT_Melt": [
+        "sequence"
+    ],
+    "PROT_Energy": [
+        "mutated_sequence"
+    ],
+    "PROT_Fitness": [
+        "mutated_sequence"
+    ],
+    "PROT_Mutation": [
+        "mutated_sequence"
+    ],
+    "PROT_Conserve": [
+        "sequence"
+    ],
+    "PROT_Location": [
+        "sequence"
+    ],
+    "MOL_Syn": [
+        "Reactant1",
+        "Reactant2"
+    ],
+    "MOL_Resyn": [
+        "Production"
+    ],
+    "PROT_EC": [
+        "sequence"
+    ],
+    "PROT_GO": [
+        "sequence"
+    ],
+    "PROT_SSC": [
+        "sequence"
+    ],
+    "PROT_Fold": [
+        "sequence"
+    ],
+    "PPI_Type": [
+        "Seq1",
+        "Seq2"
+    ],
+    "PPI_Binary": [
+        "Seq1",
+        "Seq2"
+    ],
+    "DDI_Interact": [
+        "Drug1",
+        "Drug2"
+    ],
+    "PLI_BA": [
+        "X2",
+        "X1"
+    ],
+    "CI_AbAg": [
+        "mut_heavy_chain_seq",
+        "light_chain_seq",
+        "antigen_chains_seq"
+    ],
+    "MOL_Excited": [
+        "smiles"
+    ],
+    "MOL_Thermo": [
+        "smiles"
+    ],
+    "MOL_BBBP": [
+        "smiles"
+    ],
+    "MOL_HIV": [
+        "smiles"
+    ],
+    "MOL_HLGap": [
+        "smiles"
+    ],
+    "MOL_TOX": [
+        "smiles"
+    ]
+}
