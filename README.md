@@ -138,7 +138,7 @@ Final outputs are stored in `final_results`.
 If you use BioMol-LLM-Bench in your research, please cite:
 
 ```bibtex
-@article{csb_bench_2026,
+@article{BioMol_LLM_Bench_2026,
   title   = {BioMol-LLM-Bench},
   author  = {xxx},
   journal = {arXiv preprint arXiv:XXXX.XXXXX},
