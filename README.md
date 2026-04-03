@@ -1,5 +1,5 @@
 
-# CSB-Bench: A Cross-Scale Biomolecular Benchmark for Large Language Models
+# BioMol-LLM-Bench: A Cross-Scale Biomolecular Benchmark for Large Language Models
 
 ## 📊 Overview
 
@@ -135,7 +135,7 @@ Final outputs are stored in `final_results`.
 
 ## 📖 Citation
 
-If you use CSB-Bench in your research, please cite:
+If you use BioMol-LLM-Bench in your research, please cite:
 
 ```bibtex
 @article{csb_bench_2026,
