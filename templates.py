@@ -1,0 +1,2 @@
+BIOT5_PRE = "Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.\n\n### Instruction:\n{}\n\n### Input:\n"
+BIOT5_POST = "\n\n### Response:\n"
