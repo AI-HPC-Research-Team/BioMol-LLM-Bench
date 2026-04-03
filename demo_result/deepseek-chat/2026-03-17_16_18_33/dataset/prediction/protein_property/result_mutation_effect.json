@@ -1,0 +1,85 @@
+{
+    "schema":{
+        "fields":[
+            {
+                "name":"index",
+                "type":"integer"
+            },
+            {
+                "name":"Source",
+                "type":"string"
+            },
+            {
+                "name":"mutated_sequence",
+                "type":"string"
+            },
+            {
+                "name":"DMS_score",
+                "type":"number"
+            },
+            {
+                "name":"mutant",
+                "type":"string"
+            },
+            {
+                "name":"num_of_mutation",
+                "type":"integer"
+            },
+            {
+                "name":"Model_Response",
+                "type":"string"
+            }
+        ],
+        "primaryKey":[
+            "index"
+        ],
+        "pandas_version":"1.4.0"
+    },
+    "data":[
+        {
+            "index":0,
+            "Source":"HIS7_YEAST_Pokusaeva_2019",
+            "mutated_sequence":"MTEQKALVKRITNETKIQIAISLKGGPLAIEHSIFPEKEAEAVAEQATQSQVINVHTGIGFLDHMIHALAKHSGWSLIVECIGDLHIDDHHTTEDCGIALGQAFKEALGAVRGVKRFGSGFAPLDEALSRAVVDLSNRPYAVVELGLQREKVGDLSCEMIPHFLESFAEASRITLHVDCLRGNNDHHRSESAFKALAVAIREATSPNGKNEVPSTKGVLM",
+            "DMS_score":1.0014912012,
+            "mutant":"K183N:T209K:D211E",
+            "num_of_mutation":3,
+            "Model_Response":"Answer: 0.42"
+        },
+        {
+            "index":1,
+            "Source":"Q8WTC7_9CNID_Somermeyer_2022",
+            "mutated_sequence":"MSKGEELFTGVVPILVELDGDVNGHKFSVSGEGEGDATYGKLTLKFICTTGKLPVPWPTLVTTLSYGVQCFSRYPDHMKQHDFFKSAMPEGYVQERTIFFKDDGNYKTRAEVKFEGDTLVNRIELKGIDFKEDGNILGHKLEYNYNSHNVYIMADKQKNGIKVNFKIRHNIEDGSVQLADHYQQNTPIGDGPVLLPDNHYLSTQSALSKDPNEKRDHMVLLEFVTAAGITHGMDELYK",
+            "DMS_score":2291.5634857872,
+            "mutant":"I11V:V14I:I16V:H23N:R30S:D38T:E43T:I44L:I68V:L69Q:A72S:E76D:M80Q:N81H:I93V:Q101K:K105N:G110A:M128I:F145Y:P154A:A157Q:N158K:L161I:G173D:G175S:T184Q:V186T:L188I:I195L:I197D:C203T:T205S:I207L:R211P:T214K:F220L:F224V:S225T:C227A:H229I",
+            "num_of_mutation":41,
+            "Model_Response":"Answer: 0.72"
+        },
+        {
+            "index":2,
+            "Source":"SC6A4_HUMAN_Young_2021",
+            "mutated_sequence":"METTPLNSQKQLSACEDGEDCQENGVLQKVVPTPGDKVESGQISNGYSAVPSPGAGDDTRHSIPATTTTLVAELHQGERETWGKKVDFLLSVIGYAVDLGNVWRFPYICYQNGGGAFLLPYTIMAIFGGIPLFYMELALGQYHRNGCISIWRKICPIFKGIGYAICIIAFYIASYYNTIMAWALYYLISSFTDQLPWTSCKNSWNTGNCTNYFSEDNITWTLHSTSPAEEFYTRHVLQIHRSKGLQDLGGISWQLALCIMLIFTVIYFSIWKGVKTSGKVVWVTATFPYIILSVLLVRGATLPGAWRGVLFYLKPNWQKLLETGVWIDAAAQIFFSLGPGFGVLLAFASYNKFNNNCYQDALVTSVVNCMTSFVSGFVIFTVLGYMAEMRNEDVSEVAKDAGPSLLFITYAEAIANMPASTFFAIIFFLMLITLGLDSTFAGLEGVITAVLDEFPHVWAKRRERFVLAVVITCFFGSLVTLTFGGAYVVKLLEEYATGPAVLTVALIEAVAVSWFYGITQFCRDVKEMLGFSPGWFWRICWVAISPLFLLFIICSFLMSPPQLRLFQYNYPYWSIILVYCIGTSSFICIPTYIAYRLIITPGTFKERIIKSITPETPTEIPCGDIRLNAV",
+            "DMS_score":1.008965455,
+            "mutant":"G578V",
+            "num_of_mutation":1,
+            "Model_Response":"Answer: 0.72"
+        },
+        {
+            "index":3,
+            "Source":"HECD1_HUMAN_Tsuboyama_2023_3DKM",
+            "mutated_sequence":"NLYFQGLKYMVPGARVTRGLDWKWRDQDGSPQGEGTVTGELHNGWIDVTWDAGGSNSYAMGADGKFDLKLAP",
+            "DMS_score":-2.8957617024,
+            "mutant":"R59A:E63D",
+            "num_of_mutation":2,
+            "Model_Response":"Answer: 0.72"
+        },
+        {
+            "index":4,
+            "Source":"HIS7_YEAST_Pokusaeva_2019",
+            "mutated_sequence":"MTEQKALVKRITNETKIQIAISLKGGPLAIEHSIFPEKEAEAVAEQATQSQVINVHTGIGFLDHMIHALAKHSGWSLIVECIGDLHIDDHHTTEDCGIALGQAFKEALGAVRGVKRFGSGFAPLDEALSRAVVDLSNRPYAVVELGLQREKVGDLSCEMIPHFLESFAEASRITLHVDCLARDQRPSSLRECVQGSCGCHKSAITLTGTNDVPSTKGVLM",
+            "DMS_score":0.0,
+            "mutant":"R181A:G182R:K183D:N184Q:D185R:H186P:H187S:R188S:S189L:E190R:S191E:A192C:F193V:K194Q:A195G:L196S:A197C:V198G:A199C:I200H:R201K:E202S:T204I:S205T:P206L:N207T",
+            "num_of_mutation":26,
+            "Model_Response":"Answer: 0.78"
+        }
+    ]
+}

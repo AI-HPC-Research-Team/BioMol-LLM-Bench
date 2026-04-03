@@ -1,0 +1,146 @@
+2026-03-17 18:21:48,448 - root - INFO - ==== results of demo_result/qwen3.5-35b-a3b/2026-03-17_17_23_41/./dataset/general/result_merged_general_text.json ====
+2026-03-17 18:21:48,469 - root - INFO - Accuracy: 1.0000
+2026-03-17 18:21:48,470 - root - INFO - CERR: 100.0000
+2026-03-17 18:21:48,470 - root - INFO - Validity: 0.3333
+2026-03-17 18:21:48,470 - root - INFO - ==== results of demo_result/qwen3.5-35b-a3b/2026-03-17_17_23_41/./dataset/prediction/mol_chemical_property/result_solubility.json ====
+2026-03-17 18:21:48,478 - root - INFO - RMSE: 0.3216
+2026-03-17 18:21:48,478 - root - INFO - MAE: 0.3216
+2026-03-17 18:21:48,478 - root - INFO - MEAN: -0.3216
+2026-03-17 18:21:48,478 - root - INFO - STD: 0.0000
+2026-03-17 18:21:48,478 - root - INFO - Validity: 0.3333
+2026-03-17 18:21:48,478 - root - INFO - Total: 3.0000
+2026-03-17 18:21:48,478 - root - INFO - Float: 1.0000
+2026-03-17 18:21:48,478 - root - INFO - ==== results of demo_result/qwen3.5-35b-a3b/2026-03-17_17_23_41/./dataset/prediction/mol_chemical_property/result_freesolv.json ====
+2026-03-17 18:21:48,483 - root - INFO - RMSE: 12.4400
+2026-03-17 18:21:48,483 - root - INFO - MAE: 12.4400
+2026-03-17 18:21:48,484 - root - INFO - MEAN: -12.4400
+2026-03-17 18:21:48,484 - root - INFO - STD: 0.0000
+2026-03-17 18:21:48,484 - root - INFO - Validity: 0.3333
+2026-03-17 18:21:48,484 - root - INFO - Total: 3.0000
+2026-03-17 18:21:48,484 - root - INFO - Float: 1.0000
+2026-03-17 18:21:48,484 - root - INFO - ==== results of demo_result/qwen3.5-35b-a3b/2026-03-17_17_23_41/./dataset/prediction/protein_property/result_melting_point.json ====
+2026-03-17 18:21:48,490 - root - INFO - RMSE: 11.9040
+2026-03-17 18:21:48,490 - root - INFO - MAE: 11.9040
+2026-03-17 18:21:48,490 - root - INFO - MEAN: -11.9040
+2026-03-17 18:21:48,490 - root - INFO - STD: 0.0000
+2026-03-17 18:21:48,490 - root - INFO - Validity: 0.3333
+2026-03-17 18:21:48,490 - root - INFO - Total: 3.0000
+2026-03-17 18:21:48,490 - root - INFO - Float: 1.0000
+2026-03-17 18:21:48,490 - root - INFO - ==== results of demo_result/qwen3.5-35b-a3b/2026-03-17_17_23_41/./dataset/prediction/protein_property/result_free_energy.json ====
+2026-03-17 18:21:48,495 - root - INFO - Validity: 0.0000
+2026-03-17 18:21:48,495 - root - INFO - ==== results of demo_result/qwen3.5-35b-a3b/2026-03-17_17_23_41/./dataset/prediction/protein_property/result_fitness_landscape.json ====
+2026-03-17 18:21:48,501 - root - INFO - RMSE: 2.5074
+2026-03-17 18:21:48,501 - root - INFO - MAE: 2.3989
+2026-03-17 18:21:48,501 - root - INFO - MEAN: 2.3989
+2026-03-17 18:21:48,501 - root - INFO - STD: 0.7296
+2026-03-17 18:21:48,501 - root - INFO - Validity: 0.6667
+2026-03-17 18:21:48,501 - root - INFO - Total: 3.0000
+2026-03-17 18:21:48,501 - root - INFO - Float: 2.0000
+2026-03-17 18:21:48,501 - root - INFO - ==== results of demo_result/qwen3.5-35b-a3b/2026-03-17_17_23_41/./dataset/prediction/protein_property/result_mutation_effect.json ====
+2026-03-17 18:21:48,507 - root - INFO - RMSE: 1620.3802
+2026-03-17 18:21:48,507 - root - INFO - MAE: 1146.2825
+2026-03-17 18:21:48,507 - root - INFO - MEAN: 1146.2825
+2026-03-17 18:21:48,507 - root - INFO - STD: 1145.2810
+2026-03-17 18:21:48,507 - root - INFO - Validity: 0.6667
+2026-03-17 18:21:48,507 - root - INFO - Total: 3.0000
+2026-03-17 18:21:48,508 - root - INFO - Float: 2.0000
+2026-03-17 18:21:48,508 - root - INFO - ==== results of demo_result/qwen3.5-35b-a3b/2026-03-17_17_23_41/./dataset/prediction/protein_property/result_conservation_score.json ====
+2026-03-17 18:21:48,512 - root - INFO - Validity: 0.0000
+2026-03-17 18:21:48,512 - root - INFO - ==== results of demo_result/qwen3.5-35b-a3b/2026-03-17_17_23_41/./dataset/prediction/protein_property/result_subcellular_localization.json ====
+2026-03-17 18:21:48,517 - root - INFO - Accuracy: 0.5000
+2026-03-17 18:21:48,518 - root - INFO - CERR: 100.0000
+2026-03-17 18:21:48,518 - root - INFO - Validity: 0.6667
+2026-03-17 18:21:48,518 - root - INFO - ==== results of demo_result/qwen3.5-35b-a3b/2026-03-17_17_23_41/./dataset/prediction/chemical_reaction/result_forward_synthesis.json ====
+2026-03-17 18:21:48,523 - root - INFO - Validity: 0.0000
+2026-03-17 18:21:48,523 - root - INFO - Maccs: 0.0000
+2026-03-17 18:21:48,523 - root - INFO - RDK: 0.0000
+2026-03-17 18:21:48,523 - root - INFO - Morgan: 0.0000
+2026-03-17 18:21:48,524 - root - INFO - ==== results of demo_result/qwen3.5-35b-a3b/2026-03-17_17_23_41/./dataset/prediction/chemical_reaction/result_retrosynthesis.json ====
+2026-03-17 18:21:48,529 - root - INFO - Validity: 0.0000
+2026-03-17 18:21:48,529 - root - INFO - Maccs: 0.0000
+2026-03-17 18:21:48,529 - root - INFO - RDK: 0.0000
+2026-03-17 18:21:48,529 - root - INFO - Morgan: 0.0000
+2026-03-17 18:21:48,529 - root - INFO - ==== results of demo_result/qwen3.5-35b-a3b/2026-03-17_17_23_41/./dataset/prediction/protein_function/EC/result_EC_anno.json ====
+2026-03-17 18:21:48,535 - root - INFO - Accuracy: 0.0000
+2026-03-17 18:21:48,535 - root - INFO - CERR: 100.0000
+2026-03-17 18:21:48,535 - root - INFO - Validity: 0.3333
+2026-03-17 18:21:48,535 - root - INFO - ==== results of demo_result/qwen3.5-35b-a3b/2026-03-17_17_23_41/./dataset/prediction/protein_function/GO/result_GO_anno.json ====
+2026-03-17 18:21:48,541 - root - INFO - Total: 0.0000
+2026-03-17 18:21:48,541 - root - INFO - Avgsim: 0.1000
+2026-03-17 18:21:48,541 - root - INFO - ==== results of demo_result/qwen3.5-35b-a3b/2026-03-17_17_23_41/./dataset/prediction/protein_structure/result_secondary_struc_classify.json ====
+2026-03-17 18:21:50,716 - root - INFO - BLEU-1: 0.00000000
+2026-03-17 18:21:50,716 - root - INFO - BLEU-2: 0.00000000
+2026-03-17 18:21:50,716 - root - INFO - BLEU-3: 0.00000000
+2026-03-17 18:21:50,716 - root - INFO - BLEU-4: 0.00000000
+2026-03-17 18:21:50,716 - root - INFO - ROUGE-1: 0.00000000
+2026-03-17 18:21:50,716 - root - INFO - ROUGE-2: 0.00000000
+2026-03-17 18:21:50,716 - root - INFO - ROUGE-L: 0.00000000
+2026-03-17 18:21:50,716 - root - INFO - METEOR: 0.00000000
+2026-03-17 18:21:50,717 - root - INFO - ==== results of demo_result/qwen3.5-35b-a3b/2026-03-17_17_23_41/./dataset/prediction/complex_interaction/PPI/result_interaction_type.json ====
+2026-03-17 18:21:50,728 - root - INFO - Validity: 0.0000
+2026-03-17 18:21:50,729 - root - INFO - ==== results of demo_result/qwen3.5-35b-a3b/2026-03-17_17_23_41/./dataset/prediction/complex_interaction/PPI/result_binary_classification.json ====
+2026-03-17 18:21:50,738 - root - INFO - AUROC: nan
+2026-03-17 18:21:50,738 - root - INFO - AUPRC: 1.0000
+2026-03-17 18:21:50,738 - root - INFO - Accuracy: 0.5000
+2026-03-17 18:21:50,738 - root - INFO - F1_score: 0.6667
+2026-03-17 18:21:50,738 - root - INFO - Validity: 0.6667
+2026-03-17 18:21:50,738 - root - INFO - ==== results of demo_result/qwen3.5-35b-a3b/2026-03-17_17_23_41/./dataset/prediction/complex_interaction/DDI/interaction_type/result_interaction_type.json ====
+2026-03-17 18:21:50,744 - root - INFO - Validity: 0.0000
+2026-03-17 18:21:50,744 - root - INFO - ==== results of demo_result/qwen3.5-35b-a3b/2026-03-17_17_23_41/./dataset/prediction/complex_interaction/PLI/result_binding_affinity.json ====
+2026-03-17 18:21:50,752 - root - INFO - RMSE: 2.5692
+2026-03-17 18:21:50,752 - root - INFO - MAE: 2.5692
+2026-03-17 18:21:50,752 - root - INFO - MEAN: -2.5692
+2026-03-17 18:21:50,752 - root - INFO - STD: 0.0000
+2026-03-17 18:21:50,752 - root - INFO - Validity: 0.3333
+2026-03-17 18:21:50,752 - root - INFO - Total: 3.0000
+2026-03-17 18:21:50,752 - root - INFO - Float: 1.0000
+2026-03-17 18:21:50,752 - root - INFO - ==== results of demo_result/qwen3.5-35b-a3b/2026-03-17_17_23_41/./dataset/prediction/complex_interaction/AbAg/result_AbAg_binding.json ====
+2026-03-17 18:21:50,759 - root - INFO - RMSE: 3.4678
+2026-03-17 18:21:50,759 - root - INFO - MAE: 3.4678
+2026-03-17 18:21:50,759 - root - INFO - MEAN: -3.4678
+2026-03-17 18:21:50,759 - root - INFO - STD: 0.0000
+2026-03-17 18:21:50,759 - root - INFO - Validity: 0.3333
+2026-03-17 18:21:50,759 - root - INFO - Total: 3.0000
+2026-03-17 18:21:50,759 - root - INFO - Float: 1.0000
+2026-03-17 18:21:50,759 - root - INFO - ==== results of demo_result/qwen3.5-35b-a3b/2026-03-17_17_23_41/./dataset/prediction/quantum_mechanism_property/result_excited_state_energy.json ====
+2026-03-17 18:21:50,769 - root - INFO - RMSE: 5.9472
+2026-03-17 18:21:50,769 - root - INFO - MAE: 5.4695
+2026-03-17 18:21:50,769 - root - INFO - MEAN: -5.4695
+2026-03-17 18:21:50,769 - root - INFO - STD: 2.3355
+2026-03-17 18:21:50,769 - root - INFO - Validity: 1.0000
+2026-03-17 18:21:50,769 - root - INFO - Total: 3.0000
+2026-03-17 18:21:50,769 - root - INFO - Float: 3.0000
+2026-03-17 18:21:50,769 - root - INFO - ==== results of demo_result/qwen3.5-35b-a3b/2026-03-17_17_23_41/./dataset/prediction/quantum_mechanism_property/result_electronic_thermo_energy.json ====
+2026-03-17 18:21:50,777 - root - INFO - RMSE: 24.3430
+2026-03-17 18:21:50,777 - root - INFO - MAE: 24.3430
+2026-03-17 18:21:50,777 - root - INFO - MEAN: 24.3430
+2026-03-17 18:21:50,777 - root - INFO - STD: 0.0000
+2026-03-17 18:21:50,777 - root - INFO - Validity: 0.3333
+2026-03-17 18:21:50,777 - root - INFO - Total: 3.0000
+2026-03-17 18:21:50,777 - root - INFO - Float: 1.0000
+2026-03-17 18:21:50,777 - root - INFO - ==== results of demo_result/qwen3.5-35b-a3b/2026-03-17_17_23_41/./dataset/prediction/quantum_mechanism_property/result_humo_logo_gap.json ====
+2026-03-17 18:21:50,783 - root - INFO - RMSE: 0.9362
+2026-03-17 18:21:50,783 - root - INFO - MAE: 0.9362
+2026-03-17 18:21:50,783 - root - INFO - MEAN: 0.9362
+2026-03-17 18:21:50,783 - root - INFO - STD: 0.0000
+2026-03-17 18:21:50,783 - root - INFO - Validity: 0.3333
+2026-03-17 18:21:50,783 - root - INFO - Total: 3.0000
+2026-03-17 18:21:50,783 - root - INFO - Float: 1.0000
+2026-03-17 18:21:50,784 - root - INFO - ==== results of demo_result/qwen3.5-35b-a3b/2026-03-17_17_23_41/./dataset/prediction/mol_physiological_property/result_bbbp.json ====
+2026-03-17 18:21:50,792 - root - INFO - AUROC: nan
+2026-03-17 18:21:50,792 - root - INFO - AUPRC: 0.0000
+2026-03-17 18:21:50,792 - root - INFO - Accuracy: 1.0000
+2026-03-17 18:21:50,792 - root - INFO - F1_score: 0.0000
+2026-03-17 18:21:50,792 - root - INFO - Validity: 0.3333
+2026-03-17 18:21:50,792 - root - INFO - ==== results of demo_result/qwen3.5-35b-a3b/2026-03-17_17_23_41/./dataset/prediction/mol_physiological_property/result_hiv_replication_prevention.json ====
+2026-03-17 18:21:50,800 - root - INFO - AUROC: nan
+2026-03-17 18:21:50,800 - root - INFO - AUPRC: 0.0000
+2026-03-17 18:21:50,800 - root - INFO - Accuracy: 0.0000
+2026-03-17 18:21:50,800 - root - INFO - F1_score: 0.0000
+2026-03-17 18:21:50,800 - root - INFO - Validity: 0.3333
+2026-03-17 18:21:50,800 - root - INFO - ==== results of demo_result/qwen3.5-35b-a3b/2026-03-17_17_23_41/./dataset/prediction/mol_physiological_property/result_toxicity.json ====
+2026-03-17 18:21:50,811 - root - INFO - AUROC: nan
+2026-03-17 18:21:50,811 - root - INFO - AUPRC: 0.0000
+2026-03-17 18:21:50,811 - root - INFO - Accuracy: 0.5000
+2026-03-17 18:21:50,811 - root - INFO - F1_score: 0.0000
+2026-03-17 18:21:50,811 - root - INFO - Validity: 0.6667

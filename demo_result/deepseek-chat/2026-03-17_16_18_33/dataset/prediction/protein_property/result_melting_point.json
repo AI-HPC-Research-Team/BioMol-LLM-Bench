@@ -1,0 +1,85 @@
+{
+    "schema":{
+        "fields":[
+            {
+                "name":"index",
+                "type":"integer"
+            },
+            {
+                "name":"Source",
+                "type":"string"
+            },
+            {
+                "name":"species",
+                "type":"string"
+            },
+            {
+                "name":"protein_id",
+                "type":"string"
+            },
+            {
+                "name":"sequence",
+                "type":"string"
+            },
+            {
+                "name":"meltingPoint",
+                "type":"number"
+            },
+            {
+                "name":"Model_Response",
+                "type":"string"
+            }
+        ],
+        "primaryKey":[
+            "index"
+        ],
+        "pandas_version":"1.4.0"
+    },
+    "data":[
+        {
+            "index":0,
+            "Source":"Meltome_atlas",
+            "species":"HepG2",
+            "protein_id":"GSTA4",
+            "sequence":"MAARPKLHYPNGRGRMESVRWVLAAAGVEFDEEFLETKEQLYKLQDGNHLLFQQVPMVEIDGMKLVQTRSILHYIADKHNLFGKNLKERTLIDMYVEGTLDLLELLIMHPFLKPDDQQKEVVNMAQKAIIRYFPVFEKILRGHGQSFLVGNQLSLADVILLQTILALEEKIPNILSAFPFLQEYTVKLSNIPTIKRFLEPGSKKKPPPDEIYVRTVYNIFRP",
+            "meltingPoint":47.0959549015,
+            "Model_Response":"First, I\u2019ll estimate the melting temperature (\\(T_m\\)) based on known predictors for protein thermal stability.  \n\nKey factors from the sequence:  \n- Length: 244 residues \u2014 relatively long, which can stabilize via more hydrophobic core packing.  \n- Amino acid composition:  \n  - High in Lys (K), Arg (R), Glu (E), Gln (Q) \u2014 charged residues, which can stabilize via salt bridges if paired oppositely.  \n  - Hydrophobic residues: Leu (L), Ile (I), Val (V), Phe (F), Met (M) are present but not extremely high.  \n  - Proline (P) content moderate \u2014 can restrict unfolding entropy.  \n- Potential thermophilic adaptations:  \n  - Charged residues (Arg, Lys, Glu) often elevated in thermophiles for ion pairs.  \n  - Aromatic residues (Tyr, Phe, Trp) present but not dominating.  \n\nUsing empirical correlation from known thermophilic vs mesophilic proteins:  \nFor a protein of this size and composition, typical \\(T_m\\) for a well-folded soluble protein from a mesophile might be 45\u201360\u00b0C, but the sequence has features (Arg\/Lys + Glu\/Asp possibly forming networks) that could push it higher.  \n\nGiven no experimental data, but based on sequence-based predictors (like \\(T_m\\) predictor tools trained on datasets), a rough estimate for this sequence is around **58\u201365\u00b0C** for a recombinant protein in buffer.  \n\nI\u2019ll choose a midpoint estimate:  \n\n**Answer: 62.5**"
+        },
+        {
+            "index":1,
+            "Source":"Meltome_atlas",
+            "species":"HepG2",
+            "protein_id":"CDC16",
+            "sequence":"MNLERLRKRVRQYLDQQQYQSALFWADKVASLSREEPQDIYWLAQCLYLTAQYHRAAHALRSRKLDKLYEACRYLAARCHYAAKEHQQALDVLDMEEPINKRLFEKYLKDESGFKDPSSDWEMSQSSIKSSICLLRGKIYDALDNRTLATYSYKEALKLDVYCFEAFDLLTSHHMLTAQEEKELLESLPLSKLCNEEQELLRFLFENKLKKYNKPSETVIPESVDGLQENLDVVVSLAERHYYNCDFKMCYKLTSVVMEKDPFHASCLPVHIGTLVELNKANELFYLSHKLVDLYPSNPVSWFAVGCYYLMVGHKNEHARRYLSKATTLEKTYGPAWIAYGHSFAVESEHDQAMAAYFTAAQLMKGCHLPMLYIGLEYGLTNNSKLAERFFSQALSIAPEDPFVMHEVGVVAFQNGEWKTAEKWFLDALEKIKAIGNEVTVDKWEPLLNNLGHVCRKLKKYAEALDYHRQALVLIPQNASTYSAIGYIHSLMGNFENAVDYFHTALGLRRDDTFSVTMLGHCIEMYIGDSEAYIGADIKDKLKCYDFDVHTMKTLKNIISPPWDFREFEVEKQTAEETGLTPLETSRKTPDSRPSLEETFEIEMNESDMMLETSMSDHST",
+            "meltingPoint":51.7402034794,
+            "Model_Response":"Answer: 56.3"
+        },
+        {
+            "index":2,
+            "Source":"Meltome_atlas",
+            "species":"HepG2",
+            "protein_id":"UNK",
+            "sequence":"MSKGPGPGGSAASSAPPAATAQVLQAQPEKPQHYTYLKEFRTEQCPLFVQHKCTQHRPYTCFHWHFVNQRRRRSIRRRDGTFNYSPDVYCTKYDEATGLCPEGDECPFLHRTTGDTERRYHLRYYKTGICIHETDSKGNCTKNGLHCAFAHGPHDLRSPVYDIRELQAMEALQNGQTTVEGSIEGQSAGAASHAMIEKILSEEPRWQETAYVLGNYKTEPCKKPPRLCRQGYACPYYHNSKDRRRSPRKHKYRSSPCPNVKHGDEWGDPGKCENGDACQYCHTRTEQQFHPEIYKSTKCNDMQQSGSCPRGPFCAFAHVEQPPLSDDLQPSSAVSSPTQPGPVLYMPSAAGDSVPVSPSSPHAPDLSALLCRNSSLGSPSNLCGSPPGSIRKPPNLEGIVFPGESGLAPGSYKKAPGFEREDQVGAEYLKNFKCQAKLKPHSLEPRSQEQPLLQPKQDMLGILPAGSPLTSSISSSITSSLAATPPSPVGTSSVPGMNANALPFYPTSDTVESVIESALDDLDLNEFGVAALEKTFDNSTVPHPGSITIGGSLLQSSAPVNIPGSLGSSASFHSASPSPPVSLSSHFLQQPQGHLSQSENTFLGTSASHGSLGLNGMNSSIWEHFASGSFSPGTSPAFLSGPGAAELARLRQELDEANSTIKQWEESWKQAKQACDAWKKEAEEAGERASAAGAECELAREQRDALEVQVKKLQEELERLHAGPEPQALPAFSDLEALSLSTLYSLQKQLRAHLEQVDKAVFHMQSVKCLKCQEQKRAVLPCQHAALCELCAEGSECPICQPGRAHTLQS",
+            "meltingPoint":49.1025407702,
+            "Model_Response":"Answer: 56.3"
+        },
+        {
+            "index":3,
+            "Source":"Meltome_atlas",
+            "species":"HepG2",
+            "protein_id":"TOR1AIP2",
+            "sequence":"MADSGLREPQEDSQKDLENDPSVNSQAQETTIIASNAEEAEILHSACGLSKDHQEVETEGPESADTGDKSESPDEANVGKHPKDKTEDENKQSFLDGGKGHHLPSENLGKEPLDPDPSHSPSDKVGRADAHLGSSSVALPKEASDGTGASQEPPTTDSQEAQSPGHSSAGQEGEDTLRRRLLAPEAGSHPQQTQKLEEIKENAQDTMRQINKKGFWSYGPVILVVLVVAVVASSVNSYYSSPAQQVPKNPALEAFLAQFSQLEDKFPGQSSFLWQRGRKFLQKHLNASNPTEPATIIFTAAREGRETLKCLSHHVADAYTSSQKVSPIQIDGAGRTWQDSDTVKLLVDLELSYGFENGQKAAVVHHFESFPAGSTLIFYKYCDHENAAFKDVALVLTVLLEEETLEASVGPRETEEKVRDLLWAKFTNSDTPTSFNHMDSDKLSGLWSRISHLVLPVQPVSSIEEQGCLF",
+            "meltingPoint":54.690800184,
+            "Model_Response":"Answer: 52.4"
+        },
+        {
+            "index":4,
+            "Source":"Meltome_atlas",
+            "species":"HepG2",
+            "protein_id":"EPHX1",
+            "sequence":"MWLEILLTSVLGFAIYWFISRDKEETLPLEDGWWGPGTRSAAREDDSIRPFKVETSDEEIHDLHQRIDKFRFTPPLEDSCFHYGFNSNYLKKVISYWRNEFDWKKQVEILNRYPHFKTKIEGLDIHFIHVKPPQLPAGHTPKPLLMVHGWPGSFYEFYKIIPLLTDPKNHGLSDEHVFEVICPSIPGYGFSEASSKKGFNSVATARIFYKLMLRLGFQEFYIQGGDWGSLICTNMAQLVPSHVKGLHLNMALVLSNFSTLTLLLGQRFGRFLGLTERDVELLYPVKEKVFYSLMRESGYMHIQCTKPDTVGSALNDSPVGLAAYILEKFSTWTNTEFRYLEDGGLERKFSLDDLLTNVMLYWTTGTIISSQRFYKENLGQGWMTQKHERMKVYVPTGFSAFPFELLHTPEKWVRFKYPKLISYSYMVRGGHFAAFEEPELLAQDIRKFLSVLERQ",
+            "meltingPoint":63.4173998286,
+            "Model_Response":"First, I\u2019ll estimate the melting temperature (Tm) based on protein sequence features known to influence thermal stability.  \n\nKey factors:  \n- **Amino acid composition**: High proportions of hydrophobic residues (especially Val, Ile, Leu, Phe, Trp, Tyr) and charged residues (Arg, Lys, Glu, Asp) can increase Tm if balanced.  \n- **Cysteine content**: Low here (only 2 Cys in sequence), so no major disulfide stabilization.  \n- **Length**: Long sequence (~400 residues) generally correlates with higher Tm than short ones, but not linearly.  \n- **Aromatic residues** (F, Y, W): Present but not extremely high.  \n- **Proline content**: Moderate, can restrict unfolding entropy.  \n- **Aliphatic index** (relative volume occupied by aliphatic side chains: A, V, I, L): This sequence has many Leu, Ile, Val \u2192 likely high aliphatic index \u2192 tends to increase thermostability.  \n\nRough empirical rule from some studies:  \nFor mesophilic proteins not adapted to extreme heat, Tm often 40\u201370 \u00b0C.  \nGiven the hydrophobic content and length, likely on the higher side of mesophilic range.  \n\nFrom sequence-based predictors in literature (simulated mentally):  \n- Charge\u2013hydrophobicity correlation suggests moderately stable.  \n- No obvious thermophile signatures (like clusters of charged networks), but hydrophobic core seems substantial.  \n\nEstimated Tm: **~58 \u00b0C** (common for many stable globular proteins of this type).  \n\nAnswer: 58.0"
+        }
+    ]
+}

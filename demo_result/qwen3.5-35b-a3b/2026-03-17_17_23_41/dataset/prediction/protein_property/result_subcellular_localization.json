@@ -1,0 +1,53 @@
+{
+    "schema":{
+        "fields":[
+            {
+                "name":"index",
+                "type":"integer"
+            },
+            {
+                "name":"Source",
+                "type":"string"
+            },
+            {
+                "name":"sequence",
+                "type":"string"
+            },
+            {
+                "name":"localization_class",
+                "type":"integer"
+            },
+            {
+                "name":"Model_Response",
+                "type":"string"
+            }
+        ],
+        "primaryKey":[
+            "index"
+        ],
+        "pandas_version":"1.4.0"
+    },
+    "data":[
+        {
+            "index":0,
+            "Source":"DeepLoc",
+            "sequence":"MKKELKILIIANIALLISIIHYTFDLLTLCIDDTSKDALTDEQLNPPNGFNSTFYESPPQLIPKIIHQTYKTNDIPEQWVKGRQKCIDLHPDYTYILWTDEMSDTFIKQEYPWFLDTFRSYEYPIERADAIRYFILSHYGGIYIDLDDGCERRLDPLLKVPAFLRKTSPTGVSNDVMGSVPRHPFFLKVIKSLKHYKKNWYIPYMTIMGSTGPLFISVVWKQYKRWSNTAENGAVRILQPADYKMHNNSFFSISKGSSWHTGDANFMKTLENHILSCVVTGFIFGFFILYGEFTFYTWLCSGPFNNKRYYIQWLSDKFKLHKWKLTSSYKNKEKRRNPTRHEYNSRGKRLRKDSNIPYDSVFLDIEKNHAKFTDLT",
+            "localization_class":4,
+            "Model_Response":"The provided protein sequence exhibits an N-terminal signal peptide region (`MKKELKILIIANIALLISII...`) characterized by a hydrophobic stretch, which typically directs the protein to the secretory pathway (Endoplasmic Reticulum). Additionally, the sequence contains internal hydrophobic transmembrane domains (e.g., `...GFIFGFFILY...`), suggesting that the protein is an integral membrane protein. Proteins with these features (signal peptide + transmembrane domains) are typically localized to the **Cell Surface** (Plasma Membrane) in eukaryotic systems.\n\nIn the standard 9-class subcellular localization scheme used in widely cited datasets and tools like **LocTree3** and **CellLoc** (which is the most likely context for a 1-9 output format in this domain), the classes are mapped as follows:\n1.  Nucleus\n2.  Cytosol\n3.  Mitochondria\n4.  Chloroplast\n5.  Extracellular\n6.  Cell Surface (Plasma Membrane)\n7.  Endoplasmic Reticulum\n8.  Golgi\n9.  Lysosome\n\nBased on the sequence features indicating a membrane protein, the predicted class corresponds to **Cell Surface**.\n\nAnswer: 6"
+        },
+        {
+            "index":1,
+            "Source":"DeepLoc",
+            "sequence":"MTTVVSFLALFLFLVAAVSGDVIKLPSLASKFFRPTENDDDSTKWAVLVAGSSGYWNYRHQADVCHAYQLLKKGGVKEENIVVFMYDDIAKNEENPRPGVIINSPNGEDVYNGVPKDYTGDEVNVDNLLAVILGNKTALKGGSGKVVDSGPNDHIFIYYSDHGGPGVLGMPTSPNLYANDLNDVLKKKYASGTYKSLVFYLEACESGSIFEGLLPEGLNIYATTASNAEESSWGTYCPGEDPSPPSEYETCLGDLYSVAWIEDSEKHNLQTETLHEQYELVKKRTAGSGKSYGSHVMEFGDIGLSKEKLVLFMGTNPADENFTFVNENSIRPPSRVTNQRDADLVHFWHKYQKAPEGSARKVEAQKQVLEAMSHRLHVDNSILLIGILLFGLEGHAVLNKVRPSGEPLVDDWDCLKSLVRAFERHCGSLSQYGIKHMRSIANMCNAGIQMRQMEEAAMQACPTIPTSPWSSLDRGFSA",
+            "localization_class":4,
+            "Model_Response":null
+        },
+        {
+            "index":2,
+            "Source":"DeepLoc",
+            "sequence":"MAEHGAHFTAASVADDQPSIFEVVAQDSLMTAVRPALQHVVKVLAESNPTHYGFLWRWFDEIFTLLDLLLQQHYLSRTSASFSENFYGLKRIVMGDTHKSQRLASAGLPKQQLWKSIMFLVLLPYLKVKLEKLVSSLREEDEYSIHPPSSRWKRFYRAFLAAYPFVNMAWEGWFLVQQLRYILGKAQHHSPLLRLAGVQLGRLTVQDIQALEHKPAKASMMQQPARSVSEKINSALKKAVGGVALSLSTGLSVGVFFLQFLDWWYSSENQETIKSLTALPTPPPPVHLDYNSDSPLLPKMKTVCPLCRKTRVNDTVLATSGYVFCYRCVFHYVRSHQACPITGYPTEVQHLIKLYSPEN",
+            "localization_class":7,
+            "Model_Response":"Answer: 7"
+        }
+    ]
+}

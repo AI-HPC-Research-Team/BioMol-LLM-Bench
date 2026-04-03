@@ -1,0 +1,67 @@
+{
+    "schema":{
+        "fields":[
+            {
+                "name":"index",
+                "type":"integer"
+            },
+            {
+                "name":"Source",
+                "type":"string"
+            },
+            {
+                "name":"smiles",
+                "type":"string"
+            },
+            {
+                "name":"two_class_active",
+                "type":"integer"
+            },
+            {
+                "name":"Model_Response",
+                "type":"string"
+            }
+        ],
+        "primaryKey":[
+            "index"
+        ],
+        "pandas_version":"1.4.0"
+    },
+    "data":[
+        {
+            "index":0,
+            "Source":"MoleculeNet-HIV",
+            "smiles":"N#Cc1ccccc1NC(=O)C(=O)C1NC(=S)NC1=O",
+            "two_class_active":0,
+            "Model_Response":"Looking at the SMILES:  \n`N#Cc1ccccc1NC(=O)C(=O)C1NC(=S)NC1=O`  \n\nThis is a molecule with a cyanophenyl group attached to a hydantoin-like core that includes thiocarbonyl and carbonyl groups.  \n\nCompounds with thiourea or thiohydantoin moieties sometimes show biological activity, but in the context of HIV replication prevention, this specific structure does not match known anti-HIV pharmacophores (like nucleoside analogs, NNRTIs, or protease inhibitors). It lacks typical features such as a polyaromatic system with specific hydrogen bonding patterns for known HIV targets.  \n\nGiven the absence of hallmark anti-HIV structural motifs, the prediction would lean toward **0** (does not prevent HIV replication).  \n\nAnswer: 0"
+        },
+        {
+            "index":1,
+            "Source":"MoleculeNet-HIV",
+            "smiles":"O=C1C2C3CC4C5C3C1C5C1(SCCS1)C42",
+            "two_class_active":0,
+            "Model_Response":"Let\u2019s break this down.  \n\nThe SMILES given is:  \n`O=C1C2C3CC4C5C3C1C5C1(SCCS1)C42`  \n\nThis is a compact notation for a complex polycyclic molecule.  \nFrom the structure, it looks like a steroid-like or cage-like molecule with sulfur-containing rings.  \n\nIn HIV replication prevention prediction, certain structural features are associated with activity:  \n- Sulfur atoms in a ring (thioether or dithiolane) can be found in some bioactive molecules.  \n- The cage-like polycyclic framework resembles some protease inhibitors or entry inhibitors, but not exactly typical NNRTI or NRTI scaffolds.  \n- Without specific training data or a model, I\u2019d rely on known patterns: many HIV-active compounds contain heterocycles, hydrogen bond acceptors\/donors, and lipophilic regions.  \n\nGiven the complexity, this looks like it could be a synthetic molecule designed for bioactivity. However, many such complex molecules in datasets (like the HIV dataset from MoleculeNet) are often inactive unless specifically known.  \n\nSince I don\u2019t have a computational model here, I\u2019ll make a reasoned guess:  \nThe molecule has a lactam-like `O=C1` start, fused polycyclic carbons, and a `SCCS` ring (1,2-dithiolane), which is somewhat unusual. Unusual structures in the HIV dataset sometimes show activity if they mimic pharmacophores of known inhibitors, but many random complex molecules are inactive.  \n\nGiven the lack of clear protease inhibitor motifs (like hydroxyethylene isosteres) or NNRTI aromatic\/heterocyclic motifs, I\u2019ll lean toward **inactive** in this binary prediction.  \n\n**Answer: 0**"
+        },
+        {
+            "index":2,
+            "Source":"MoleculeNet-HIV",
+            "smiles":"NC(=O)CN1CCN(CCCN2c3ccccc3Sc3ccc(Cl)cc32)CC1",
+            "two_class_active":0,
+            "Model_Response":"Based on the structure, the molecule contains features associated with HIV protease inhibitors, such as a sulfonamide-like group (S linking two aromatic rings), a chloro-substituted aromatic ring, and an amide group. These are common in antiviral agents that target HIV replication.  \n\nAnswer: 1"
+        },
+        {
+            "index":3,
+            "Source":"MoleculeNet-HIV",
+            "smiles":"CCCCCC=C(c1cc(Cl)c(OC)c(C(=O)O)c1)c1cc(Cl)c(OC)c(C(=O)O)c1.N",
+            "two_class_active":1,
+            "Model_Response":"Answer: 1"
+        },
+        {
+            "index":4,
+            "Source":"MoleculeNet-HIV",
+            "smiles":"CC(C)(C)Cc1cc(O)ccc1O",
+            "two_class_active":1,
+            "Model_Response":"First, let\u2019s interpret the SMILES:  \n`CC(C)(C)Cc1cc(O)ccc1O` corresponds to a molecule with a tert-butyl group (`CC(C)(C)C`) attached to a benzene ring (`c1ccccc1`) with two hydroxyl groups (`O`) in positions that appear to be ortho or para relative to the tert-butyl attachment.\n\nChecking the structure:  \n- The tert-butyl group is attached to the benzene ring via a CH\u2082 linker (`Cc1\u2026`).  \n- The benzene ring has two OH substituents (`O`), likely at positions 2 and 4 relative to the CH\u2082 attachment (or 3 and 4 depending on numbering).  \nThis looks like **butylated hydroxyanisole (BHA)** or a related phenolic antioxidant, but BHA usually has methoxy groups. Actually, `CC(C)(C)Cc1cc(O)ccc1O` is **2,4-dihydroxy-3-tert-butylphenethyl**? Wait, let\u2019s draw mentally:  \n\nSMILES breakdown:  \n`CC(C)(C)C` = tert-butyl  \n`c1cc(O)ccc1O` = benzene with OH at position 2 and 4 (if numbering from the attachment point of the tert-butyl chain). Actually, the tert-butyl is attached via a CH\u2082 (`C` before `c1`), so the full substituent is `-CH\u2082-C(CH\u2083)\u2083`. That makes the benzene substitution pattern: 1 = CH\u2082-tert-butyl, 2 = OH, 4 = OH. That\u2019s **2,4-dihydroxy-3-tert-butylphenethyl**? No, the tert-butyl is on the benzylic carbon\u2019s chain, not directly on ring.  \n\nActually, `CC(C)(C)Cc1cc(O)ccc1O` = tert-butyl-CH\u2082-phenyl-2,4-diol. This is **2,4-dihydroxybenzyl-tert-butyl**? Wait, benzyl-tert-butyl would be tert-butyl attached to CH\u2082 attached to phenyl. Yes, that\u2019s it: 4-tert-butylbenzyl alcohol with two OH on ring? That can\u2019t be \u2014 too many substituents. Let\u2019s map:  \n\nC(C)(C)(C)Cc1cc(O)ccc1O  \nStart: tert-butyl-CH\u2082- then benzene: positions:  \n1: CH\u2082-tert-butyl  \n2: OH  \n3: C  \n4: C  \n5: C  \n6: C with OH? Wait, `c1cc(O)ccc1O` means: after c1, next c has OH (position 2), then c (position 3), then c (position 4), then c (position 5), then c1 with O (position 6 OH). So OH at positions 2 and 6? That\u2019s resorcinol-type (meta diol) with tert-butyl-CH\u2082 at position 1.  \n\nSo: 2,6-dihydroxybenzyl-tert-butyl. That\u2019s **2,6-dihydroxy-\u03b1-tert-butyltoluene**? Actually, \u03b1-tert-butyl-2,6-dihydroxybenzyl alcohol? No, the CH\u2082 is between tert-butyl and ring, so it\u2019s (2,6-dihydroxybenzyl)-tert-butane? That\u2019s unusual.  \n\nAnyway, this is a phenolic compound with antioxidant properties.  \n\nFor HIV replication prevention: phenolic antioxidants are not typically strong anti-HIV agents unless they have specific pharmacophores (e.g., coumarins, flavonoids, specific polyhydroxylated aromatics known for integrase inhibition). This looks like a simple dihydroxybenzyl-tert-butyl, not a known anti-HIV compound.  \n\nGiven the dataset context (Tox21, HIV screening), such a molecule is likely **inactive** in HIV replication prevention.  \n\nThus, predicted class: **0**.  \n\nAnswer: 0"
+        }
+    ]
+}

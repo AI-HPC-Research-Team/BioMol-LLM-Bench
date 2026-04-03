@@ -1,0 +1,168 @@
+2026-03-17 18:21:39,535 - root - INFO - ==== results of demo_result/deepseek-chat/2026-03-17_16_18_33/./dataset/general/result_merged_general_text.json ====
+2026-03-17 18:21:39,544 - root - INFO - Accuracy: 0.6000
+2026-03-17 18:21:39,544 - root - INFO - CERR: 100.0000
+2026-03-17 18:21:39,544 - root - INFO - Validity: 0.8000
+2026-03-17 18:21:39,544 - root - INFO - ==== results of demo_result/deepseek-chat/2026-03-17_16_18_33/./dataset/prediction/mol_chemical_property/result_solubility.json ====
+2026-03-17 18:21:39,551 - root - INFO - RMSE: 1.4082
+2026-03-17 18:21:39,551 - root - INFO - MAE: 1.1238
+2026-03-17 18:21:39,551 - root - INFO - MEAN: -0.3021
+2026-03-17 18:21:39,551 - root - INFO - STD: 1.3754
+2026-03-17 18:21:39,551 - root - INFO - Validity: 1.0000
+2026-03-17 18:21:39,551 - root - INFO - Total: 5.0000
+2026-03-17 18:21:39,551 - root - INFO - Float: 5.0000
+2026-03-17 18:21:39,551 - root - INFO - ==== results of demo_result/deepseek-chat/2026-03-17_16_18_33/./dataset/prediction/mol_chemical_property/result_freesolv.json ====
+2026-03-17 18:21:39,556 - root - INFO - RMSE: 117.1639
+2026-03-17 18:21:39,556 - root - INFO - MAE: 85.7375
+2026-03-17 18:21:39,557 - root - INFO - MEAN: -76.4575
+2026-03-17 18:21:39,557 - root - INFO - STD: 88.7786
+2026-03-17 18:21:39,557 - root - INFO - Validity: 0.8000
+2026-03-17 18:21:39,557 - root - INFO - Total: 5.0000
+2026-03-17 18:21:39,557 - root - INFO - Float: 4.0000
+2026-03-17 18:21:39,557 - root - INFO - ==== results of demo_result/deepseek-chat/2026-03-17_16_18_33/./dataset/prediction/protein_property/result_melting_point.json ====
+2026-03-17 18:21:39,562 - root - INFO - RMSE: 8.0553
+2026-03-17 18:21:39,562 - root - INFO - MAE: 6.8339
+2026-03-17 18:21:39,562 - root - INFO - MEAN: -3.5906
+2026-03-17 18:21:39,562 - root - INFO - STD: 7.2108
+2026-03-17 18:21:39,562 - root - INFO - Validity: 1.0000
+2026-03-17 18:21:39,562 - root - INFO - Total: 5.0000
+2026-03-17 18:21:39,562 - root - INFO - Float: 5.0000
+2026-03-17 18:21:39,562 - root - INFO - ==== results of demo_result/deepseek-chat/2026-03-17_16_18_33/./dataset/prediction/protein_property/result_free_energy.json ====
+2026-03-17 18:21:39,568 - root - INFO - RMSE: 4.1837
+2026-03-17 18:21:39,568 - root - INFO - MAE: 3.8630
+2026-03-17 18:21:39,568 - root - INFO - MEAN: 3.3430
+2026-03-17 18:21:39,568 - root - INFO - STD: 2.5156
+2026-03-17 18:21:39,568 - root - INFO - Validity: 1.0000
+2026-03-17 18:21:39,568 - root - INFO - Total: 5.0000
+2026-03-17 18:21:39,568 - root - INFO - Float: 5.0000
+2026-03-17 18:21:39,568 - root - INFO - ==== results of demo_result/deepseek-chat/2026-03-17_16_18_33/./dataset/prediction/protein_property/result_fitness_landscape.json ====
+2026-03-17 18:21:39,573 - root - INFO - RMSE: 2.7235
+2026-03-17 18:21:39,573 - root - INFO - MAE: 2.4384
+2026-03-17 18:21:39,573 - root - INFO - MEAN: 2.4384
+2026-03-17 18:21:39,573 - root - INFO - STD: 1.2130
+2026-03-17 18:21:39,573 - root - INFO - Validity: 1.0000
+2026-03-17 18:21:39,573 - root - INFO - Total: 5.0000
+2026-03-17 18:21:39,573 - root - INFO - Float: 5.0000
+2026-03-17 18:21:39,573 - root - INFO - ==== results of demo_result/deepseek-chat/2026-03-17_16_18_33/./dataset/prediction/protein_property/result_mutation_effect.json ====
+2026-03-17 18:21:39,579 - root - INFO - RMSE: 1024.8194
+2026-03-17 18:21:39,579 - root - INFO - MAE: 459.2939
+2026-03-17 18:21:39,579 - root - INFO - MEAN: 458.1356
+2026-03-17 18:21:39,579 - root - INFO - STD: 916.7150
+2026-03-17 18:21:39,579 - root - INFO - Validity: 1.0000
+2026-03-17 18:21:39,579 - root - INFO - Total: 5.0000
+2026-03-17 18:21:39,579 - root - INFO - Float: 5.0000
+2026-03-17 18:21:39,579 - root - INFO - ==== results of demo_result/deepseek-chat/2026-03-17_16_18_33/./dataset/prediction/protein_property/result_conservation_score.json ====
+2026-03-17 18:21:41,708 - root - INFO - BLEU-1: 0.00000000
+2026-03-17 18:21:41,708 - root - INFO - BLEU-2: 0.00000000
+2026-03-17 18:21:41,708 - root - INFO - BLEU-3: 0.00000000
+2026-03-17 18:21:41,708 - root - INFO - BLEU-4: 0.00000000
+2026-03-17 18:21:41,708 - root - INFO - ROUGE-1: 0.00000000
+2026-03-17 18:21:41,708 - root - INFO - ROUGE-2: 0.00000000
+2026-03-17 18:21:41,708 - root - INFO - ROUGE-L: 0.00000000
+2026-03-17 18:21:41,708 - root - INFO - METEOR: 0.00000000
+2026-03-17 18:21:41,708 - root - INFO - ==== results of demo_result/deepseek-chat/2026-03-17_16_18_33/./dataset/prediction/protein_property/result_subcellular_localization.json ====
+2026-03-17 18:21:41,713 - root - INFO - Accuracy: 0.0000
+2026-03-17 18:21:41,713 - root - INFO - CERR: 100.0000
+2026-03-17 18:21:41,713 - root - INFO - Validity: 1.0000
+2026-03-17 18:21:41,713 - root - INFO - ==== results of demo_result/deepseek-chat/2026-03-17_16_18_33/./dataset/prediction/chemical_reaction/result_forward_synthesis.json ====
+2026-03-17 18:21:41,720 - root - INFO - Validity: 0.0000
+2026-03-17 18:21:41,720 - root - INFO - Maccs: 0.0000
+2026-03-17 18:21:41,720 - root - INFO - RDK: 0.0000
+2026-03-17 18:21:41,720 - root - INFO - Morgan: 0.0000
+2026-03-17 18:21:41,720 - root - INFO - ==== results of demo_result/deepseek-chat/2026-03-17_16_18_33/./dataset/prediction/chemical_reaction/result_retrosynthesis.json ====
+2026-03-17 18:21:41,729 - root - INFO - Validity: 0.0000
+2026-03-17 18:21:41,729 - root - INFO - Maccs: 0.0000
+2026-03-17 18:21:41,729 - root - INFO - RDK: 0.0000
+2026-03-17 18:21:41,729 - root - INFO - Morgan: 0.0000
+2026-03-17 18:21:41,730 - root - INFO - ==== results of demo_result/deepseek-chat/2026-03-17_16_18_33/./dataset/prediction/protein_function/EC/result_EC_anno.json ====
+2026-03-17 18:21:41,735 - root - INFO - Accuracy: 0.2000
+2026-03-17 18:21:41,735 - root - INFO - CERR: 100.0000
+2026-03-17 18:21:41,736 - root - INFO - Validity: 1.0000
+2026-03-17 18:21:41,736 - root - INFO - ==== results of demo_result/deepseek-chat/2026-03-17_16_18_33/./dataset/prediction/protein_function/GO/result_GO_anno.json ====
+2026-03-17 18:21:41,741 - root - INFO - Total: 0.0000
+2026-03-17 18:21:41,741 - root - INFO - Avgsim: 0.2000
+2026-03-17 18:21:41,741 - root - INFO - ==== results of demo_result/deepseek-chat/2026-03-17_16_18_33/./dataset/prediction/protein_structure/result_secondary_struc_classify.json ====
+2026-03-17 18:21:41,754 - root - INFO - BLEU-1: 0.00000000
+2026-03-17 18:21:41,754 - root - INFO - BLEU-2: 0.00000000
+2026-03-17 18:21:41,754 - root - INFO - BLEU-3: 0.00000000
+2026-03-17 18:21:41,755 - root - INFO - BLEU-4: 0.00000000
+2026-03-17 18:21:41,755 - root - INFO - ROUGE-1: 0.00000000
+2026-03-17 18:21:41,755 - root - INFO - ROUGE-2: 0.00000000
+2026-03-17 18:21:41,755 - root - INFO - ROUGE-L: 0.00000000
+2026-03-17 18:21:41,755 - root - INFO - METEOR: 0.00000000
+2026-03-17 18:21:41,755 - root - INFO - ==== results of demo_result/deepseek-chat/2026-03-17_16_18_33/./dataset/prediction/complex_interaction/PPI/result_interaction_type.json ====
+2026-03-17 18:21:41,761 - root - INFO - Accuracy: 0.4000
+2026-03-17 18:21:41,761 - root - INFO - CERR: 100.0000
+2026-03-17 18:21:41,761 - root - INFO - Validity: 0.4000
+2026-03-17 18:21:41,761 - root - INFO - ==== results of demo_result/deepseek-chat/2026-03-17_16_18_33/./dataset/prediction/complex_interaction/PPI/result_binary_classification.json ====
+2026-03-17 18:21:41,770 - root - INFO - AUROC: 0.0000
+2026-03-17 18:21:41,770 - root - INFO - AUPRC: 0.6000
+2026-03-17 18:21:41,770 - root - INFO - Accuracy: 0.0000
+2026-03-17 18:21:41,770 - root - INFO - F1_score: 0.0000
+2026-03-17 18:21:41,770 - root - INFO - Validity: 1.0000
+2026-03-17 18:21:41,770 - root - INFO - ==== results of demo_result/deepseek-chat/2026-03-17_16_18_33/./dataset/prediction/complex_interaction/DDI/interaction_type/result_interaction_type.json ====
+2026-03-17 18:21:41,780 - root - INFO - BLEU-1: 0.04298280
+2026-03-17 18:21:41,780 - root - INFO - BLEU-2: 0.01292054
+2026-03-17 18:21:41,780 - root - INFO - BLEU-3: 0.01008077
+2026-03-17 18:21:41,780 - root - INFO - BLEU-4: 0.00991875
+2026-03-17 18:21:41,780 - root - INFO - ROUGE-1: 0.12096531
+2026-03-17 18:21:41,780 - root - INFO - ROUGE-2: 0.00000000
+2026-03-17 18:21:41,780 - root - INFO - ROUGE-L: 0.12096531
+2026-03-17 18:21:41,780 - root - INFO - METEOR: 0.09924196
+2026-03-17 18:21:41,780 - root - INFO - ==== results of demo_result/deepseek-chat/2026-03-17_16_18_33/./dataset/prediction/complex_interaction/PLI/result_binding_affinity.json ====
+2026-03-17 18:21:41,788 - root - INFO - RMSE: 2.0131
+2026-03-17 18:21:41,788 - root - INFO - MAE: 1.5868
+2026-03-17 18:21:41,788 - root - INFO - MEAN: 0.1101
+2026-03-17 18:21:41,788 - root - INFO - STD: 2.0101
+2026-03-17 18:21:41,788 - root - INFO - Validity: 1.0000
+2026-03-17 18:21:41,788 - root - INFO - Total: 5.0000
+2026-03-17 18:21:41,788 - root - INFO - Float: 5.0000
+2026-03-17 18:21:41,788 - root - INFO - ==== results of demo_result/deepseek-chat/2026-03-17_16_18_33/./dataset/prediction/complex_interaction/AbAg/result_AbAg_binding.json ====
+2026-03-17 18:21:41,795 - root - INFO - RMSE: 4.2954
+2026-03-17 18:21:41,795 - root - INFO - MAE: 4.1179
+2026-03-17 18:21:41,795 - root - INFO - MEAN: -1.4943
+2026-03-17 18:21:41,795 - root - INFO - STD: 4.0271
+2026-03-17 18:21:41,795 - root - INFO - Validity: 1.0000
+2026-03-17 18:21:41,795 - root - INFO - Total: 5.0000
+2026-03-17 18:21:41,795 - root - INFO - Float: 5.0000
+2026-03-17 18:21:41,795 - root - INFO - ==== results of demo_result/deepseek-chat/2026-03-17_16_18_33/./dataset/prediction/quantum_mechanism_property/result_excited_state_energy.json ====
+2026-03-17 18:21:41,804 - root - INFO - RMSE: 5.6329
+2026-03-17 18:21:41,804 - root - INFO - MAE: 4.8667
+2026-03-17 18:21:41,804 - root - INFO - MEAN: -4.8056
+2026-03-17 18:21:41,804 - root - INFO - STD: 2.9386
+2026-03-17 18:21:41,804 - root - INFO - Validity: 1.0000
+2026-03-17 18:21:41,804 - root - INFO - Total: 5.0000
+2026-03-17 18:21:41,804 - root - INFO - Float: 5.0000
+2026-03-17 18:21:41,805 - root - INFO - ==== results of demo_result/deepseek-chat/2026-03-17_16_18_33/./dataset/prediction/quantum_mechanism_property/result_electronic_thermo_energy.json ====
+2026-03-17 18:21:41,813 - root - INFO - RMSE: 29.4138
+2026-03-17 18:21:41,813 - root - INFO - MAE: 29.0574
+2026-03-17 18:21:41,813 - root - INFO - MEAN: 29.0574
+2026-03-17 18:21:41,813 - root - INFO - STD: 4.5652
+2026-03-17 18:21:41,813 - root - INFO - Validity: 1.0000
+2026-03-17 18:21:41,813 - root - INFO - Total: 5.0000
+2026-03-17 18:21:41,813 - root - INFO - Float: 5.0000
+2026-03-17 18:21:41,813 - root - INFO - ==== results of demo_result/deepseek-chat/2026-03-17_16_18_33/./dataset/prediction/quantum_mechanism_property/result_humo_logo_gap.json ====
+2026-03-17 18:21:41,819 - root - INFO - RMSE: 2.9365
+2026-03-17 18:21:41,819 - root - INFO - MAE: 2.3732
+2026-03-17 18:21:41,819 - root - INFO - MEAN: -0.6876
+2026-03-17 18:21:41,819 - root - INFO - STD: 2.8548
+2026-03-17 18:21:41,819 - root - INFO - Validity: 1.0000
+2026-03-17 18:21:41,819 - root - INFO - Total: 5.0000
+2026-03-17 18:21:41,819 - root - INFO - Float: 5.0000
+2026-03-17 18:21:41,819 - root - INFO - ==== results of demo_result/deepseek-chat/2026-03-17_16_18_33/./dataset/prediction/mol_physiological_property/result_bbbp.json ====
+2026-03-17 18:21:41,828 - root - INFO - AUROC: 0.3333
+2026-03-17 18:21:41,828 - root - INFO - AUPRC: 0.4000
+2026-03-17 18:21:41,828 - root - INFO - Accuracy: 0.4000
+2026-03-17 18:21:41,828 - root - INFO - F1_score: 0.0000
+2026-03-17 18:21:41,828 - root - INFO - Validity: 1.0000
+2026-03-17 18:21:41,828 - root - INFO - ==== results of demo_result/deepseek-chat/2026-03-17_16_18_33/./dataset/prediction/mol_physiological_property/result_hiv_replication_prevention.json ====
+2026-03-17 18:21:41,836 - root - INFO - AUROC: 0.5833
+2026-03-17 18:21:41,836 - root - INFO - AUPRC: 0.4500
+2026-03-17 18:21:41,836 - root - INFO - Accuracy: 0.6000
+2026-03-17 18:21:41,836 - root - INFO - F1_score: 0.5000
+2026-03-17 18:21:41,836 - root - INFO - Validity: 1.0000
+2026-03-17 18:21:41,836 - root - INFO - ==== results of demo_result/deepseek-chat/2026-03-17_16_18_33/./dataset/prediction/mol_physiological_property/result_toxicity.json ====
+2026-03-17 18:21:41,848 - root - INFO - AUROC: 0.2500
+2026-03-17 18:21:41,848 - root - INFO - AUPRC: 0.3250
+2026-03-17 18:21:41,848 - root - INFO - Accuracy: 0.2000
+2026-03-17 18:21:41,848 - root - INFO - F1_score: 0.3333
+2026-03-17 18:21:41,848 - root - INFO - Validity: 1.0000

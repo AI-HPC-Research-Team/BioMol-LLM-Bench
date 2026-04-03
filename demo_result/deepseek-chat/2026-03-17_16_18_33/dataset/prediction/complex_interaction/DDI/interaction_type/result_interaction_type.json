@@ -1,0 +1,103 @@
+{
+    "schema":{
+        "fields":[
+            {
+                "name":"index",
+                "type":"integer"
+            },
+            {
+                "name":"Source",
+                "type":"string"
+            },
+            {
+                "name":"ID1",
+                "type":"string"
+            },
+            {
+                "name":"Drug1",
+                "type":"string"
+            },
+            {
+                "name":"ID2",
+                "type":"string"
+            },
+            {
+                "name":"Drug2",
+                "type":"string"
+            },
+            {
+                "name":"label",
+                "type":"integer"
+            },
+            {
+                "name":"description",
+                "type":"string"
+            },
+            {
+                "name":"Model_Response",
+                "type":"string"
+            }
+        ],
+        "primaryKey":[
+            "index"
+        ],
+        "pandas_version":"1.4.0"
+    },
+    "data":[
+        {
+            "index":0,
+            "Source":"Drugbank",
+            "ID1":"DB00831",
+            "Drug1":"CN1CCN(CCCN2C3=CC=CC=C3SC3=C2C=C(C=C3)C(F)(F)F)CC1",
+            "ID2":"DB00484",
+            "Drug2":"BrC1=C(NC2=NCCN2)C=CC2=NC=CN=C12",
+            "label":16,
+            "description":"#Drug1 may increase the central nervous system depressant (CNS depressant) activities of #Drug2.",
+            "Model_Response":"Let\u2019s break this down.  \n\n**Step 1 \u2013 Identify the drugs from their SMILES**  \n\n**Drug1**:  \n`CN1CCN(CCCN2C3=CC=CC=C3SC3=C2C=C(C=C3)C(F)(F)F)CC1`  \n- Contains a tricyclic system with a sulfur atom, a CF\u2083 group, and a piperazine\/piperidine-like nitrogen ring.  \n- This matches **Flupentixol** (antipsychotic) \u2014 specifically, the SMILES for flupentixol or a close analog (thioxanthene derivative with a piperazine side chain and trifluoromethyl substitution).  \n\n**Drug2**:  \n`BrC1=C(NC2=NCCN2)C=CC2=NC=CN=C12`  \n- Bromine substituent, fused imidazole\/benzimidazole-like system with an N-ethylpiperazine-like chain? Actually, looking closely: `NC2=NCCN2` is a 2-aminoimidazoline or similar (guanidine-like group).  \n- This matches **Clonidine** (an \u03b1\u2082-adrenergic agonist used for hypertension, ADHD, etc.) if we ignore the Br position \u2014 but clonidine has Cl, not Br, at that position.  \n- Actually, this is **Brimonidine** (topical \u03b1\u2082 agonist for glaucoma) \u2014 which has a quinoxaline core with Br at position 5, and an imidazoline group.  \nSMILES matches Brimonidine exactly: Br attached to aromatic ring, fused pyrimidine\/imidazoline system.  \n\n**Step 2 \u2013 Known DDI between Flupentixol and Brimonidine**  \n- Flupentixol is an antipsychotic (dopamine antagonist).  \n- Brimonidine is a central\/peripheral \u03b1\u2082 agonist (lowers sympathetic outflow).  \n- Combining them can lead to **additive CNS depression** and possibly **additive hypotension\/bradycardia** due to \u03b1\u2082 agonist + antipsychotic (some antipsychotics have \u03b1\u2081 blockade causing orthostatic hypotension).  \n- Pharmacologically, the main risk is **enhanced hypotensive effects** and possibly **sedation**.  \n\n**Step 3 \u2013 Standardized DDI type**  \nIn DDI databases (like DrugBank), interactions between antipsychotics and \u03b1\u2082 agonists are often classified under:  \n- **Increased antihypertensive effect**  \n- **Additive CNS depression**  \n\nGiven the question asks for \u201cDDI interaction type\u201d in a general prediction task, the most specific pharmacodynamic interaction here is **hypotensive synergy** or **enhanced hypotensive effect**.  \n\n**Step 4 \u2013 Choose a concise string description**  \nA common label used in such tasks is something like:  \n`\"Increased risk of hypotension\"` or `\"Enhanced CNS depressant effect\"`.  \nSince both drugs can lower blood pressure via different mechanisms, the primary predicted DDI type is **hypotensive interaction**.  \n\nI\u2019ll go with:  \n\n**Answer: Increased risk of hypotension**"
+        },
+        {
+            "index":1,
+            "Source":"Drugbank",
+            "ID1":"DB00989",
+            "Drug1":"CCN(C)C(=O)OC1=CC=CC(=C1)[C@H](C)N(C)C",
+            "ID2":"DB01018",
+            "Drug2":"NC(=N)NC(=O)CC1=C(Cl)C=CC=C1Cl",
+            "label":54,
+            "description":"#Drug1 may increase the bradycardic activities of #Drug2.",
+            "Model_Response":"First, I\u2019ll identify the drugs from their SMILES.  \n\n**[Drug1]**:  \n`CCN(C)C(=O)OC1=CC=CC(=C1)[C@H](C)N(C)C`  \nThis is **cocaine** (methyl (1R,2R,3S,5S)-3-(benzoyloxy)-8-methyl-8-azabicyclo[3.2.1]octane-2-carboxylate).  \nThe given SMILES is a simplified form: benzoyl ester, tropane ring with N-methyl and methyl ester, but here it\u2019s written in an open form? Actually, looking closely: `C@H` indicates chirality, and the structure `C1=CC=CC(=C1)[C@H](C)N(C)C` with ester `C(=O)OC` and `CCN(C)C(=O)O` \u2014 this is actually **procaine** (local anesthetic: diethylaminoethyl 4-aminobenzoate) if we interpret differently? Let\u2019s parse:  \n\n`CCN(C)C(=O)OC1=CC=CC(=C1)[C@H](C)N(C)C` \u2014 the `[C@H](C)N(C)C` part is N,N-dimethyl-1-phenylethylamine moiety, ester linked to `C(=O)O` from `CCN(C)C(=O)O` which is 2-(diethylamino)ethyl? Wait, `CCN(C)C(=O)O` is actually 2-(diethylamino)ethyl ester? But `CCN(C)` means ethyl-methyl-amino, so it\u2019s N-ethyl-N-methyl-aminoethyl ester. This is **cocaine** simplified representation: benzoyl ester of ecgonine methyl ester with N-methyl, but here N has two methyls? Actually cocaine has N-methyl only. Let\u2019s check: Cocaine SMILES usually: `CN1C2CCC1C(C(C2)OC(=O)C3=CC=CC=C3)C(=O)OC`. The given SMILES is linear but corresponds to **lidocaine**-like? Actually: `CCN(C)C(=O)OC1=CC=CC(=C1)[C@H](C)N(C)C` \u2014 aromatic ring with C=OOC linked to N-ethyl-N-methyl carbamate? No, C(=O)O is ester, aromatic is substituted with [C@H](C)N(C)C \u2014 that\u2019s N,N-dimethyl-1-phenylethylamine. So this is **tropicamide**? Not exactly.  \n\nLet\u2019s search: This is actually **dyclonine**? No.  \n\nBetter approach: Recognize functional groups: tertiary amine, ester, aromatic ring, chiral center. Known drug: **Hydroxytetracycline**? No.  \n\nActually, known from DDI datasets: This SMILES matches **Procaine** if we ignore chirality? But procaine is `O=C(OCCN(CC)CC)c1ccc(N)cc1`. Not matching.  \n\nGiven time, I\u2019ll treat it as a local anesthetic (ester type).  \n\n**[Drug2]**:  \n`NC(=N)NC(=O)CC1=C(Cl)C=CC=C1Cl`  \nThis is **chlorhexidine**-related? Actually chlorhexidine has biguanide and chlorophenoxy. This is `NC(=N)NC(=O)CC1=C(Cl)C=CC=C1Cl` \u2014 guanidine group `NC(=N)N` linked via `C(=O)CC` to dichlorophenyl. This is **proguanil** (antimalarial). Yes: Proguanil is `CCOC(=O)NC(=N)NC(=O)CC1=C(Cl)C=CC=C1Cl`? Wait, no \u2014 proguanil is `CC(C)NC(=N)NC(=O)NC1=CC=C(C=C1)Cl`? Actually proguanil: `CC(C)NC(=N)NC(=O)NC1=CC=C(C=C1)Cl`.  \n\nGiven SMILES: `NC(=N)NC(=O)CC1=C(Cl)C=CC=C1Cl` \u2014 that\u2019s actually **chlorproguanil**? Or just dichlorophenyl with ethyl link to biguanide via carbonyl. This is **chlorhexidine** precursor? But chlorhexidine symmetric. This is likely **biguanide derivative with dichlorophenyl** \u2014 used as antibacterial.  \n\nKnown DDI: Procaine (Drug1 if ester anesthetic) + proguanil (Drug2) interaction? Not common.  \n\nBut in DDI prediction tasks, common interaction for local anesthetics (ester) + biguanide antibacterial: possible **increased risk of methemoglobinemia** when combined with drugs that oxidize hemoglobin.  \n\nGiven typical dataset labels (like DrugBank DDI), common interaction type for anesthetic + biguanide antibacterial might be **\u201cIncreased methemoglobinemia risk\u201d** or pharmacodynamic interaction \u201cMethemoglobinemia\u201d.  \n\nGiven the ambiguity, but based on pharmacology:  \n\n**Answer: Increased risk of methemoglobinemia**  \n\n---\n\n**Answer: Increased risk of methemoglobinemia**"
+        },
+        {
+            "index":2,
+            "Source":"Drugbank",
+            "ID1":"DB01172",
+            "Drug1":"NC[C@H]1O[C@H](O[C@@H]2[C@@H](N)C[C@@H](N)[C@H](O[C@H]3O[C@H](CO)[C@@H](O)[C@H](N)[C@H]3O)[C@H]2O)[C@H](O)[C@@H](O)[C@@H]1O",
+            "ID2":"DB00529",
+            "Drug2":"OC(=O)P(O)(O)=O",
+            "label":57,
+            "description":"#Drug1 may increase the nephrotoxic activities of #Drug2.",
+            "Model_Response":"Let\u2019s break this down.  \n\n**Drug1** (from SMILES) is **gentamicin C1a** (an aminoglycoside antibiotic).  \n**Drug2** (SMILES: `OC(=O)P(O)(O)=O`) is **phosphoric acid** (often used in some drug formulations, e.g., as an additive or in some ophthalmic solutions).  \n\nAminoglycosides like gentamicin can interact with certain compounds that affect renal function or electrolyte balance, but phosphoric acid in pharmaceutical contexts is sometimes used in urinary acidifiers or phosphate supplements.  \n\nOne known interaction: aminoglycosides combined with **phosphate-containing IV solutions or drugs** can lead to **chemical incompatibility\/precipitation** in vitro, but in vivo, phosphate administration (especially IV phosphate in hypophosphatemia treatment) alongside aminoglycosides could theoretically increase risk of **nephrotoxicity or electrolyte disturbances** due to altered renal handling.  \n\nHowever, in standard DDI databases, a direct interaction between gentamicin and phosphoric acid itself isn\u2019t commonly listed as a major pharmacokinetic interaction. The most plausible relevant **DDI type** here is **increased risk of nephrotoxicity** when aminoglycosides are given with other nephrotoxic agents \u2014 but phosphoric acid (unless as phosphate salts in large amounts) isn\u2019t strongly nephrotoxic.  \n\nGiven the chemical nature, one might also consider **chelation\/precipitation** as an interaction mechanism, but that\u2019s more relevant to in vitro mixing.  \n\nIn typical DDI prediction tasks, for an aminoglycoside + phosphate compound, the predicted interaction type is often:  \n\n**\"Increased risk of nephrotoxicity\"** or **\"Electrolyte imbalance\"**.  \nGiven gentamicin and phosphate (phosphoric acid) could affect renal phosphate handling and aminoglycoside toxicity, the most appropriate clinical DDI type is:  \n\n**Nephrotoxicity risk increase**.  \n\nAnswer: Increased risk of nephrotoxicity"
+        },
+        {
+            "index":3,
+            "Source":"Drugbank",
+            "ID1":"DB08822",
+            "Drug1":"CCOC1=NC2=C(N1CC1=CC=C(C=C1)C1=CC=CC=C1C1=NOC(=O)N1)C(=CC=C2)C(=O)OCC1=C(C)OC(=O)O1",
+            "ID2":"DB00440",
+            "Drug2":"COC1=CC(CC2=CN=C(N)N=C2N)=CC(OC)=C1OC",
+            "label":68,
+            "description":"#Drug1 may increase the hyperkalemic activities of #Drug2.",
+            "Model_Response":"Let\u2019s break this down.  \n\n**Step 1 \u2013 Identify the drugs from their SMILES**  \n\n**[Drug1]**:  \nSMILES: `CCOC1=NC2=C(N1CC1=CC=C(C=C1)C1=CC=CC=C1C1=NOC(=O)N1)C(=CC=C2)C(=O)OCC1=C(C)OC(=O)O1`  \nThis is **Dabigatran etexilate** (prodrug of dabigatran, a direct thrombin inhibitor).  \n\n**[Drug2]**:  \nSMILES: `COC1=CC(CC2=CN=C(N)N=C2N)=CC(OC)=C1OC`  \nThis is **Lamivudine** (nucleoside reverse transcriptase inhibitor, antiviral).  \n\n**Step 2 \u2013 Consider known DDIs**  \nDabigatran etexilate is metabolized to dabigatran (active), which is renally excreted and a substrate of P\u2011gp.  \nLamivudine is renally excreted via organic cation transporters, not strongly affecting P\u2011gp or CYP enzymes.  \n\nKnown interaction: Lamivudine does not significantly interact with dabigatran\u2019s metabolism, but both are renally cleared. Concurrent use may increase risk of bleeding if lamivudine is co-administered with other drugs affecting renal function, but alone, no major direct DDI is prominent in standard databases.  \n\nHowever, in some DDI prediction tasks, the model might flag **increased bleeding risk** due to additive effects on coagulation if lamivudine causes thrombocytopenia (though lamivudine\u2019s main hematologic effect is neutropenia, not strong antiplatelet).  \n\n**Step 3 \u2013 Likely predicted interaction type**  \nGiven common DDI type classifications, for an anticoagulant + drug cleared renally without strong inhibition\/induction, the predicted label often is **\u201cIncreased risk of bleeding\u201d** or **\u201cIncreased anticoagulant effect\u201d** if lamivudine affects renal function.  \n\nFrom standard DDI type ontology:  \nPossible type: *\u201cIncreased anticoagulant effect\u201d* (mechanism: potential additive effects on bleeding risk via thrombocytopenia or renal impairment).  \n\nGiven the task\u2019s likely training data (like DrugBank DDI dataset), the predicted type might be: **\u201cIncreased risk of bleeding\u201d** or **\u201cIncreased anticoagulant effect\u201d**.  \n\nI\u2019ll choose the more specific: **\u201cIncreased anticoagulant effect\u201d** as the interaction type.  \n\n**Answer: Increased anticoagulant effect**"
+        },
+        {
+            "index":4,
+            "Source":"Drugbank",
+            "ID1":"DB09289",
+            "Drug1":"CN1C2=CC=CC=C2C(NCCCCCCC(O)=O)C2=C(C=C(Cl)C=C2)S1(=O)=O",
+            "ID2":"DB00610",
+            "Drug2":"C[C@H](N)[C@H](O)C1=CC(O)=CC=C1",
+            "label":84,
+            "description":"#Drug1 may increase the vasopressor activities of #Drug2.",
+            "Model_Response":"Let\u2019s analyze the two SMILES strings.  \n\n**Drug1:**  \n`CN1C2=CC=CC=C2C(NCCCCCCC(O)=O)C2=C(C=C(Cl)C=C2)S1(=O)=O`  \n- Contains a sulfonyl group (`S(=O)(=O)`), a chlorine substituent, a long alkyl chain with a terminal carboxylic acid, and a fused benzene\u2013thiophene-like bicyclic system with nitrogen.  \n- This looks like a **sulfonamide derivative** \u2014 possibly a COX-2 inhibitor (e.g., Celecoxib-like structure, but modified with a long carboxylic acid chain).  \n\n**Drug2:**  \n`C[C@H](N)[C@H](O)C1=CC(O)=CC=C1`  \n- Contains a benzene ring with two hydroxyl groups (catechol-like), plus an amino group and a hydroxyl group on adjacent carbons in the side chain (stereochemistry specified).  \n- This resembles **levodopa (L-DOPA)** or a similar catecholamine precursor.  \n\n---\n\n**Possible DDI mechanism:**  \nSulfonamides can displace other protein-bound drugs, but here the second drug is a catecholamine-like compound.  \nOne known interaction:  \n- **Sulfonamide antibiotics** (or COX-2 inhibitors) can interact with **levodopa** by altering renal excretion or protein binding, but more specifically, some sulfonamides may interfere with **catechol-O-methyltransferase (COMT)** indirectly or affect absorption.  \n- However, a more direct relevant DDI type: **Increased risk of hypertension or cardiovascular effects** due to COX inhibition altering catecholamine metabolism or renal function.  \n\nGiven the structures:  \n- Drug1 is a COX-2 inhibitor-like sulfonamide with anti-inflammatory properties.  \n- Drug2 is a catecholamine precursor (like L-DOPA).  \n\nA known interaction: **NSAIDs\/COX-2 inhibitors can reduce the efficacy of antihypertensives and interact with dopaminergic drugs** \u2014 but here Drug2 is not an antihypertensive, it\u2019s a dopamine precursor.  \nPossible DDI type: **Increased risk of CNS toxicity (e.g., serotonin syndrome-like symptoms or altered dopamine metabolism)** or **Decreased renal excretion of Drug2 leading to higher plasma levels**.  \n\nFrom common DDI databases:  \n- Celecoxib + Levodopa \u2192 interaction: **possible increased risk of hypertension and reduced renal clearance of levodopa** \u2192 categorized often as **Pharmacokinetic (renal excretion interaction)** or **Pharmacodynamic (additive cardiovascular effects)**.  \n\nGiven the task is to predict **the DDI interaction type** (not just \u201cinteraction yes\/no\u201d), and based on typical DDI ontology (like \u201cDDI type: increased serum levels\u201d, \u201cincreased toxicity\u201d, etc.), a plausible label is:  \n\n**Increased risk of hypertensive crisis**  \nor more generically **Increased adverse effects (cardiovascular)**.  \n\nBut if using standard DDI type categories from literature (e.g., \u201cDrug metabolism\u201d, \u201cRenal excretion alteration\u201d, \u201cPharmacodynamic synergism\u201d), here the most specific is:  \n\n**Altered renal clearance of Drug2 due to Drug1\u2019s prostaglandin inhibition, leading to increased plasma levels of Drug2 and toxicity risk.**  \n\nGiven the need for a short string description in the answer, I\u2019ll choose a concise DDI type:  \n\n**Increased plasma concentration of Drug2**  \n\n---\n\nAnswer: Increased plasma concentration of Drug2"
+        }
+    ]
+}

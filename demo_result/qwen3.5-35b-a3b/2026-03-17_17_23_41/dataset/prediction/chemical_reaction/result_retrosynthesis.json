@@ -1,0 +1,74 @@
+{
+    "schema":{
+        "fields":[
+            {
+                "name":"index",
+                "type":"integer"
+            },
+            {
+                "name":"Source",
+                "type":"string"
+            },
+            {
+                "name":"Question",
+                "type":"string"
+            },
+            {
+                "name":"Production",
+                "type":"string"
+            },
+            {
+                "name":"Reaction type",
+                "type":"string"
+            },
+            {
+                "name":"Answer",
+                "type":"string"
+            },
+            {
+                "name":"Label",
+                "type":"string"
+            },
+            {
+                "name":"Model_Response",
+                "type":"string"
+            }
+        ],
+        "primaryKey":[
+            "index"
+        ],
+        "pandas_version":"1.4.0"
+    },
+    "data":[
+        {
+            "index":0,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"CC(C)(C)OC(=O)Nc1ccc(CCO)cc1",
+            "Reaction type":"protections",
+            "Answer":"CC(C)(C)OC(=O)OC(=O)OC(C)(C)C,Nc1ccc(CCO)cc1",
+            "Label":"E",
+            "Model_Response":"Answer: Nc1ccc(CCO)cc1, CC(C)(C)OC(=O)OC(=O)C(C)(C)C"
+        },
+        {
+            "index":1,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"COc1ncccc1-c1ccc(O)c(-c2nc3ccc(C(=O)N(C)C)cc3[nH]2)c1",
+            "Reaction type":"acylation and related processes",
+            "Answer":"CNC,COc1ncccc1-c1ccc(O)c(-c2nc3ccc(C(=O)O)cc3[nH]2)c1",
+            "Label":"B",
+            "Model_Response":"Answer: COc1ncccc1-c1ccc(O)c(-c2nc3ccc(C(=O)O)cc3[nH]2)c1, CN(C)"
+        },
+        {
+            "index":2,
+            "Source":"USPTO-50K",
+            "Question":"To synthesize the given production, which two reactants are needed.",
+            "Production":"Cc1c(F)ccc(Br)[n+]1[O-]",
+            "Reaction type":"oxidations",
+            "Answer":"Cc1nc(Br)ccc1F,O=S([O-])([O-])=S",
+            "Label":"F",
+            "Model_Response":"Answer: Cc1c(F)ccc(Br)n1,OO"
+        }
+    ]
+}

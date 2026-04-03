@@ -1,0 +1,76 @@
+{
+    "schema":{
+        "fields":[
+            {
+                "name":"index",
+                "type":"integer"
+            },
+            {
+                "name":"Source",
+                "type":"string"
+            },
+            {
+                "name":"id",
+                "type":"string"
+            },
+            {
+                "name":"smiles",
+                "type":"string"
+            },
+            {
+                "name":"HUMO_LOGO",
+                "type":"number"
+            },
+            {
+                "name":"Model_Response",
+                "type":"string"
+            }
+        ],
+        "primaryKey":[
+            "index"
+        ],
+        "pandas_version":"1.4.0"
+    },
+    "data":[
+        {
+            "index":0,
+            "Source":"PCQM4M-Valid",
+            "id":null,
+            "smiles":"C[C@@H](CCC=C(C)C)CCOC(=O)N",
+            "HUMO_LOGO":7.0940080825,
+            "Model_Response":"First, let\u2019s interpret the SMILES:  \n\n**SMILES:** `C[C@@H](CCC=C(C)C)CCOC(=O)N`  \n\nThis is a chiral molecule:  \n- Core: `C[C@@H](CCC=C(C)C)CCOC(=O)N`  \n- Breaking it down:  \n  - `C` \u2013 methyl group  \n  - `[C@@H]` \u2013 chiral carbon (S or R configuration given by @@)  \n  - `(CCC=C(C)C)` \u2013 propyl chain ending in an isobutene-like group (C=C with two methyls on one end)  \n  - `CCOC(=O)N` \u2013 ethyl group attached to oxygen, then carbonyl, then amide (NH\u2082)  \n\nSo the molecule is an unsaturated amide derivative, likely a terpenoid-like structure with an amide at the end.  \n\n**HOMO-LUMO gap estimation:**  \nFor organic molecules of this size (~C12H23NO), typical HOMO-LUMO gaps from DFT calculations range between ~4\u20136 eV if non-conjugated.  \nThis molecule has one isolated C=C double bond (not conjugated to the amide because of the CCO spacer), so conjugation is minimal.  \n\nAmides have a modest n\u2192\u03c0* gap, but here the carbonyl is part of an amide, not conjugated to the alkene.  \nEmpirically, similar structures (e.g., N-acyl amino acid derivatives with an isoprenoid tail) give gaps around **5.0\u20135.5 eV** at DFT\/B3LYP 6-31G* level.  \n\nGiven no special electron-donating\/accepting conjugation, I\u2019ll pick a typical value:  \n\n**Answer: 5.2**"
+        },
+        {
+            "index":1,
+            "Source":"PCQM4M-Valid",
+            "id":null,
+            "smiles":"O=C(N1CCCCCC1)[C@@H]1CCC=CC1",
+            "HUMO_LOGO":6.9361820492,
+            "Model_Response":"First, let\u2019s interpret the SMILES:  \n\n**SMILES:** `O=C(N1CCCCCC1)[C@@H]1CCC=CC1`  \n\nBreaking it down:  \n- `O=C` \u2192 carbonyl group (part of an amide or similar).  \n- `(N1CCCCCC1)` \u2192 nitrogen attached to a 6-membered cycloalkyl ring (piperidine-like, but without double bonds in the ring).  \n- `[C@@H]1CCC=CC1` \u2192 a cyclohexene ring (6-membered ring with one double bond) with a chiral center at the carbon attached to the carbonyl.  \n\nSo the structure is:  \nA carbonyl carbon is bonded to:  \n1. Oxygen (double bond)  \n2. Nitrogen of a piperidine ring  \n3. A chiral carbon belonging to a cyclohexene ring.  \n\nThis is an **N-acylpiperidine derivative with a cyclohexenyl substituent** at the carbonyl\u2019s alpha position (relative to carbonyl).  \n\n---\n\n**HOMO-LUMO gap estimation:**  \n- The molecule has an amide group (conjugated N\u2013C=O) but the nitrogen is in a saturated piperidine, so no strong extended \u03c0 system except the cyclohexene\u2019s C=C.  \n- The conjugation is limited: carbonyl is conjugated with nitrogen lone pair (amide-like), but the cyclohexene double bond is not conjugated with the carbonyl because of the chiral tetrahedral carbon between them.  \n- So HOMO likely localized on the C=C of cyclohexene or nitrogen lone pair; LUMO likely on the C=O \u03c0* orbital.  \n\nFor typical saturated amides with isolated alkene, HOMO-LUMO gaps are around **6\u20137 eV** in small molecules, but if we consider computational data for similar structures (e.g., N-cyclohex-2-en-1-ylpiperidine-1-carboxaldehyde-like), DFT calculations often give ~5.5\u20136.5 eV.  \n\nGiven no strong electron donors\/acceptors beyond amide and isolated alkene, I\u2019ll estimate:  \n\n**Answer: 6.2**"
+        },
+        {
+            "index":2,
+            "Source":"QM9",
+            "id":"gdb_14282",
+            "smiles":"CC1C2CC(=O)OC12",
+            "HUMO_LOGO":0.2799,
+            "Model_Response":"First, let\u2019s interpret the SMILES:  \n\n**CC1C2CC(=O)OC12**  \n\nThis is a compact notation for a bicyclic molecule. Breaking it down:  \n\n- **CC1C2CC(=O)OC12** means there are two fused rings sharing two atoms.  \n- The numbers indicate ring closure points.  \n- The structure corresponds to **2-oxabicyclo[2.2.1]heptan-3-one** or a similar bicyclic lactone.  \n\nFrom known computational chemistry data for small organic molecules, the HOMO-LUMO gap for such a saturated oxygen-containing bicyclic compound typically falls in the range of **6\u20138 eV** in gas-phase DFT calculations (e.g., B3LYP\/6-31G*).  \n\nChecking approximate values for similar structures (like \u03b3-butyrolactone derivatives or norbornane-like systems with a ketone and an ether oxygen), a reasonable estimate is around **6.5\u20137.0 eV**.  \n\nGiven the constraints and typical results for this specific SMILES from chemical databases or QM calculations I recall, I\u2019ll choose:  \n\n**Answer: 6.8**"
+        },
+        {
+            "index":3,
+            "Source":"PCQM4M-Valid",
+            "id":null,
+            "smiles":"CCCCCCCC[SiH3]",
+            "HUMO_LOGO":9.1838424544,
+            "Model_Response":"First, let\u2019s interpret the SMILES:  \n\n**CCCCCCCC[SiH3]**  \n- `C` repeated 8 times means a linear octane chain.  \n- `[SiH3]` means a silicon atom bonded to three hydrogens, attached to the last carbon.  \n\nSo the molecule is **octylsilane** (C\u2088H\u2081\u2087\u2013SiH\u2083).  \n\nThe HOMO\u2013LUMO gap for such alkylsilanes is typically in the range of **large organic molecules without conjugation** \u2014 roughly **7\u20139 eV** for saturated hydrocarbons.  \nSilicon substitution at the end doesn\u2019t drastically change the gap compared to a pure alkane, but slightly lowers it because Si\u2013C and Si\u2013H bonds have somewhat lower \u03c3\u2013\u03c3* energy differences than C\u2013C\/C\u2013H.  \n\nFrom computational data for similar molecules (e.g., tetraalkylsilanes or alkylsilanes), the HOMO\u2013LUMO gap is often around **7.5\u20138.5 eV**.  \nFor octylsilane specifically, a reasonable estimate is **\u2248 8.2 eV**.  \n\nAnswer: 8.2"
+        },
+        {
+            "index":4,
+            "Source":"PCQM4M-Valid",
+            "id":null,
+            "smiles":"S=C1NN[C]2C(=Nc3c2cccc3C)[N]1",
+            "HUMO_LOGO":2.0680652638,
+            "Model_Response":"First, let\u2019s parse the SMILES:  \n\n**S=C1NN[C]2C(=Nc3c2cccc3C)[N]1**  \n\nThis is a heterocyclic molecule containing sulfur, nitrogen, and carbon atoms.  \nIt looks like a fused ring system \u2014 possibly a thiadiazole fused with an indole-like ring, but with a methyl substituent.  \n\nFrom the structure:  \n- The core is a 5-membered ring containing S and N atoms (thiadiazole or similar).  \n- Fused to it is a 6-membered benzene-like ring with a methyl group.  \n- The SMILES has `[C]` and `[N]` in brackets, meaning they are radicals unless charged, but in context, they\u2019re likely part of aromatic rings with hydrogen adjustments.  \n\nChecking systematically:  \nSMILES can be interpreted as:  \n`S=C1N-N-[C]2-C(=N-c3c2cccc3-C)-[N]1`  \nThis is a bicyclic system:  \nRing1: S=C\u2013N\u2013N\u2013[C]\u2013back to S (5 atoms)  \nRing2: [C] from ring1 is also in a 6-membered ring with N and benzene.  \n\nActually, redrawing mentally:  \nIt\u2019s **2-methylbenzo[4,5]thiazolo[3,2-c][1,2,4]triazine** or similar \u2014 known heterocycle with experimental\/computed HOMO\u2013LUMO gaps in the range **3.5\u20134.5 eV** for such conjugated systems not heavily substituted with electron donors\/acceptors.  \n\nGiven typical DFT values for such fused N\/S heterocycles:  \nHOMO\u2013LUMO gap often ~ **3.8\u20134.2 eV**.  \nA reasonable estimate for this specific structure (moderately conjugated, no strong donor\/acceptor beyond ring N atoms) is around **4.0 eV**.  \n\n**Answer: 4.0**"
+        }
+    ]
+}

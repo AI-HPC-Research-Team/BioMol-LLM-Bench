@@ -1,0 +1,81 @@
+{
+    "schema":{
+        "fields":[
+            {
+                "name":"index",
+                "type":"integer"
+            },
+            {
+                "name":"Source",
+                "type":"string"
+            },
+            {
+                "name":"Question",
+                "type":"string"
+            },
+            {
+                "name":"Reactant1",
+                "type":"string"
+            },
+            {
+                "name":"Reactant2",
+                "type":"string"
+            },
+            {
+                "name":"Reaction type",
+                "type":"string"
+            },
+            {
+                "name":"Label",
+                "type":"string"
+            },
+            {
+                "name":"Answer",
+                "type":"string"
+            },
+            {
+                "name":"Model_Response",
+                "type":"string"
+            }
+        ],
+        "primaryKey":[
+            "index"
+        ],
+        "pandas_version":"1.4.0"
+    },
+    "data":[
+        {
+            "index":0,
+            "Source":"USPTO-50K",
+            "Question":"Given the two reactants and reaction type, predict the production and reaction type.",
+            "Reactant1":"CCCc1c(OCCCSCC2COC(C)(CCC(=O)O)S2)ccc(C(C)=O)c1O",
+            "Reactant2":"O=C(OO)c1cccc(Cl)c1",
+            "Reaction type":"oxidations",
+            "Label":"F",
+            "Answer":"CCCc1c(OCCCS(=O)CC2COC(C)(CCC(=O)O)S2)ccc(C(C)=O)c1O",
+            "Model_Response":"The reaction between the given reactants involves a ketone-containing aromatic compound (Reactant 1) and a peroxy acid (Reactant 2, m-chloroperbenzoic acid or similar).\n\n**Reactant 1:** `CCCc1c(OCCCSCC2COC(C)(CCC(=O)O)S2)ccc(C(C)=O)c1O`\nThis molecule contains a ketone group (`C(C)=O`), a phenol group (`O`), and a thioether\/thiazolidine moiety. The ketone is an acetyl group attached to the benzene ring.\n\n**Reactant 2:** `O=C(OO)c1cccc(Cl)c1`\nThis is a peroxy acid (specifically, a chlorinated benzoic peracid).\n\n**Reaction:**\nPeracids are commonly used for **Baeyer-Villiger oxidation** of ketones to esters. While sulfides (thioethers) can also be oxidized to sulfoxides or sulfones by peracids, the Baeyer-Villiger oxidation of ketones is a classic and highly significant transformation in organic synthesis, often featured in reaction prediction tasks. In this specific molecule, the ketone is an acetophenone derivative. The migration aptitude generally favors the aryl group over the alkyl (methyl) group. Therefore, the oxygen atom inserts between the aromatic ring and the carbonyl carbon, forming a phenyl acetate ester.\n\nThe transformation converts the acetyl group `-C(=O)CH3` to an acetoxy group `-OC(=O)CH3`.\n\n**SMILES Transformation:**\nOriginal substituent: `C(C)=O` (attached to the ring).\nNew substituent: `OC(C)=O` (attached to the ring).\n\nThe rest of the molecule remains unchanged.\n\nAnswer: CCCc1c(OCCCSCC2COC(C)(CCC(=O)O)S2)ccc(OC(C)=O)c1O\n\nAnswer: CCCc1c(OCCCSCC2COC(C)(CCC(=O)O)S2)ccc(OC(C)=O)c1O"
+        },
+        {
+            "index":1,
+            "Source":"USPTO-50K",
+            "Question":"Given the two reactants and reaction type, predict the production and reaction type.",
+            "Reactant1":"CCOC(=O)C1CN(Cc2ccccc2)CC1O",
+            "Reactant2":"N",
+            "Reaction type":" functional group interconversion",
+            "Label":"G",
+            "Answer":"NC(=O)C1CN(Cc2ccccc2)CC1O",
+            "Model_Response":null
+        },
+        {
+            "index":2,
+            "Source":"USPTO-50K",
+            "Question":"Given the two reactants and reaction type, predict the production and reaction type.",
+            "Reactant1":"CC1CCC(=O)C(CC(=O)c2ccccc2)C1",
+            "Reactant2":"CCN(CC)CCN",
+            "Reaction type":"heterocycle formation",
+            "Label":"D",
+            "Answer":"CCN(CC)CCn1c(-c2ccccc2)cc2c1CCC(C)C2",
+            "Model_Response":null
+        }
+    ]
+}

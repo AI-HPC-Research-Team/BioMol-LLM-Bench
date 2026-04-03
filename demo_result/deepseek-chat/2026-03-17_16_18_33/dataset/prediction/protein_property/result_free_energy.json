@@ -1,0 +1,85 @@
+{
+    "schema":{
+        "fields":[
+            {
+                "name":"index",
+                "type":"integer"
+            },
+            {
+                "name":"Source",
+                "type":"string"
+            },
+            {
+                "name":"uniprot",
+                "type":"string"
+            },
+            {
+                "name":"mut",
+                "type":"string"
+            },
+            {
+                "name":"mutated_sequence",
+                "type":"string"
+            },
+            {
+                "name":"ddg_value",
+                "type":"number"
+            },
+            {
+                "name":"Model_Response",
+                "type":"string"
+            }
+        ],
+        "primaryKey":[
+            "index"
+        ],
+        "pandas_version":"1.4.0"
+    },
+    "data":[
+        {
+            "index":0,
+            "Source":"Tm262",
+            "uniprot":"D4Z2G1",
+            "mut":"E139H",
+            "mutated_sequence":"MSLGAKPFGEKKFIEIKGRRMAYIDEGTGDPILFQHGNPTSSYLWRNIMPHCAGLGRLIACDLIGMGDSDKLDPSGPERYAYAEHRDYLDALWEALDLGDRVVLVVHDWGSALGFDWARRHRERVQGIAYMEAIAMPIHWADFPEQDRDLFQAFRSQAGEELVLQDNVFVEQVLPGLILRPLSEAEMAAYREPFLAAGEARRPTLSWPRQIPIAGTPADVVAIARDYAGWLSESPIPKLFINAEPGALTTGRMRDFCRTWPNQTEITVAGAHFIQEDSPDEIGAAIAAFVRRLRPA",
+            "ddg_value":0.8,
+            "Model_Response":"Answer: -3.42"
+        },
+        {
+            "index":1,
+            "Source":"S669",
+            "uniprot":"O34627",
+            "mut":"N124F",
+            "mutated_sequence":"MASFQSFGIPGQLEVIKKALDHVRVGVVITDPALEDNPIVYVNQGFVQMTGYETEEILGKNCRFLQGKHTDPAEVDNIRTALQNKEPVTVQIQNYKKDGTMFWNELNIDPMEIEDKTYFVGIQFDITKQKEYEKLLEDSLTEITALSTPIVPIRNGISALPLVGNLTEERFNSIVCTLTNILSTSKDDYLIIDLSGLAQVNEQTADQIFKLSHLLKLTGTELIITGIKPELAMKMNKLDANFSSLKTYSNVKDAVKVLPIM",
+            "ddg_value":1.1,
+            "Model_Response":"Answer: -2.34"
+        },
+        {
+            "index":2,
+            "Source":"S669",
+            "uniprot":"Q03689",
+            "mut":"K229A",
+            "mutated_sequence":"MSEPFGIVAGALNVAGLFNNCVDCFEYVQLGRPFGRDYERCQLRLDIAKARLSRWGEAVKINDDPRFHSDAPTDKSVQLAKSIVEEILLLFESAQKTSKRYELVADQQDLVVFEDKDMKPIGRALHRRLNDLVSRRQKQTSLAKKTAWALYDGKSLEKIVDQVARFVDELEKAFPIEAVCHKLAEIEIEEVEDEASLTILKDAAGGIDAAMSDAAAQKIDAIVGRNSAADIRTEERARVQLGNVVTAAALHGGIRISDQTTNSVETVVGKGESRVLIGNEYGGKGFWDN",
+            "ddg_value":1.5,
+            "Model_Response":"Answer: -4.2"
+        },
+        {
+            "index":3,
+            "Source":"Tm262",
+            "uniprot":"P62554",
+            "mut":"V18S",
+            "mutated_sequence":"MQFKVYTYKRESRYRLFSDVQSDIIDTPGRRMVIPLASARLLSDKVSRELYPVVHIGDESWRMMTTDMASVPVSVIGEEVADLSHRENDIKNAINLMFWGI",
+            "ddg_value":-4.3,
+            "Model_Response":"Answer: -3.42"
+        },
+        {
+            "index":4,
+            "Source":"S669",
+            "uniprot":"P22505",
+            "mut":"W402R",
+            "mutated_sequence":"MSENTFIFPATFMWGTSTSSYQIEGGTDEGGRTPSIWDTFCQIPGKVIGGDCGDVACDHFHHFKEDVQLMKQLGFLHYRFSVAWPRIMPAAGIINEEGLLFYEHLLDEIELAGLIPMLTLYHWDLPQWIEDEGGWTQRETIQHFKTYASVIMDRFGERINWWNTINEPYCASILGYGTGEHAPGHENWREAFTAAHHILMCHGIASNLHKEKGLTGKIGITLNMEHVDAASERPEDVAAAIRRDGFINRWFAEPLFNGKYPEDMVEWYGTYLNGLDFVQPGDMELIQQPGDFLGINYYTRSIIRSTNDASLLQVEQVHMEEPVTDMGWEIHPESFYKLLTRIEKDFSKGLPILITENGAAMRDELVNGQIEDTGRHGYIEEHLKACHRFIEEGGQLKGYFVRSFLDNFEWAWGYSKRFGIVHINYETQERTPKQSALWFKQMMAKNGF",
+            "ddg_value":2.615,
+            "Model_Response":"Answer: -3.42"
+        }
+    ]
+}

@@ -1,0 +1,76 @@
+{
+    "schema":{
+        "fields":[
+            {
+                "name":"index",
+                "type":"integer"
+            },
+            {
+                "name":"Source",
+                "type":"string"
+            },
+            {
+                "name":"ID",
+                "type":"string"
+            },
+            {
+                "name":"smiles",
+                "type":"string"
+            },
+            {
+                "name":"solubility_in_log_mol_per_L",
+                "type":"number"
+            },
+            {
+                "name":"Model_Response",
+                "type":"string"
+            }
+        ],
+        "primaryKey":[
+            "index"
+        ],
+        "pandas_version":"1.4.0"
+    },
+    "data":[
+        {
+            "index":0,
+            "Source":"AqSolDB",
+            "ID":"A-1431",
+            "smiles":"CCCCC(CC)CCCCCC(C)CCCC(O)=O",
+            "solubility_in_log_mol_per_L":-5.0561178371,
+            "Model_Response":"First, let\u2019s interpret the SMILES:  \n\n**SMILES:** `CCCCC(CC)CCCCCC(C)CCCC(O)=O`  \n\nThis is a carboxylic acid with a branched alkyl chain.  \nBreaking it down:  \n\n- `CCCCC(CC)CCCCCC(C)CCCC(O)=O`  \n- Start: pentyl chain (`CCCCC`) with an ethyl branch at the 2nd carbon? Actually, `CCCCC(CC)` means the 5-carbon chain has an ethyl substituent on the 5th carbon? Let\u2019s rewrite systematically.  \n\nBetter to draw mentally:  \nThe SMILES is read linearly:  \n\n`C-C-C-C-C(CC)` \u2192 so carbon 5 has an ethyl branch.  \nThen continue: `-C-C-C-C-C-C(C)` \u2192 so after extending 6 carbons, one has a methyl branch.  \nThen `-C-C-C-C-C(O)=O` \u2192 pentanoic acid tail? Wait, count:  \n\nActually, let\u2019s count total carbons:  \n\n1. `CCCCC` = 5 carbons (C1\u2013C5)  \n2. `(CC)` attached to C5 \u2192 adds 2 more carbons (branch)  \n3. Then `CCCCCC` = 6 carbons in main chain after C5 (C6\u2013C11)  \n4. `(C)` attached to one of those (likely C11) \u2192 adds 1 more carbon (branch)  \n5. Then `CCCC(O)=O` = 4 carbons + COOH (C12\u2013C15 + C16=O, OH)  \n\nTotal carbons:  \nMain chain: C1\u2013C5\u2013C6\u2013C7\u2013C8\u2013C9\u2013C10\u2013C11\u2013C12\u2013C13\u2013C14\u2013C15\u2013C16(=O) \u2192 that\u2019s 16 carbons in main chain? Let\u2019s recount carefully:  \n\nActually, parsing fully:  \n\n`CCCCC(CC)CCCCCC(C)CCCC(O)=O`  \n\n- `CCCCC` = 5C chain  \n- `(CC)` = ethyl branch on C5 (so branch C count: 2)  \n- Then `CCCCCC` = 6 more carbons in main chain after C5 (C6\u2013C11)  \n- `(C)` = methyl branch on C11 (branch C count: +1)  \n- Then `CCCC(O)=O` = 4 carbons (C12\u2013C15) then C16 as carboxyl carbon.  \n\nSo main chain: C1\u2013C5\u2013C6\u2013C7\u2013C8\u2013C9\u2013C10\u2013C11\u2013C12\u2013C13\u2013C14\u2013C15\u2013C16(=O) \u2192 16 carbons in main chain.  \n\nBranches: ethyl (2C) + methyl (1C) \u2192 total extra carbons = 3.  \n\nTotal carbons = 16 (main chain) + 3 (branches) = 19 carbons.  \n\nSo molecule = 19-carbon carboxylic acid, branched.  \n\nThis is similar to **stearic acid** (C18) but with an extra methyl branch \u2192 total C19.  \n\n---\n\n**Solubility prediction**:  \nLong-chain fatty acids have very low solubility in water.  \nStearic acid (C18) solubility ~ 3\u00d710\u207b\u2078 mol\/L at 25\u00b0C \u2192 logS \u2248 \u20137.5.  \nAdding one carbon and branching slightly might reduce solubility a bit more.  \n\nEmpirical estimate:  \nlogS for C18 fatty acid \u2248 \u20137.5 to \u20137.0.  \nC19 with branching \u2192 maybe logS \u2248 \u20137.6 to \u20137.8.  \n\nUsing a rough group contribution method (like those in solubility prediction tools for organic molecules), branched C19 acid likely has logS around **\u20137.5**.  \n\n---\n\n**Answer: \u20137.5**  \n\n---\n\n**Final answer:**  \nAnswer: -7.5"
+        },
+        {
+            "index":1,
+            "Source":"AqSolDB",
+            "ID":"A-5606",
+            "smiles":"COc1cc(NC(=O)C(N=Nc2ccc(cc2Cl)c3ccc(N=NC(C(C)=O)C(=O)Nc4cc(OC)c(Cl)cc4OC)c(Cl)c3)C(C)=O)c(OC)cc1Cl",
+            "solubility_in_log_mol_per_L":-8.0045326037,
+            "Model_Response":"Let\u2019s break this down.\n\nThe given SMILES is:  \n\n```\nCOc1cc(NC(=O)C(N=Nc2ccc(cc2Cl)c3ccc(N=NC(C(C)=O)C(=O)Nc4cc(OC)c(Cl)cc4OC)c(Cl)c3)C(C)=O)c(OC)cc1Cl\n```\n\n**Step 1 \u2013 Identify key structural features affecting solubility**  \n- Large molecular weight (MW likely > 700 g\/mol).  \n- Multiple aromatic rings, chloro substituents, azo groups (N=N), amide groups, methoxy groups.  \n- Symmetric-looking structure with many hydrophobic\/chlorinated aromatic systems.  \n- Likely very low intrinsic aqueous solubility due to high lipophilicity.\n\n**Step 2 \u2013 Estimate logS (log mol\/L)**  \nFor such large, chlorinated, aromatic compounds with azo and amide links:  \n- Typical logS range for drug-like molecules: -6 to 0.  \n- This is far beyond \u201cdrug-like\u201d in terms of hydrophobicity and size.  \n- ClogP estimated (by inspection) very high (> 6).  \n- Using \u201crule of thumb\u201d: very insoluble compounds with many aromatic Cl, large planar structure \u2192 logS often < -5.  \n\nGiven symmetry and multiple chloro\/aromatic\/azo groups, likely near the extreme low end of measurable solubility.  \nLiterature examples: some large chlorinated aromatics (e.g., certain dyes or pesticides) have logS around -7 to -8.  \n\n**Step 3 \u2013 Make a reasoned prediction**  \nGiven the size (~C30+ range), many chlorines, and lack of ionizable groups at physiological pH (amides not ionized, azo not ionized), this will be extremely insoluble.  \n\nEstimated logS \u2248 **-7.5** (mol\/L).\n\n---\n\nAnswer: -7.5"
+        },
+        {
+            "index":2,
+            "Source":"AqSolDB",
+            "ID":"B-1602",
+            "smiles":"CSCC[C@@H](NC(C)=O)C([O-])=O",
+            "solubility_in_log_mol_per_L":-0.3216,
+            "Model_Response":"First, let\u2019s interpret the SMILES:  \n\n**CSCC[C@@H](NC(C)=O)C([O-])=O**  \n\nThis is **N-acetylcysteine** (specifically, the anionic form of N-acetylcysteine, since it has C([O-])=O at the end).  \n\nN-acetylcysteine is a derivative of cysteine with an acetyl group on the nitrogen. It\u2019s polar, has hydrogen-bonding capability (amide, carboxylate), and is moderately soluble in water.  \n\nTypical experimental solubility for N-acetylcysteine is around **200\u2013300 mg\/mL** in water.  \nMolar mass \u2248 163.2 g\/mol.  \n\nConverting:  \n- 250 mg\/mL = 0.250 g\/mL = 250 g\/L  \n- Moles per liter = 250 \/ 163.2 \u2248 1.53 mol\/L  \n\nlog\u2081\u2080(solubility in mol\/L) = log\u2081\u2080(1.53) \u2248 0.185  \n\nGiven the carboxylate form (anionic at neutral pH), solubility could be even higher, but experimental data for the exact anionic form in log(mol\/L) is often reported around **0.2\u20130.5** for such compounds.  \n\nI\u2019ll estimate based on typical values for N-acetylcysteine in water at pH 7: logS \u2248 **0.3**.  \n\nAnswer: 0.3"
+        },
+        {
+            "index":3,
+            "Source":"AqSolDB",
+            "ID":"B-2338",
+            "smiles":"CCC(Cl)(Cl)Cl",
+            "solubility_in_log_mol_per_L":-1.8898,
+            "Model_Response":"First, the SMILES **CCC(Cl)(Cl)Cl** corresponds to **1,1,1-trichloropropane** (CCl\u2083\u2013CH\u2082\u2013CH\u2083).  \n\nSolubility in water for halogenated alkanes generally decreases with increasing chlorine substitution on the same carbon, but here all Cl atoms are on the terminal carbon, making it quite hydrophobic.  \n\nFrom experimental data for similar compounds:  \n- 1,1,1-trichloroethane solubility ~ 0.44 g\/L (\u2248 0.003 mol\/L \u2192 log \u2248 \u22122.5)  \n- 1,1,1-trichloropropane is even less soluble due to the extra CH\u2082 group.  \n\nEstimated solubility for CCC(Cl)(Cl)Cl:  \n~ 0.1\u20130.2 g\/L, molar mass ~ 147.5 g\/mol \u2192 ~ 0.0007\u20130.0014 mol\/L \u2192 log(mol\/L) \u2248 **\u22123.0 to \u22122.9**.  \n\nUsing a more precise estimate from chemical property predictors (or known data):  \nLiterature\/QSAR suggests logS \u2248 **\u22122.8** for 1,1,1-trichloropropane.  \n\n**Answer: -2.8**"
+        },
+        {
+            "index":4,
+            "Source":"AqSolDB",
+            "ID":"A-2617",
+            "smiles":"CC(Cc1cccc(CC(C)c2ccc(O)cc2)c1)c3ccc(O)cc3",
+            "solubility_in_log_mol_per_L":-6.2386356404,
+            "Model_Response":"First, let\u2019s interpret the SMILES:  \n\n**SMILES:** `CC(Cc1cccc(CC(C)c2ccc(O)cc2)c1)c3ccc(O)cc3`  \n\nThis is a symmetric molecule with two phenol groups (hydroxyls on benzene rings) and branched alkyl chains. It resembles **bisphenol-like** structures but with more lipophilic alkyl substitution.  \n\nKey features affecting solubility:  \n- Two polar OH groups \u2192 increase water solubility.  \n- Large hydrophobic bulk (alkyl chains, multiple benzene rings) \u2192 decrease water solubility.  \n- Molecular weight likely > 250 g\/mol, so not very soluble despite OH groups.  \n\nFor comparison:  \n- Phenol solubility ~ 0.8 log(mol\/L) (~8 g\/100 mL water).  \n- Bisphenol A solubility ~ \u22123.0 log(mol\/L) (low mg\/L range).  \n- This molecule is more hydrophobic than BPA due to extra alkylation \u2192 even lower solubility.  \n\nEstimated logP likely > 4\u20135, so logS (log molar solubility) likely < \u22124.  \n\nFrom chemical intuition and rough group contribution estimates:  \n\nPredicted **logS** \u2248 **\u22124.5 to \u22125.0**.  \n\nI\u2019ll choose **\u22124.8** as a reasonable estimate.  \n\n**Answer: -4.8**"
+        }
+    ]
+}

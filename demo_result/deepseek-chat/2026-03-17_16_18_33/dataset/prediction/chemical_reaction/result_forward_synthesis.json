@@ -1,0 +1,103 @@
+{
+    "schema":{
+        "fields":[
+            {
+                "name":"index",
+                "type":"integer"
+            },
+            {
+                "name":"Source",
+                "type":"string"
+            },
+            {
+                "name":"Question",
+                "type":"string"
+            },
+            {
+                "name":"Reactant1",
+                "type":"string"
+            },
+            {
+                "name":"Reactant2",
+                "type":"string"
+            },
+            {
+                "name":"Reaction type",
+                "type":"string"
+            },
+            {
+                "name":"Label",
+                "type":"string"
+            },
+            {
+                "name":"Answer",
+                "type":"string"
+            },
+            {
+                "name":"Model_Response",
+                "type":"string"
+            }
+        ],
+        "primaryKey":[
+            "index"
+        ],
+        "pandas_version":"1.4.0"
+    },
+    "data":[
+        {
+            "index":0,
+            "Source":"USPTO-50K",
+            "Question":"Given the two reactants and reaction type, predict the production and reaction type.",
+            "Reactant1":"CCCc1c(OCCCSCC2COC(C)(CCC(=O)O)S2)ccc(C(C)=O)c1O",
+            "Reactant2":"O=C(OO)c1cccc(Cl)c1",
+            "Reaction type":"oxidations",
+            "Label":"F",
+            "Answer":"CCCc1c(OCCCS(=O)CC2COC(C)(CCC(=O)O)S2)ccc(C(C)=O)c1O",
+            "Model_Response":"Let\u2019s break this down.\n\n**Step 1 \u2013 Identify functional groups and likely reaction**\n\n- **Reactant1** (`CCCc1c(OCCCSCC2COC(C)(CCC(=O)O)S2)ccc(C(C)=O)c1O`):  \n  Contains a phenol group (OH on aromatic ring), a ketone (`C(C)=O`), and a carboxylic acid (`CCC(=O)O`) at the end of a chain.  \n  Also has an ether\/thioether chain with a second carboxylic acid group in a cyclic dithioacetal-like structure? Actually, looking closely: `SCC2COC(C)(CCC(=O)O)S2` \u2014 that\u2019s a 1,3-dithiolane or 1,3-oxathiolane ring with a carboxylic acid substituent. But the phenol OH is likely reactive.\n\n- **Reactant2** (`O=C(OO)c1cccc(Cl)c1`):  \n  This is **peroxybenzoic acid derivative** \u2014 specifically 4-chloroperoxybenzoic acid (m-CPBA) SMILES: peroxy acid group `O=C(OO)` attached to benzene with Cl substituent.\n\n**Step 2 \u2013 Probable reaction**\n\nm-CPBA is commonly used for **Baeyer\u2013Villiger oxidation** of ketones to esters, or for epoxidation of alkenes, or oxidation of sulfides to sulfoxides\/sulfones.\n\nReactant1 has a ketone `C(C)=O` on the aromatic ring (actually it\u2019s an acetylphenol \u2014 a hydroxyacetophenone derivative).  \nBaeyer\u2013Villiger oxidation of an aromatic ketone adjacent to OH? That\u2019s possible, but aromatic ketones are less reactive unless activated. However, m-CPBA can also oxidize **sulfides** to **sulfoxides** or **sulfones**.\n\nLooking at Reactant1: there are two sulfur atoms in the chain:  \n`OCCCSCC2COC(C)(CCC(=O)O)S2`  \nBreakdown: `OCCC-S-C-C2COC(C)(CCC(=O)O)S2` \u2014 so one sulfide linkage (\u2013S\u2013) and one sulfur in a 5-membered ring with O and C (1,3-oxathiolane).  \nThe sulfide (\u2013S\u2013) is more easily oxidized by m-CPBA than the ketone here (faster reaction).\n\n**Step 3 \u2013 Most likely single oxidation site**\n\nm-CPBA with 1 equiv. typically oxidizes the more nucleophilic sulfide to **sulfoxide** selectively.  \nSo the product would be Reactant1 with S oxidized to S=O in the chain, not in the ring necessarily? Actually both sulfurs could be oxidized, but the non-cyclic thioether `\u2013S\u2013` is more exposed.\n\nBut given one equivalent of m-CPBA, likely mono-oxidation at the non-cyclic sulfide.\n\n**Step 4 \u2013 Product SMILES**\n\nOriginal: `CCCc1c(OCCCSCC2COC(C)(CCC(=O)O)S2)ccc(C(C)=O)c1O`  \nChange `S` (the one between `CCC` and `CC2`\u2026) to `S(=O)`.\n\nLet\u2019s locate: `OCCCSCC2` \u2192 `OCCC-S-CC2`. Change to `OCCCS(=O)CC2`.\n\nSo product SMILES:  \n`CCCc1c(OCCCS(=O)CC2COC(C)(CCC(=O)O)S2)ccc(C(C)=O)c1O`\n\n**Step 5 \u2013 Check other possibilities**\n\nCould also oxidize the ketone to ester via BV, but less likely with competing sulfide.  \nGiven typical organic reactivity, sulfide oxidation is faster.  \nThus, sulfoxide is the probable major product.\n\n---\n\n**Answer:** `CCCc1c(OCCCS(=O)CC2COC(C)(CCC(=O)O)S2)ccc(C(C)=O)c1O`"
+        },
+        {
+            "index":1,
+            "Source":"USPTO-50K",
+            "Question":"Given the two reactants and reaction type, predict the production and reaction type.",
+            "Reactant1":"CCOC(=O)C1CN(Cc2ccccc2)CC1O",
+            "Reactant2":"N",
+            "Reaction type":" functional group interconversion",
+            "Label":"G",
+            "Answer":"NC(=O)C1CN(Cc2ccccc2)CC1O",
+            "Model_Response":"Let\u2019s break this down.\n\n**Reactant1 SMILES:** `CCOC(=O)C1CN(Cc2ccccc2)CC1O`  \nThis is an ester with an N-substituted morpholine-like ring (actually a 4-hydroxy piperidine with an N-benzyl group and an ester at the 2-position relative to N? Let\u2019s map it):\n\n- `CCOC(=O)` = ethyl ester group.\n- `C1CN(Cc2ccccc2)CC1O` = piperidine ring with OH at position 4 (or 3 depending on numbering) and N-benzyl.\n\nActually, rewriting systematically:  \n`CCOC(=O)C1CN(Cc2ccccc2)CC1O`  \nThe `C1...CC1O` means a 6-membered ring: atoms: C1 (attached to C=O ester), C (attached to N), N (substituted with benzyl), C, C, C1O (with OH).  \nSo it\u2019s **ethyl 2-oxo-4-hydroxy-1-benzylpiperidine-3-carboxylate**? Wait, not quite \u2014 the ester is at C2, C=O from ester is already counted, so maybe ethyl 1-benzyl-4-hydroxypiperidine-2-carboxylate.\n\n**Reactant2 SMILES:** `N`  \nThat\u2019s just ammonia (NH\u2083).\n\nAmmonia can react with esters via ammonolysis to give an amide and ethanol.\n\nSo:  \n`CCOC(=O)-piperidine` + NH\u2083 \u2192 `H2NC(=O)-piperidine` + C2H5OH\n\nThe piperidine part stays intact: `C1CN(Cc2ccccc2)CC1O` with the ester C=O now an amide C=O attached to NH\u2082.\n\nThus product SMILES:  \n`NHC(=O)C1CN(Cc2ccccc2)CC1O`\n\nLet\u2019s check:  \nStart from Reactant1: `CCOC(=O)C1CN(Cc2ccccc2)CC1O`  \nReplace `CCO` (ethoxy) with `NH` (amino from ammonia) \u2192 `NHC(=O)C1CN(Cc2ccccc2)CC1O`.\n\nThat\u2019s consistent.\n\n**Answer:** `NHC(=O)C1CN(Cc2ccccc2)CC1O`"
+        },
+        {
+            "index":2,
+            "Source":"USPTO-50K",
+            "Question":"Given the two reactants and reaction type, predict the production and reaction type.",
+            "Reactant1":"CC1CCC(=O)C(CC(=O)c2ccccc2)C1",
+            "Reactant2":"CCN(CC)CCN",
+            "Reaction type":"heterocycle formation",
+            "Label":"D",
+            "Answer":"CCN(CC)CCn1c(-c2ccccc2)cc2c1CCC(C)C2",
+            "Model_Response":"Let\u2019s break this down.  \n\n**Reactant1:** `CC1CCC(=O)C(CC(=O)c2ccccc2)C1`  \nThis is a \u03b2-diketone-like structure with a cyclohexanone ring substituted with a benzoyl group at the \u03b2-position (2-acetyl-1-tetralone type skeleton, but actually 5-methyl-2-(2-oxo-2-phenylethyl)cyclohexan-1-one).  \n\n**Reactant2:** `CCN(CC)CCN`  \nThis is N,N-diethylethylenediamine \u2014 a primary amine and a tertiary amine in the same molecule.  \n\n---\n\n**Reaction type:**  \nThe primary amine (`-NH\u2082` at the end of Reactant2) can undergo nucleophilic addition to a ketone, forming an imine after dehydration. But here, we have two ketones in Reactant1: one is part of a \u03b2-diketone system (\u03b1 to another carbonyl).  \n\n\u03b2-Diketones are acidic at the \u03b1-position and can undergo **Knoevenagel-type condensation** with primary amines to give enamines, but more relevant: \u03b2-diketones + primary diamines can give **\u03b2-enaminones** or cyclic products if the diketone is 1,3-dicarbonyl.  \n\nLooking closely:  \nReactant1 has `C(CC(=O)c2ccccc2)` \u2014 so the \u03b1-carbon between two carbonyls (one cyclohexanone C=O, one benzoyl C=O) is acidic.  \n\nWith a diamine like `H\u2082N-CH\u2082-CH\u2082-NEt\u2082`, the primary amine could attack one carbonyl, then the other amine (tertiary, not nucleophilic enough for carbonyl) stays unchanged, or intramolecular cyclization occurs if geometry allows.  \n\nBut actually, the \u03b2-diketone unit can react with the primary amine to give an **enamine** at the central CH, replacing the H with `-N-CH\u2082-CH\u2082-NEt\u2082`, forming a \u03b2-enaminone.  \n\n---\n\n**Likely product:**  \nThe primary amine adds to the benzoyl carbonyl (more electrophilic than the cyclohexanone carbonyl due to conjugation with phenyl) \u2192 forms an imine? No, with \u03b2-diketones, the usual product is enamine at the methylene between carbonyls, not imine at carbonyl.  \n\nKnown reaction: \u03b2-diketone + primary amine \u2192 \u03b2-enaminone via condensation and proton transfer.  \n\nSo:  \nReactant1 central CH (between C=O of cyclohexanone and C=O of benzoyl) gets deprotonated, amine adds to benzoyl C=O, then proton transfer, dehydration? Wait \u2014 that would give a different structure.  \n\nActually, simpler: \u03b2-diketone + H\u2082N-R \u2192 C=C-NR\u2082 type? But here only one N is primary, the other tertiary, so product is `C=C-NH-CH\u2082-CH\u2082-NEt\u2082`.  \n\nLet\u2019s sketch in SMILES:  \n\nReactant1: `CC1CCC(=O)C(CC(=O)c2ccccc2)C1`  \nThe acidic proton is on the CH between the two C=O groups. Replace that H with `-NH-CH\u2082-CH\u2082-NEt\u2082`.  \n\nSo product SMILES:  \n\n`CC1CCC(=O)C(C=C(NCCN(CC)CC)c2ccccc2)C1` \u2014 but that\u2019s not quite right, need to ensure enamine double bond between the \u03b1-carbon and \u03b2-carbon?  \n\nBetter: Enamine formation:  \n`CC1CCC(=O)C(C(=C(NCCN(CC)CC))c2ccccc2)C1` \u2014 no, that breaks aromaticity.  \n\nActually, the benzoyl carbonyl becomes part of enamine: final structure is cyclohexanone still C=O, but the CH\u2082-C(=O)-Ph becomes CH=C(NHR)-Ph with OH lost? Not OH lost, but H\u2082O lost from NH\u2082 and C=O of benzoyl? That would give imine, not enamine of \u03b2-diketone.  \n\nGiven time constraints, the most plausible single-step product is **enamine at the methylene of the \u03b2-diketone unit**, with N attached to the diamine chain:  \n\nSo: `CC1CCC(=O)C(C(=C(NCCN(CC)CC))c2ccccc2)C1` is wrong SMILES (aromatic broken).  \n\nCorrect: The benzoyl stays aromatic, enamine double bond between \u03b1-C and carbonyl-C of benzoyl? That yields:  \n\n`CC1CCC(=O)C(C=C(NCCN(CC)CC)c2ccccc2)C1` \u2014 aromatic c2ccccc2 preserved.  \n\nYes: `C=C(NCCN(CC)CC)c2ccccc2` is the enamine side chain, attached to cyclohexanone at the \u03b1-position.  \n\nSo final:  \n`CC1CCC(=O)C(C=C(NCCN(CC)CC)c2ccccc2)C1`  \n\n---\n\n**Answer:** `CC1CCC(=O)C(C=C(NCCN(CC)CC)c2ccccc2)C1`"
+        },
+        {
+            "index":3,
+            "Source":"USPTO-50K",
+            "Question":"Given the two reactants and reaction type, predict the production and reaction type.",
+            "Reactant1":"CC(C)(C)OC(=O)OC(=O)OC(C)(C)C",
+            "Reactant2":"Nc1ccc([N+](=O)[O-])cn1",
+            "Reaction type":"protections",
+            "Label":"E",
+            "Answer":"CC(C)(C)OC(=O)Nc1ccc([N+](=O)[O-])cn1",
+            "Model_Response":"Let\u2019s break this down.  \n\n**Reactant1:**  \nSMILES: `CC(C)(C)OC(=O)OC(=O)OC(C)(C)C`  \nThis is di\u2011tert\u2011butyl dicarbonate (Boc anhydride), often written as `(Boc)\u2082O`.  \nStructure: `(t\u2011Bu\u2011O\u2011C(=O)\u2011O\u2011C(=O)\u2011O\u2011t\u2011Bu)` \u2014 an anhydride of Boc acid.\n\n**Reactant2:**  \nSMILES: `Nc1ccc([N+](=O)[O-])cn1`  \nThis is 5\u2011nitro\u20112\u2011aminopyridine (amino group on pyridine ring at position 2, nitro at position 5).  \n`Nc1ccc([N+](=O)[O-])cn1` \u2192 aromatic amine.\n\n---\n\n**Reaction type:**  \nBoc anhydride reacts with amines to give **N\u2011Boc protected amine** + tert\u2011butyl carbonate (which decarboxylates to CO\u2082 + t\u2011BuOH).  \nThe amine here is aromatic (primary amine on pyridine), so Boc protection will occur at nitrogen.\n\n---\n\n**Product:**  \nReplace `N\u2011H` of `Nc1ccc([N+](=O)[O-])cn1` with `N\u2011C(=O)OC(C)(C)C` (Boc group).  \nThe rest of the pyridine ring stays the same.\n\n---\n\n**SMILES after Boc protection:**  \nOriginal amine SMILES: `Nc1ccc([N+](=O)[O-])cn1`  \nReplace `N` with `NC(=O)OC(C)(C)C` attached to same ring position.\n\nLet\u2019s write it systematically:  \nRing: `c1ccc([N+](=O)[O-])cn1` with `N` at position 2 (attached to C2).  \nAfter Boc: `NC(=O)OC(C)(C)C` attached to C2.\n\nSo:  \n`NC(=O)OC(C)(C)C` group attached to pyridine N? Wait \u2014 careful: In `Nc1ccc...`, the `N` is outside ring, bonded to C2 of pyridine. That\u2019s `NH\u2082`.  \nAfter reaction: `N` is still outside ring, but now `N` is bonded to `C=O` of Boc.  \n\nSo: `C(=O)OC(C)(C)C` group on that nitrogen.\n\n---\n\n**Construct SMILES:**  \nStart from ring: `c1ccc([N+](=O)[O-])cn1`  \nAttach `N` at beginning: `Nc1ccc([N+](=O)[O-])cn1` (original).  \nNow replace `N` with `N(C(=O)OC(C)(C)C)`? No \u2014 primary amine becomes secondary amide: `NC(=O)OC(C)(C)C` attached to ring.\n\nBetter: `O=C(OC(C)(C)C)NC1=NC=C([N+](=O)[O-])C=C1`\n\nLet\u2019s check:  \n- `O=C(OC(C)(C)C)N-` (Boc\u2011NH\u2011)  \n- `c1nc(ccc1[N+](=O)[O-])` but need to connect N of Boc to C2 of pyridine.  \n\nActually, pyridine numbering: given `Nc1ccc([N+](=O)[O-])cn1`:  \n`c1` is C2? Wait, SMILES `Nc1ccc([N+](=O)[O-])cn1`:  \n`N` connected to `c1` (C2 of pyridine), `c1` connected to `c2` (C3), `c3` (C4), `c4` (C5) has nitro, `n1` is N1 of pyridine (at end of SMILES). Yes, so ring is pyridine with N1 at end, substituents: C2 has NH\u2082, C5 has NO\u2082.\n\nSo after Boc: C2 has `NHC(=O)OC(C)(C)C`.\n\n---\n\n**Final SMILES:**  \n`O=C(OC(C)(C)C)Nc1ccc([N+](=O)[O-])cn1`  \nBut that\u2019s exactly the original with `N` replaced by `N(C(=O)OC(C)(C)C)`? No \u2014 original `N` is `NH\u2082`, now `NH` with Boc on N.\n\nActually `NHC(=O)OC(C)(C)C` is `N` with H and Boc, so `Nc1...` still works if `N` is understood as NH. But in SMILES, `Nc1` means nitrogen with one H (secondary amine\/amide). That\u2019s correct here.\n\nSo: `O=C(OC(C)(C)C)Nc1ccc([N+](=O)[O-])cn1`\n\n---\n\n**Answer:** `O=C(OC(C)(C)C)Nc1ccc([N+](=O)[O-])cn1`"
+        },
+        {
+            "index":4,
+            "Source":"USPTO-50K",
+            "Question":"Given the two reactants and reaction type, predict the production and reaction type.",
+            "Reactant1":"CNC(=O)COc1cc(C#N)ccc1CN",
+            "Reactant2":"O=C(O)c1cc(Cl)ccc1O",
+            "Reaction type":"acylation and related processes",
+            "Label":"B",
+            "Answer":"CNC(=O)COc1cc(C#N)ccc1CNC(=O)c1cc(Cl)ccc1O",
+            "Model_Response":"Let\u2019s analyze the reactants.\n\n**[Reactant1]**: `CNC(=O)COc1cc(C#N)ccc1CN`  \nThis is an amide (`CNC(=O)`) connected to a methylene (`CH2`) connected to an ether oxygen (`O`) attached to a benzene ring with a cyano group (`C#N`) and a terminal `CH2NH2` group (actually `CN` at the end means `CH2NH2` if we expand \u2014 but here `CN` in SMILES means `C#N` for cyano, but in the benzene substitution it's `C#N`, and the last `CN` is actually `C` then `N` with two hydrogens: so `CH2NH2`).\n\nActually, parsing carefully:  \n`CNC(=O)COc1cc(C#N)ccc1CN`  \n- `CN` at start: `H3C-NH-`  \n- `C(=O)` carbonyl  \n- `CO` methylene-O  \n- `c1cc(C#N)ccc1` is a para-cyano phenol ether (but no OH, it's O-linked to the previous part)  \n- Last `CN` attached to benzene: `CH2NH2` group (benzylamine-like, but attached to benzene at para relative to O? Let's map: benzene substitution pattern: positions: O at 1, cyano at 4? Let's check SMILES: `c1cc(C#N)ccc1CN` means cyano at position 3? Actually `cc(C#N)ccc` means cyano at position 2 of the 6-membered ring if we number from O? Let's not overcomplicate.)\n\n**[Reactant2]**: `O=C(O)c1cc(Cl)ccc1O`  \nThis is 4-chloro-2-hydroxybenzoic acid (Cl at position 4, OH at position 2 relative to COOH). Actually numbering:  \n`c1cc(Cl)ccc1O` with OH at position where? SMILES: `c1cc(Cl)ccc1O` means OH is at position 1 in numbering? Let's check:  \nRing: atoms: C1 (C attached to COOH), C2 (c, part of `cc`), C3 (c with Cl), C4 (c), C5 (c), C6 (c with O). So OH at C6, Cl at C3. That\u2019s 3-chloro-6-hydroxybenzoic acid? But that\u2019s unusual. More likely: `O=C(O)c1cc(Cl)ccc1O` means OH is at position 2 if we start numbering from carboxyl carbon? Wait, SMILES aromatic ring notation: `c1cc(Cl)ccc1O` means:  \n- First atom (atom1) = carbon attached to C(=O)O (carboxyl)  \n- atom2 = c (aromatic)  \n- atom3 = c with substituent Cl  \n- atom4 = c  \n- atom5 = c  \n- atom6 = c with substituent O (OH)  \nSo substituents: COOH at 1, Cl at 3, OH at 6. That\u2019s 3-chloro-2-hydroxybenzoic acid? No, OH at 6 means para to COOH? Let's map: 1-COOH, 2-H, 3-Cl, 4-H, 5-H, 6-OH. That\u2019s 3-chloro-6-hydroxybenzoic acid, which is same as 5-chloro-2-hydroxybenzoic acid if numbering starts with OH at 1? Actually, if we renumber with OH as 1, then COOH at 2, Cl at 4 \u2192 4-chloro-2-hydroxybenzoic acid. Yes, that\u2019s more common: salicylic acid derivative with Cl at position 4 (relative to OH). So Reactant2 = 5-chlorosalicylic acid (OH at 2, COOH at 1, Cl at 5).\n\nGiven these, the reaction likely involves the amine (`CH2NH2` on Reactant1\u2019s benzene) reacting with the carboxylic acid group of Reactant2 to form an amide.\n\nSo:  \nReactant1 has terminal `CH2NH2` group on benzene ring.  \nReactant2 has `COOH`.  \nThey undergo condensation:  \n`H2N-CH2-Ph-... + HOOC-Ar \u2192 Ph-CH2-NH-C(=O)-Ar + H2O`\n\nThus, product SMILES:  \nTake Reactant1, replace the last `N` (of `CH2NH2`) with `N(C=O)Ar` where Ar is Reactant2 without the OH of COOH.\n\nSo:  \nReactant1 without last `NH2` but keeping `CH2`: `CNC(=O)COc1cc(C#N)ccc1C`  \nThen add `NC(=O)` then Reactant2 without the carboxylic OH: `c1cc(Cl)ccc1O` (but careful: Reactant2 is `O=C(O)c1cc(Cl)ccc1O`; removing `O` from `O=C(O)` means `O=C`? Actually `O=C(O)` means carboxyl, to make amide we replace `OH` with `N` linkage: so `C(=O)N` attached to `CH2` of Reactant1).\n\nBetter to construct:  \nReactant1 amine nitrogen attacks carbonyl of Reactant2\u2019s COOH, losing H2O.\n\nFinal SMILES:  \n`CNC(=O)COc1cc(C#N)ccc1CNC(=O)c2cc(Cl)ccc2O`\n\nCheck:  \n- `CNC(=O)COc1cc(C#N)ccc1C` \u2013 wait, I must keep `CH2` before N: actually Reactant1 ends with `ccc1CN` meaning `C` is aromatic? No, `ccc1CN` means after the ring closure `1`, the next `C` is outside aromatic, so `CH2`, then `N` with two H\u2019s. So `CH2NH2`.  \nSo product: `CH2NH` becomes `CH2NHC(=O)Ar`.  \nSo: `CNC(=O)COc1cc(C#N)ccc1CNC(=O)c2cc(Cl)ccc2O`.\n\nYes.\n\n**Answer**: `CNC(=O)COc1cc(C#N)ccc1CNC(=O)c2cc(Cl)ccc2O`"
+        }
+    ]
+}

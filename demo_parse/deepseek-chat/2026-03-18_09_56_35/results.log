@@ -1,0 +1,28 @@
+2026-03-18 10:41:01,221 - root - INFO - ==== results of demo_result/deepseek-chat/2026-03-18_09_56_35/./dataset/prediction/mol_chemical_property/result_solubility.json ====
+2026-03-18 10:41:01,235 - root - INFO - RMSE: 0.6098
+2026-03-18 10:41:01,235 - root - INFO - MAE: 0.4875
+2026-03-18 10:41:01,235 - root - INFO - MEAN: 0.2442
+2026-03-18 10:41:01,235 - root - INFO - STD: 0.5588
+2026-03-18 10:41:01,236 - root - INFO - Validity: 1.0000
+2026-03-18 10:41:01,236 - root - INFO - Total: 10.0000
+2026-03-18 10:41:01,236 - root - INFO - Float: 10.0000
+2026-03-18 10:41:01,236 - root - INFO - ==== results of demo_result/deepseek-chat/2026-03-18_09_56_35/./dataset/prediction/mol_chemical_property/result_freesolv.json ====
+2026-03-18 10:41:01,241 - root - INFO - RMSE: 0.6737
+2026-03-18 10:41:01,241 - root - INFO - MAE: 0.5367
+2026-03-18 10:41:01,241 - root - INFO - MEAN: -0.1663
+2026-03-18 10:41:01,241 - root - INFO - STD: 0.6528
+2026-03-18 10:41:01,241 - root - INFO - Validity: 1.0000
+2026-03-18 10:41:01,241 - root - INFO - Total: 10.0000
+2026-03-18 10:41:01,241 - root - INFO - Float: 10.0000
+2026-03-18 10:41:01,241 - root - INFO - ==== results of demo_result/deepseek-chat/2026-03-18_09_56_35/./dataset/prediction/mol_physiological_property/result_bbbp.json ====
+2026-03-18 10:41:01,251 - root - INFO - AUROC: 0.8750
+2026-03-18 10:41:01,251 - root - INFO - AUPRC: 0.8571
+2026-03-18 10:41:01,251 - root - INFO - Accuracy: 0.9000
+2026-03-18 10:41:01,251 - root - INFO - F1_score: 0.9231
+2026-03-18 10:41:01,251 - root - INFO - Validity: 1.0000
+2026-03-18 10:41:01,251 - root - INFO - ==== results of demo_result/deepseek-chat/2026-03-18_09_56_35/./dataset/prediction/mol_physiological_property/result_toxicity.json ====
+2026-03-18 10:41:01,264 - root - INFO - AUROC: 0.7500
+2026-03-18 10:41:01,264 - root - INFO - AUPRC: 0.6000
+2026-03-18 10:41:01,264 - root - INFO - Accuracy: 0.9000
+2026-03-18 10:41:01,264 - root - INFO - F1_score: 0.6667
+2026-03-18 10:41:01,264 - root - INFO - Validity: 1.0000

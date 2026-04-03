@@ -1,0 +1,76 @@
+{
+    "schema":{
+        "fields":[
+            {
+                "name":"index",
+                "type":"integer"
+            },
+            {
+                "name":"Source",
+                "type":"string"
+            },
+            {
+                "name":"mol_name",
+                "type":"string"
+            },
+            {
+                "name":"smiles",
+                "type":"string"
+            },
+            {
+                "name":"two_class_label",
+                "type":"integer"
+            },
+            {
+                "name":"Model_Response",
+                "type":"string"
+            }
+        ],
+        "primaryKey":[
+            "index"
+        ],
+        "pandas_version":"1.4.0"
+    },
+    "data":[
+        {
+            "index":0,
+            "Source":"MoleculeNet-BBBP",
+            "mol_name":"cefdaloxime",
+            "smiles":"COCC1=C(N2[C@H](SC1)[C@H](NC(=O)C(=N\\O)\/c3csc(N)n3)C2=O)C(O)=O",
+            "two_class_label":0,
+            "Model_Response":"First, let's interpret the SMILES:  \n\n**SMILES:**  \n`COCC1=C(N2[C@H](SC1)[C@H](NC(=O)C(=N\\O)\/c3csc(N)n3)C2=O)C(O)=O`  \n\nThis is a penicillin-derived \u03b2-lactam antibiotic structure (specifically, it resembles **amoxicillin** or a similar penicillin with an oxime group).  \n\n---\n\n**Key factors for BBB permeability (BBB+ = 1, BBB\u2212 = 0):**  \n- **Molecular weight**: This molecule is large (~400+ g\/mol), which reduces BBB penetration.  \n- **Hydrogen bond donors\/acceptors**: Multiple H-bond donors (COOH, NH\u2082, OH, CONH, oxime OH) and acceptors \u2192 high polar surface area \u2192 poor passive diffusion across BBB.  \n- **Acid groups**: Carboxylic acid (ionized at physiological pH) \u2192 very low passive permeability.  \n- **Known property**: \u03b2-lactam antibiotics generally do **not** cross BBB well unless inflamed meninges (and even then, limited).  \n\n---\n\nGiven the structure and typical medicinal chemistry rules for BBB penetration (Lipinski-like but stricter, e.g., usually MW < 450, low TPSA, minimal acids), this molecule fails on:  \n- High TPSA  \n- Acidic group  \n- Too many H-bond donors  \n\nThus, predicted **BBB\u2212** (class 0).  \n\n---\n\n**Answer: 0**"
+        },
+        {
+            "index":1,
+            "Source":"MoleculeNet-BBBP",
+            "mol_name":"fusidic-acid",
+            "smiles":"C[C@@H]1[C@H](O)CC[C@@]2(C)[C@H]1CC[C@@]3(C)[C@H]2[C@H](O)C[C@H]4\\C([C@H](C[C@]34C)OC(C)=O)=C(\/CCC=C(C)C)C(O)=O",
+            "two_class_label":0,
+            "Model_Response":"First, let\u2019s analyze the SMILES:  \n\nThe molecule is a steroid derivative (specifically, it resembles a bile acid or steroid with multiple chiral centers, hydroxyl groups, carboxylate, and acetate groups).  \n\nKey structural features:  \n- Multiple hydroxyl groups (polar)  \n- Carboxylic acid group (polar, ionized at physiological pH)  \n- Large molecular weight (likely >500)  \n- Steroid-like rigid fused ring system (good for membrane permeability)  \n- But the presence of ionizable carboxylic acid significantly reduces BBB penetration because it\u2019s charged at pH 7.4.  \n\nIn the **BBBP dataset** (Blood-Brain Barrier Penetration), molecules with carboxylic acids, especially large ones like this, tend to be classified as **non-penetrating** (label 0).  \n\nGiven the structural similarity to cholic acid derivatives, which are known not to cross BBB easily, the prediction should be **0**.  \n\nAnswer: 0"
+        },
+        {
+            "index":2,
+            "Source":"MoleculeNet-BBBP",
+            "mol_name":"GR94839_I",
+            "smiles":"c1(CC(N2[C@H](CN(CC2)C(=O)C)C[N@]2CC[C@H](O)C2)=O)ccc([S@](=O)C)cc1",
+            "two_class_label":0,
+            "Model_Response":"Answer: 1"
+        },
+        {
+            "index":3,
+            "Source":"MoleculeNet-BBBP",
+            "mol_name":"Fluroxene",
+            "smiles":"FC(F)(F)COC=C",
+            "two_class_label":1,
+            "Model_Response":"First, let\u2019s interpret the SMILES:  \n\n**FC(F)(F)COC=C**  \n\nBreaking it down:  \n- **F C (F)(F)** \u2192 CF\u2083 (trifluoromethyl group)  \n- **C O C=C** \u2192 connected as \u2013CH\u2082\u2013O\u2013CH=CH\u2082  \n\nSo the molecule is **CF\u2083\u2013CH\u2082\u2013O\u2013CH=CH\u2082**, which is **3,3,3-trifluoropropoxyethene** (or 1-(2,2,2-trifluoroethoxy)ethene).  \n\n---\n\n**BBB permeability considerations:**  \n1. **Molecular weight**: ~126 g\/mol (small enough).  \n2. **LogP**: Fluorine atoms lower lipophilicity significantly; trifluoroethoxy group is polar and may reduce membrane penetration.  \n3. **H-bond donors**: None.  \n4. **H-bond acceptors**: Ether oxygen + fluorine atoms \u2192 several acceptors.  \n5. **Rule of thumb**: Molecules with high polarity, especially polyfluorinated small ethers, often have poor passive BBB penetration unless specifically transporter-mediated.  \n\nGiven the trifluoroethoxy group, this molecule is likely **too polar\/low logP** to cross BBB passively in significant amounts.  \n\n---\n\nBased on typical BBB permeability predictions for such compounds, I\u2019d classify it as **non-permeant (0)**.  \n\n**Answer: 0**"
+        },
+        {
+            "index":4,
+            "Source":"MoleculeNet-BBBP",
+            "mol_name":"rofelodine",
+            "smiles":"C3=C(C2CN1C(CCN=C1C2)=O)C=CC=C3",
+            "two_class_label":1,
+            "Model_Response":"First, let\u2019s interpret the SMILES:  \n\n**SMILES:** `C3=C(C2CN1C(CCN=C1C2)=O)C=CC=C3`  \n\nThis is a compact notation for a molecule. Let\u2019s break it down:  \n\n- `C3=C(...)C=CC=C3` \u2192 This is a benzene ring (positions numbered 3,4,5,6,1,2 in SMILES numbering).  \n- Inside the parentheses: `C2CN1C(CCN=C1C2)=O` \u2192 This describes a fused bicyclic system attached to the benzene.  \n\nRewriting systematically:  \n\nThe core is **benzene** with a substituent at position 3 (SMILES numbering). The substituent is a **2,3,6,7-tetrahydro-1H-cyclopenta[b]pyrazin-8-one** type structure (a fused cyclopentane\u2013pyrazine\u2013lactam ring).  \n\nActually, let\u2019s map it:  \n\n`C2CN1C(CCN=C1C2)=O` \u2192  \n- `N1C(CCN=C1C2)=O` \u2192 N1 is part of a ring closure to \u201c1\u201d later.  \n- `C2CN1...C2` \u2192 C2 is part of another ring closure.  \n\nBetter to draw mentally:  \nRing 1: atoms in order: N1 \u2013 C \u2013 C \u2013 N = C1 \u2013 back to N1? Wait, `N=C1` means a double bond from N to C1, and C1 is closure to earlier N1.  \n\nLet\u2019s parse step-by-step:  \n\nStart with `C3=C(C2CN1C(CCN=C1C2)=O)C=CC=C3`  \n\n1. Benzene: atoms in SMILES order:  \n   - C3 (atom 1)  \n   - =C (atom 2)  \n   - ( ... ) substituent on atom 2? Wait, check: `C3=C(...)C=CC=C3` means:  \n     C3 is connected to C (atom 2) with double bond, and that C (atom 2) has substituent in parentheses.  \n     Then C (atom 3), =C (atom 4), C (atom 5), =C (atom 6), back to C3 (atom 1).  \n\n   So benzene atoms: C1 (called C3 in label), C2, C3, C4, C5, C6.  \n\n2. Substituent on C2 of benzene: `C2CN1C(CCN=C1C2)=O`  \n\n   Start: C2 (this is a carbon, call it Ca) connected to C (Cb) connected to N (Nc) connected to C1 (Cd) with ring closure 1 earlier? Wait, `N1C` means N with label 1 connected to C (Cd), but closure 1 is later at `=C1`.  \n\n   Actually, rewrite substituent as:  \n   Ca \u2013 Cb \u2013 Nc \u2013 Cd \u2013 (C \u2013 C \u2013 N = C1) =O, and C1 connects back to Nc (ring closure 1), and Ca connects to C2 (ring closure 2) at the end `C2)`? Wait, `C2)` means closure 2 is to the earlier `C2` at start of substituent.  \n\n   So:  \n   - Ca (labeled C2 in SMILES) is attached to benzene at C2 position.  \n   - Ca connected to Cb.  \n   - Cb connected to Nc (labeled N1 in SMILES).  \n   - Nc connected to Cd.  \n   - Cd connected to C (Ce), connected to C (Cf), connected to N (Ng), double bond to C1 (Ch), and C1 connects back to Nc (closure 1).  \n   - Also, Ca connects to Ch via closure 2? Let\u2019s check: `C2)` at end refers to `C2` at start of substituent `(C2CN1...)`. So Ch (C1) connects to Ca (C2) via ring closure 2.  \n\n   So we have two fused rings:  \n   Ring A: Nc \u2013 Cd \u2013 Ce \u2013 Cf \u2013 Ng = Ch \u2013 back to Nc (6-membered dihydropyrazine with one double bond).  \n   Ring B: Ca \u2013 Cb \u2013 Nc \u2013 Ch \u2013 back to Ca (5-membered ring).  \n\n   And Cd has =O (carbonyl).  \n\nSo the substituent on benzene is a **fused bicyclic lactam**: benzene fused? No, benzene is attached at Ca, not fused. So it\u2019s benzene with a **2,3,4a,8a-tetrahydro-1H-cyclopenta[b]pyrazin-6-one** substituent at meta position.  \n\n---\n\n**Key property for BBBP:**  \n- Molecular weight: ~243 g\/mol (estimated).  \n- LogP: likely moderate (~2\u20133).  \n- H-bond donors: 1 (NH in ring).  \n- H-bond acceptors: 3 (N, N, O).  \n- Polar surface area: ~50\u201360 \u00c5\u00b2.  \n- Rigid fused rings + benzene \u2192 might be too polar\/rigid for good BBB penetration.  \n\nKnown similar structures:  \nCompounds with multiple H-bond acceptors\/donors and aromatic + fused aliphatic rings often have reduced BBB penetration unless specifically designed for CNS. This looks like a fragment of some drug-like molecule but not highly lipophilic.  \n\nGiven typical BBB permeability rules (Lipinski\u2019s rule of 5 extensions for CNS: MW < ~450, logP ~2\u20134, HBD < 3, PSA < ~90 \u00c5\u00b2), this molecule might be borderline. But the polar surface area and H-bonding capacity suggest it\u2019s **not** highly likely to cross BBB easily without active transport.  \n\nIn the BBBP dataset, such fused N-heterocycles with carbonyls often label as **0** (non-permeant).  \n\n---\n\n**Prediction:** Based on structure, likely **0**.  \n\nAnswer: 0"
+        }
+    ]
+}
